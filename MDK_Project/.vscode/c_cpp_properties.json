@@ -15,12 +15,14 @@
                 "d:\\Ethan\\Project\\ACM32\\ModulesDemo\\Core_Drivers\\CMSIS",
                 "d:\\Ethan\\Project\\ACM32\\ModulesDemo\\Core_Drivers\\Device",
                 "d:\\Ethan\\Project\\ACM32\\ModulesDemo\\Core_Drivers\\HAL_Driver\\Inc",
+                "d:\\Ethan\\Project\\ACM32\\ModulesDemo\\UART\\demo\\Source_Code\\main",
                 "D:\\Keil_v5\\ARM\\ARMCLANG\\include",
                 "D:\\Keil_v5\\ARM\\ARMCLANG\\include\\arm_linux",
                 "D:\\Keil_v5\\ARM\\ARMCLANG\\include\\arm_linux_compat",
                 "D:\\Keil_v5\\ARM\\ARMCLANG\\include\\libcxx",
                 "d:\\Ethan\\Project\\ACM32\\ModulesDemo\\Core_Drivers\\HAL_Driver\\Src",
-                "d:\\Ethan\\Project\\ACM32\\ModulesDemo\\UART\\demo\\Source_Code"
+                "d:\\Ethan\\Project\\ACM32\\ModulesDemo\\UART\\demo\\Source_Code",
+                "d:\\Ethan\\Project\\ACM32\\ModulesDemo\\UART\\demo\\MDK_Project"
             ],
             "defines": [
                 "__alignof__(x)=",

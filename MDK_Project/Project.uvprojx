@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>..\Core_Drivers\CMSIS;..\Core_Drivers\Device;..\Core_Drivers\Device\other;..\Core_Drivers\HAL_Driver;..\Core_Drivers\HAL_Driver\Src;..\Core_Drivers\HAL_Driver\Inc;..\Source_Code\APP;..\Source_Code\BSP_Driver;..\Source_Code\IC_Driver;..\..\..\Core_Drivers\CMSIS;..\..\..\Core_Drivers\Device;..\..\..\Core_Drivers\HAL_Driver\Inc</IncludePath>
+              <IncludePath>..\Core_Drivers\CMSIS;..\Core_Drivers\Device;..\Core_Drivers\Device\other;..\Core_Drivers\HAL_Driver;..\Core_Drivers\HAL_Driver\Src;..\Core_Drivers\HAL_Driver\Inc;..\Source_Code\APP;..\Source_Code\BSP_Driver;..\Source_Code\IC_Driver;..\..\..\Core_Drivers\CMSIS;..\..\..\Core_Drivers\Device;..\..\..\Core_Drivers\HAL_Driver\Inc;..\Source_Code\main</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -448,6 +448,11 @@
               <FileType>1</FileType>
               <FilePath>..\..\..\Core_Drivers\HAL_Driver\Src\HAL_UART.c</FilePath>
             </File>
+            <File>
+              <FileName>HAL_EXTI.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source_Code\HAL_EXTI.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -468,6 +473,56 @@
               <FileType>1</FileType>
               <FilePath>..\Source_Code\main.c</FilePath>
             </File>
+            <File>
+              <FileName>SI523_App.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source_Code\SI523_App.c</FilePath>
+            </File>
+            <File>
+              <FileName>SI523_App.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source_Code\SI523_App.h</FilePath>
+            </File>
+            <File>
+              <FileName>delay.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\delay.c</FilePath>
+            </File>
+            <File>
+              <FileName>delay.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\delay.h</FilePath>
+            </File>
+            <File>
+              <FileName>exti.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source_Code\exti.c</FilePath>
+            </File>
+            <File>
+              <FileName>exti.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source_Code\exti.h</FilePath>
+            </File>
+            <File>
+              <FileName>finger.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\finger.c</FilePath>
+            </File>
+            <File>
+              <FileName>finger.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\finger.h</FilePath>
+            </File>
+            <File>
+              <FileName>nfc_iic.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source_Code\nfc_iic.c</FilePath>
+            </File>
+            <File>
+              <FileName>nfc_iic.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source_Code\nfc_iic.h</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>
@@ -483,7 +538,7 @@
   <LayerInfo>
     <Layers>
       <Layer>
-        <LayName>&lt;Project Info&gt;</LayName>
+        <LayName>Project</LayName>
         <LayTarg>0</LayTarg>
         <LayPrjMark>1</LayPrjMark>
       </Layer>

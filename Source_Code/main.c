@@ -5,13 +5,23 @@
   ******************************************************************************
 */
 #include "APP.h" 
+#include "nfc_iic.h"
+#include "delay.h"
+#include "exti.h"
+#include "SI523_App.h"
+
+#include "finger.h"
+
+uint8_t  PCD_IRQ_flagA = 0;
 
 #define UART_BAUD_RATE  115200
+
 
 UART_HandleTypeDef UART1_Handle;
 
 static uint8_t gu8_UART2Test[] = {"This is UART2 Test Data"};
 static uint8_t gu8_UART3Test[] = {"This is UART3 Test Data"};
+
 
 /************************************************************************
  * function   : Uart_Init
@@ -43,28 +53,38 @@ void Uart_Init(void)
 **********************************************************************************/
 int main(void)
 {
-    System_Init();
+	System_Init();
     
-    Uart_Init();
-		UART2_Init();
-		UART3_Init();
-    
-		/* UARTx Tx */
-		//HAL_UART_Transmit(&UART2_Handle, gu8_UART2Test, strlen((char *)gu8_UART2Test),0);
-		//HAL_UART_Transmit(&UART3_Handle, gu8_UART3Test, strlen((char *)gu8_UART3Test),0);
+  Uart_Init();
+	UART2_Init();
+	UART3_Init();
+	
+  printfS("\n\rAPP START.");
+	/* UARTx Tx */
+	//HAL_UART_Transmit(&UART2_Handle, gu8_UART2Test, strlen((char *)gu8_UART2Test),0);
+	//HAL_UART_Transmit(&UART3_Handle, gu8_UART3Test, strlen((char *)gu8_UART3Test),0);
 	
     /* Select Mode: TEST_LOOP、TEST_UART1_IT、TEST_DMA、TEST_UART_ABORT、TEST_UART2,TEST_UART3*/
-		// memset(send_cmd,0,sizeof(send_cmd));  
-		// zw_reg(1);
-		// for (int i = 0; i < len+9; i++)
-		// printfS("%02x ", send_cmd[i]);
-		// printfS("\n");
-		// HAL_UART_Transmit(&UART2_Handle, send_cmd, len+9,0);
-		
-		APP_Uart_Test(TEST_UART1_IT);
-		while(1)
-		{
-			
-		};
+	APP_Uart_Test(TEST_UART1_IT);
+
+	//EXTIX_Init();
+	//ACD_init_Fun();
+	//ACD_Fun();
+	// PCD_SI523_TypeA_Init();
+	// PCD_SI523_TypeA();
+	
+	//SI523_I2C_LL_Init();
+	while(1)
+	{
+		uint8_t k = 0x6c;
+		printfS("\n\r********wirte:%02x*******", k);
+		I_SI523_IO_Write(ACDConfigSelReg, (ACDConfigK << 2) | 0x40);
+		I_SI523_IO_Write(ACDConfigReg, k );
+		printfS("\n\r********read********");
+		char version = I_SI523_IO_Read(ACDConfigReg);
+		printfS("\n\rACDConfigReg: %02x", version);
+		//IIC_Send_Byte(0xff);
+		delay_ms(500);
+	};
 }
 

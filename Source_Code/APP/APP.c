@@ -8,10 +8,10 @@
   ******************************************************************************        
 */
 #include "APP.h"
+#include "finger.h"
 
 uint8_t gu8_TxBuffer[512];
 uint8_t gu8_RxBuffer[512];
-
 
 uint8_t gu8_Note[] = {"This is interrupt Mode"};
 
@@ -30,264 +30,17 @@ volatile uint32_t gu32_RxCpltStatus = false,gu32_RxCpltStatus2 = false,gu32_RxCp
 
 uint8_t g_send_buff[32];
 
-
-uint8_t packing(uint8_t *data, uint8_t data_len)
-{
-    uint16_t check_sum = 0;
-    // header
-    g_send_buff[0] = 0xef;
-    g_send_buff[1] = 0x01;
-    // address
-    g_send_buff[2] = 0xff;
-    g_send_buff[3] = 0xff;
-    g_send_buff[4] = 0xff;
-    g_send_buff[5] = 0xff;
-    // data
-    if (0 != data)
-    {
-        memcpy(g_send_buff + 6, data, data_len);
-    }
-    for (int i = 0; i < data_len; i++)
-    {
-        check_sum += data[i];
-    }
-    if (check_sum > 0xFFFF)
-    {
-        g_send_buff[data_len + 6] = 0xFF;
-        g_send_buff[data_len + 7] = 0xFF;
-    }
-    else
-    {
-	    g_send_buff[data_len + 6] = (uint8_t)((check_sum & 0xFF00) >> 8);
-	    g_send_buff[data_len + 7] = (uint8_t)(check_sum & 0x00FF);
-    }
-    return data_len + 8;
-}
-
-
-uint8_t PS_AutoEnroll(uint16_t id, uint8_t count, uint16_t param)
-{
-    uint8_t data[9];
-    data[0] = 0x01;
-    data[1] = 0x00;
-    data[2] = 0x08;
-    data[3] = 0x31;
-    data[4] = (uint8_t)((id & 0xFF00) >> 8);
-    data[5] = (uint8_t)(id & 0x00FF);
-    data[6] = count;
-    data[7] = (uint8_t)((param & 0xFF00) >> 8);
-    data[8] = (uint8_t)(param & 0x00FF);
-    return packing(data, 9);
-}
-
-uint8_t PS_AutoIdentify(uint8_t safety_level, uint16_t id, uint16_t param)
-{
-    uint8_t data[9];
-    data[0] = 0x01;
-    data[1] = 0x00;
-    data[2] = 0x08;
-    data[3] = 0x32;
-    data[4] = safety_level;
-    data[5] = (uint8_t)((id & 0xFF00) >> 8);
-    data[6] = (uint8_t)(id & 0x00FF);
-    data[7] = (uint8_t)((param & 0xFF00) >> 8);
-    data[8] = (uint8_t)(param & 0x00FF);
-    return packing(data, 9);
-
-}
-
-uint8_t PS_DeletChar(uint16_t page_id, uint16_t n)
-{
-    uint8_t data[9];
-    data[0] = 0x01;
-    data[1] = 0x00;
-    data[2] = 0x07;
-    data[3] = 0x0c;
-    data[5] = (uint8_t)((page_id & 0xFF00) >> 8);
-    data[6] = (uint8_t)(page_id & 0x00FF);
-    data[7] = (uint8_t)((n & 0xFF00) >> 8);
-    data[8] = (uint8_t)(n & 0x00FF);
-
-    return packing(data, 9);
-}
-
-uint8_t PS_Empty()
-{
-    uint8_t data[] = {0x01, 0x00, 0x03, 0x0d};
-
-    return packing(data, 4);
-}
-
-uint8_t PS_Cancel()
-{
-    uint8_t data[] = {0x01, 0x00, 0x03, 0x30};
-
-    return packing(data, 4);
-}
-
-uint8_t PS_Sleep()
-{
-    uint8_t data[] = {0x01, 0x00, 0x03, 0x33};
-
-    return packing(data, 4);
-}
-
-uint8_t PS_ValidTempleteNum()
-{
-    uint8_t data[] = {0x01, 0x00, 0x03, 0x1d};
-
-    return packing(data, 4);
-}
-
-uint8_t PS_SetPwd(uint32_t passwd)
-{
-    uint8_t data[9];
-    data[0] = 0x01;
-    data[1] = 0x00;
-    data[2] = 0x07;
-    data[3] = 0x12;
-    data[5] = (uint8_t)((passwd & 0xFF000000) >> 24);
-    data[6] = (uint8_t)((passwd & 0x00FF0000) >> 16);
-    data[7] = (uint8_t)((passwd  & 0x0000FF00) >> 8);
-    data[8] = (uint8_t)(passwd & 0x000000FF);
-
-    return packing(data, 9);
-}
-
-uint8_t PS_VfyPwd(uint32_t passwd)
-{
-    uint8_t data[9];
-    data[0] = 0x01;
-    data[1] = 0x00;
-    data[2] = 0x07;
-    data[3] = 0x12;
-    data[5] = (uint8_t)((passwd & 0xFF000000) >> 24);
-    data[6] = (uint8_t)((passwd & 0x00FF0000) >> 16);
-    data[7] = (uint8_t)((passwd  & 0x0000FF00) >> 8);
-    data[8] = (uint8_t)(passwd & 0x000000FF);
-
-    return packing(data, 9);
-}
-
-uint8_t PS_AuraLedConfig(uint8_t cmd, uint8_t speed, uint8_t color, uint8_t count)
-{
-    uint8_t data[8];
-    data[0] = 0x01;
-    data[1] = 0x00;
-    data[2] = 0x07;
-    data[3] = 0x3c;
-    data[4] = cmd;
-    data[5] = speed;
-    data[6] = color;
-    data[7] = count;
-    return packing(data, 8);
-}
-
-uint8_t send_cmd[52],cmd,bs,len,ply[20];
-
-//指纹包
-void send_cmdToZw(uint8_t *send_buf,uint8_t bs,uint16_t len,uint8_t cmd,uint8_t *ply)
-{
-	uint8_t i=0;
-	uint8_t con=0;
-	uint8_t arr[50];
-	uint8_t n=0;
-	uint16_t sum=0;
-	send_buf[i++]=0xEF;
-	send_buf[i++]=0x01;
-	//芯片地址
-	send_buf[i++]=0xFF;
-	send_buf[i++]=0xFF;
-	send_buf[i++]=0xFF;
-	send_buf[i++]=0xFF;
-	// 包标识
-	send_buf[i++]=bs;
-	sum=sum+bs;
-	send_buf[i++]=((len) & 0xff00)>>8;
-    // 包长度
-	send_buf[i++]=len &0x00ff;
-	sum=sum+len;
-    // 指令码
-	send_buf[i++]=cmd;
-	sum=sum+cmd;
-	for(con=0;con<len-3;con++)
-	{
-		send_buf[i++]=ply[con];
-		sum=sum+ply[con];
-	}
-	arr[0]=len+2;
-	arr[1]=cmd;
-	for(n=0;n<len-3;n++)
-	{
-		arr[n+2]=ply[n];
-	}
-	send_buf[i++]=(uint8_t)((sum & 0xFF00)>>8);
-	send_buf[i++]=(uint8_t)(sum & 0x00FF);
-}
-
-
-void zw_val(uint8_t i)
-{
-	bs=0x01;
-	len=0x08;
-	cmd=0x32;
-	ply[0]=0x01;
-	ply[1]=0x00;
-	ply[2]=i;
-	ply[3]=0x00;
-	ply[4]=0x01;
-	send_cmdToZw(send_cmd,bs,len,cmd,ply);
-}
-
-void zw_reg(uint8_t n)
-{
-	bs=0x01;
-	len=0x08;
-	cmd=0x31;
-	ply[0]=0x00;
-	ply[1]=n;
-	ply[2]=0x03;
-	ply[3]=0x00;
-	ply[4]=0x0F;
-	send_cmdToZw(send_cmd,bs,len,cmd,ply);
-}
-
-void zw_del()
-{
-	bs=0x01;
-	len=0x07;
-	cmd=0x0c;
-	ply[0]=0x00;
-	ply[1]=0x01;
-	ply[2]=0x00;
-	ply[3]=0x01;
-	send_cmdToZw(send_cmd,bs,len,cmd,ply);
-}
-
-void zw_count()
-{
-	bs=0x01;
-	len=0x03;
-	cmd=0x1d;
-	ply[0]=0x00;
-	ply[1]=0x01;
-	ply[2]=0x00;
-	ply[3]=0x01;
-	send_cmdToZw(send_cmd,bs,len,cmd,ply);
-}
-
 /*********************************************************************************
 * Function    : UART1_IRQHandler
 * Description : UAAR1 Interrupt handler
 * Input       : 
 * Outpu       : 
-* Author      : Chris_Kyle                         Data : 2020年
+* Author      : Chris_Kyle                         Data : 2020?
 **********************************************************************************/
 void UART1_IRQHandler(void)
 {
     HAL_UART_IRQHandler(&UART1_Handle);
 }
-
 /*********************************************************************************
 * Function    : UART2_IRQHandler
 * Description : UART2 Interrupt handler
@@ -494,11 +247,12 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 **********************************************************************************/
 void APP_Uart_Test(enum_TEST_MODE_t fe_Mode)
 {
-    printfS("\r\n---------- UART Test ----------\r\n");
-    // printfS("Please enter any String/Data \r\n");
+    printfS("\r\nUART Test.");
+		printfS("\r\n**********************************************");
+		printfS("\r\nPlease enter Finger command:\r\n");
 
-	uint8_t lu8_ret;
-	uint8_t pack_len;
+		uint8_t lu8_ret;
+		uint8_t pack_len;
     
     switch (fe_Mode)
     {
@@ -528,43 +282,72 @@ void APP_Uart_Test(enum_TEST_MODE_t fe_Mode)
                     while (!gu32_RxCpltStatus);
                 
                     gu32_RxCpltStatus=false;
-                
-                    memset(send_cmd,0,sizeof(send_cmd));  
+										memset(g_send_buff, 0, sizeof(g_send_buff));
                     memcpy(gu8_TxBuffer, gu8_RxBuffer, UART1_Handle.lu32_RxCount);
-                    printfS("Receive data: %s\n", gu8_RxBuffer);
+                    printfS("\r\nReceive cmd: %s", gu8_RxBuffer);
                     if(strstr((char *)gu8_RxBuffer,"1"))
                     {
-                        pack_len = PS_AutoEnroll(0x1, 0x03, 0x000F);
+                        pack_len = PS_AutoEnroll(g_send_buff, 0x0001, 0x03, 0x000F);
                     }
                     else if(strstr((char *)gu8_RxBuffer,"2"))
                     {
-                        pack_len = PS_AutoIdentify(1, 0xFFFF, 0x0001);
+                        pack_len = PS_AutoIdentify(g_send_buff, 0x01, 0xFFFF, 0x0001);
                     }
                     else if(strstr((char *)gu8_RxBuffer,"3"))
                     {
-                        pack_len = PS_Empty();
+                        pack_len = PS_Empty(g_send_buff);
                     }
                     else if(strstr((char *)gu8_RxBuffer,"4"))
                     {
-                        pack_len = PS_ValidTempleteNum();
+                        pack_len = PS_ValidTempleteNum(g_send_buff);
                     }
                     else if(strstr((char *)gu8_RxBuffer,"5"))
                     {
-                        pack_len = PS_AuraLedConfig(0x04, 0, 0, 0);
+                        pack_len = PS_AuraLedConfig(g_send_buff, 0x04, 0, 0, 0);
                         System_Delay_MS(500);
-                        pack_len = PS_AuraLedConfig(0x01, 0xF0, 0x01, 0xF0);
+                        pack_len = PS_AuraLedConfig(g_send_buff, 0x01, 0x6F, 0x02, 0x00);
                     }
+										printfS("\r\nPackege:");
                     for (int i = 0; i < pack_len; i++)
                     printfS("%02X ", g_send_buff[i]);
-                    printfS("\n");
-                    printfS("**********************************************\n");
+										
                     HAL_UART_Transmit(&UART2_Handle, g_send_buff, pack_len, 0);
                 
-                    HAL_UART_Transmit_IT(&UART1_Handle, gu8_TxBuffer, UART1_Handle.lu32_RxCount, UART_TX_FIFO_1_2); 
-                
+                    HAL_UART_Transmit_IT(&UART1_Handle, gu8_TxBuffer, UART1_Handle.lu32_RxCount, UART_TX_FIFO_1_2);
+										
+										/*
+										HAL_UART_Receive(&UART2_Handle, gu8_RxBuffer, sizeof(gu8_RxBuffer), 200);
+										HAL_UART_Transmit(&UART1_Handle, gu8_RxBuffer, UART1_Handle.lu32_RxCount, 0);  
+										memset(gu8_RxBuffer, 0, sizeof(gu8_RxBuffer));										
+										*/
+										
                     while (!gu32_TxCpltStatus);  
 				
                     gu32_TxCpltStatus =false;
+										
+										while(1)
+										{
+											memset(gu8_RxBuffer, 0, sizeof(gu8_RxBuffer));
+											memset(gu8_TxBuffer, 0, sizeof(gu8_TxBuffer));
+											HAL_UART_Receive_IT(&UART2_Handle, gu8_RxBuffer, sizeof(gu8_RxBuffer), UART_RX_FIFO_1_2);    // length should <= sizeof(gu8_RxBuffer)   
+													
+											while(1)  
+											{
+												while (!gu32_RxCpltStatus2);
+											
+												gu32_RxCpltStatus2=false;
+											
+												memcpy(gu8_TxBuffer, gu8_RxBuffer, UART2_Handle.lu32_RxCount);
+												printfS("\r\nFinger Result: ");
+												for (int i = 0; i < UART2_Handle.lu32_RxCount; i++)
+												{
+													printfS("%02X ", gu8_RxBuffer[i]);
+												}
+											
+												break;		   
+											}
+											break;
+										}
 				
                     break;
            
