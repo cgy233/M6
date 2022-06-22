@@ -1,3 +1,13 @@
+<!--
+ * @Author: cgy233 1781387847@qq.com
+ * @Date: 2022-06-14 11:51:35
+ * @LastEditors: cgy233 1781387847@qq.com
+ * @LastEditTime: 2022-06-22 19:15:35
+ * @FilePath: \demo\readme.md
+ * @Description:
+ * 
+ * Copyright (c) 2022 by cgy233 1781387847@qq.com, All Rights Reserved. 
+-->
 <!-- 多串口应用示例工程：
 
 UART1  -> 打印调试串口，支持printf， 管脚：A9:Tx  A10:Rx  波特率：115200
@@ -16,4 +26,4 @@ TEST_UART_ABORT：测试串口终止传输
 TEST_UART2：测试串口2的中断接收和发送
 
 TEST_UART3：测试串口3的中断接收和发送 -->
-# ACM32 指纹模块和读卡模块
+# ACM32 指纹模块、读卡模块、触摸屏模块

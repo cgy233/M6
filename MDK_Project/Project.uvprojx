@@ -33,7 +33,7 @@
           <SLE66AMisc></SLE66AMisc>
           <SLE66LinkerMisc></SLE66LinkerMisc>
           <SFDFile>$$Device:ACM32F403CET7$ACM32F4.svd</SFDFile>
-          <bCustSvd>0</bCustSvd>
+          <bCustSvd>1</bCustSvd>
           <UseEnv>0</UseEnv>
           <BinPath></BinPath>
           <IncludePath></IncludePath>
@@ -523,6 +523,26 @@
               <FileType>5</FileType>
               <FilePath>..\Source_Code\nfc_iic.h</FilePath>
             </File>
+            <File>
+              <FileName>Si14tch.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source_Code\Si14tch.c</FilePath>
+            </File>
+            <File>
+              <FileName>Si14tch.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source_Code\Si14tch.h</FilePath>
+            </File>
+            <File>
+              <FileName>led.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source_Code\led.h</FilePath>
+            </File>
+            <File>
+              <FileName>led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source_Code\led.c</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>
@@ -532,7 +552,14 @@
   <RTE>
     <apis/>
     <components/>
-    <files/>
+    <files>
+      <file attr="config" category="source" name="src\jansson_config.c" version="2.7.0">
+        <instance index="0" removed="1">RTE\Data_Exchange\jansson_config.c</instance>
+        <component Cclass="Data Exchange" Cgroup="JSON" Csub="Jansson" Cvendor="Keil" Cversion="2.7.0" condition="ARMCC"/>
+        <package name="Jansson" schemaVersion="1.0" url="http://www.keil.com/pack/" vendor="Keil" version="1.0.0"/>
+        <targetInfos/>
+      </file>
+    </files>
   </RTE>
 
   <LayerInfo>
