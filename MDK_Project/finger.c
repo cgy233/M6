@@ -239,6 +239,12 @@ uint8_t PS_AuraLedConfig(uint8_t *send_buff, uint8_t cmd, uint8_t speed, uint8_t
     data[7] = count;
     return packing(send_buff, data, 8);
 }
+/**
+ * @description: 设置芯片地址
+ * @param {uint8_t} *send_buff
+ * @param {uint8_t} chip_addr 芯片地址
+ * @return {*}
+ */
 uint8_t PS_SetChipAddr(uint8_t *send_buff,  uint8_t chip_addr)
 {
     uint8_t data[9];

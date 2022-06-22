@@ -10,10 +10,12 @@
 #include "APP.h"
 #include "finger.h"
 
-uint8_t gu8_TxBuffer[512];
-uint8_t gu8_RxBuffer[512];
+uint8_t guint8_t_TxBuffer[512];
+uint8_t guint8_t_RxBuffer[512];
+uint8_t guint8_t_TxBufferF[512];
+uint8_t guint8_t_RxBufferF[512];
 
-uint8_t gu8_Note[] = {"This is interrupt Mode"};
+uint8_t guint8_t_Note[] = {"This is interrupt Mode"};
 
 extern UART_HandleTypeDef  UART1_Handle;
 UART_HandleTypeDef  UART2_Handle;
@@ -21,11 +23,11 @@ UART_HandleTypeDef  UART3_Handle;
  
 DMA_HandleTypeDef  DMA_CH1_Handle;
 
-volatile uint32_t gu32_DMA_Status = false;
+volatile uint32_t guint32_t_DMA_Status = false;
 
-volatile uint32_t gu32_TxCpltStatus = false,gu32_TxCpltStatus2 =false,gu32_TxCpltStatus3 =false;
+volatile uint32_t guint32_t_TxCpltStatus = false,guint32_t_TxCpltStatus2 =false,guint32_t_TxCpltStatus3 =false;
 
-volatile uint32_t gu32_RxCpltStatus = false,gu32_RxCpltStatus2 = false,gu32_RxCpltStatus3 = false;
+volatile uint32_t guint32_t_RxCpltStatus = false,guint32_t_RxCpltStatus2 = false,guint32_t_RxCpltStatus3 = false;
 
 
 uint8_t g_send_buff[32];
@@ -91,9 +93,9 @@ void UART2_Init(void)
 void UART3_Init(void) 
 {
     UART3_Handle.Instance        = UART3;    
-    UART3_Handle.Init.BaudRate   = 9600; 
+    UART3_Handle.Init.BaudRate   = 57600; 
     UART3_Handle.Init.WordLength = UART_WORDLENGTH_8B;
-    UART3_Handle.Init.StopBits   = UART_STOPBITS_1;
+    UART3_Handle.Init.StopBits   = UART_STOPBITS_2;
     UART3_Handle.Init.Parity     = UART_PARITY_NONE;
     UART3_Handle.Init.Mode       = UART_MODE_TX_RX;
     UART3_Handle.Init.HwFlowCtl  = UART_HWCONTROL_NONE;
@@ -123,7 +125,7 @@ void HAL_UART_MspInit(UART_HandleTypeDef *huart)
         GPIO_InitStruct.Mode      = GPIO_MODE_AF_PP;
         GPIO_InitStruct.Pull      = GPIO_PULLUP;
         GPIO_InitStruct.Alternate = GPIO_FUNCTION_2;       
-		HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+				HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 		
         /* NVIC Config */
         NVIC_ClearPendingIRQ(UART1_IRQn);
@@ -137,11 +139,11 @@ void HAL_UART_MspInit(UART_HandleTypeDef *huart)
        
         /* Initialization GPIO */
         /* A2:Tx  A3:Rx */
-        GPIO_InitStruct.Pin       = GPIO_PIN_2|GPIO_PIN_3;
+        GPIO_InitStruct.Pin       = GPIO_PIN_6|GPIO_PIN_7;
         GPIO_InitStruct.Mode      = GPIO_MODE_AF_PP;
         GPIO_InitStruct.Pull      = GPIO_PULLUP;
-        GPIO_InitStruct.Alternate = GPIO_FUNCTION_2;       
-        HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);  
+        GPIO_InitStruct.Alternate = GPIO_FUNCTION_1;       
+        HAL_GPIO_Init(GPIOB, &GPIO_InitStruct); 
 		      			
         /* NVIC Config */
         NVIC_ClearPendingIRQ(UART2_IRQn);
@@ -173,7 +175,7 @@ void HAL_UART_MspInit(UART_HandleTypeDef *huart)
 * Description : DMA Interrupt handler
 * Input       : 
 * Outpu       : 
-* Author      : Chris_Kyle                         Data : 2020å¹´
+* Author      : Chris_Kyle                         Data : 2020å¹?
 **********************************************************************************/
 void DMA_IRQHandler(void)
 {
@@ -191,15 +193,15 @@ void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart)
 {
     if(huart->Instance ==UART1)  // Transfor Data By UART1
     {
-		gu32_TxCpltStatus= true;
+		guint32_t_TxCpltStatus= true;
     }
     else if(huart->Instance ==UART2) //Transfor Data By UART2 
 	{
-		gu32_TxCpltStatus2 =true;
+		guint32_t_TxCpltStatus2 =true;
 	}
 	else if(huart->Instance ==UART3) // Transfor Data By UART3
 	{
-		gu32_TxCpltStatus3 =true;
+		guint32_t_TxCpltStatus3 =true;
 	}
 }
 
@@ -212,7 +214,7 @@ void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart)
 **********************************************************************************/
 void UART1_DMA_ITC_Callback(void)
 {
-    gu32_DMA_Status = true;
+    guint32_t_DMA_Status = true;
 }
 
 /*********************************************************************************
@@ -225,15 +227,15 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {	
     if(huart->Instance ==UART1)  // receive data by UART1
     {
-		gu32_RxCpltStatus= true;
+		guint32_t_RxCpltStatus= true;
     }
     else if(huart->Instance ==UART2) //receive data by UART2  
 	{
-		gu32_RxCpltStatus2 =true;
+		guint32_t_RxCpltStatus2 =true;
 	}
 	else if(huart->Instance ==UART3) // receive data by UART3  
 	{
-		gu32_RxCpltStatus3 =true;
+		guint32_t_RxCpltStatus3 =true;
 	}
 }
 
@@ -243,15 +245,15 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 * Description : 
 * Input       : 
 * Outpu       : 
-* Author      : PJ                       Data : 2021å¹´
+* Author      : PJ                       Data : 2021å¹?
 **********************************************************************************/
 void APP_Uart_Test(enum_TEST_MODE_t fe_Mode)
 {
     printfS("\r\nUART Test.");
 		printfS("\r\n**********************************************");
-		printfS("\r\nPlease enter Finger command:\r\n");
+		printfS("\r\nPlease enter Finger command:");
 
-		uint8_t lu8_ret;
+		uint8_t luint8_t_ret;
 		uint8_t pack_len;
     
     switch (fe_Mode)
@@ -261,11 +263,11 @@ void APP_Uart_Test(enum_TEST_MODE_t fe_Mode)
         {
             for(;;)
             {
-                HAL_UART_Receive(&UART1_Handle, gu8_RxBuffer, sizeof(gu8_RxBuffer), 200);
+                HAL_UART_Receive(&UART1_Handle, guint8_t_RxBuffer, sizeof(guint8_t_RxBuffer), 200);
 
-                HAL_UART_Transmit(&UART1_Handle, gu8_RxBuffer, UART1_Handle.lu32_RxCount, 0);  
+                HAL_UART_Transmit(&UART1_Handle, guint8_t_RxBuffer, UART1_Handle.lu32_RxCount, 0);  
 
-                memset(gu8_RxBuffer, 0, sizeof(gu8_RxBuffer)); 
+                memset(guint8_t_RxBuffer, 0, sizeof(guint8_t_RxBuffer)); 
             }
         }break;
 
@@ -275,82 +277,66 @@ void APP_Uart_Test(enum_TEST_MODE_t fe_Mode)
             while(1)
             {
                 /*receive variable length data by intrrupt method*/
-                HAL_UART_Receive_IT(&UART1_Handle, gu8_RxBuffer, sizeof(gu8_RxBuffer), UART_RX_FIFO_1_2);    // length should <= sizeof(gu8_RxBuffer)   
+                HAL_UART_Receive_IT(&UART1_Handle, guint8_t_RxBuffer, sizeof(guint8_t_RxBuffer), UART_RX_FIFO_1_2);    // length should <= sizeof(guint8_t_RxBuffer)   
+                HAL_UART_Receive_IT(&UART3_Handle, guint8_t_RxBufferF, sizeof(guint8_t_RxBufferF), UART_RX_FIFO_1_2);    // length should <= sizeof(guint8_t_RxBuffer)   
 						
                 while(1)  
                 {
-                    while (!gu32_RxCpltStatus);
+                    if (guint32_t_RxCpltStatus){
                 
-                    gu32_RxCpltStatus=false;
-										memset(g_send_buff, 0, sizeof(g_send_buff));
-                    memcpy(gu8_TxBuffer, gu8_RxBuffer, UART1_Handle.lu32_RxCount);
-                    printfS("\r\nReceive cmd: %s", gu8_RxBuffer);
-                    if(strstr((char *)gu8_RxBuffer,"1"))
-                    {
-                        pack_len = PS_AutoEnroll(g_send_buff, 0x0001, 0x03, 0x000F);
+                        guint32_t_RxCpltStatus=false;
+                        // memcpy(guint8_t_TxBuffer, guint8_t_RxBuffer, UART1_Handle.luint32_t_RxCount);
+                        printfS("\r\nReceive cmd: %s", guint8_t_RxBuffer);
+                        if(strstr((char *)guint8_t_RxBuffer,"1"))
+                        {
+                            pack_len = PS_AutoEnroll(g_send_buff, 0x0001, 0x03, 0x000F);
+                        }
+                        else if(strstr((char *)guint8_t_RxBuffer,"2"))
+                        {
+                            pack_len = PS_AutoIdentify(g_send_buff, 0x05, 0xFFFF, 0x0001);
+                        }
+                        else if(strstr((char *)guint8_t_RxBuffer,"3"))
+                        {
+                            pack_len = PS_Empty(g_send_buff);
+                        }
+                        else if(strstr((char *)guint8_t_RxBuffer,"4"))
+                        {
+                            pack_len = PS_ValidTempleteNum(g_send_buff);
+                        }
+                        else if(strstr((char *)guint8_t_RxBuffer,"5"))
+                        {
+                            pack_len = PS_AuraLedConfig(g_send_buff, 0x04, 0, 0, 0);
+                            System_Delay_MS(200);
+                            pack_len = PS_AuraLedConfig(g_send_buff, 0x01, 0x6F, 0x02, 0x00);
+                        }
+                        printfS("\r\nPackege:");
+                        for (int i = 0; i < pack_len; i++)
+                        printfS("%02X ", g_send_buff[i]);
+                                            
+                        HAL_UART_Transmit(&UART3_Handle, g_send_buff, pack_len, 0);
+                        memset(g_send_buff, 0, sizeof(g_send_buff));
+                        memset(guint8_t_RxBuffer, 0, sizeof(guint8_t_RxBuffer));
+                        System_Delay_MS(20);
+                        break;
+
+                        // HAL_UART_Transmit_IT(&UART1_Handle, guint8_t_TxBuffer, UART1_Handle.luint32_t_RxCount, UART_TX_FIFO_1_2);
+                                            
+                        // while (!guint32_t_TxCpltStatus);  
+                        // guint32_t_TxCpltStatus =false;
+                        // break;
                     }
-                    else if(strstr((char *)gu8_RxBuffer,"2"))
+                    if (guint32_t_RxCpltStatus3)
                     {
-                        pack_len = PS_AutoIdentify(g_send_buff, 0x01, 0xFFFF, 0x0001);
+                        guint32_t_RxCpltStatus3 = false;
+                        printfS("\r\nFinger Result:");
+                        for (int i = 0; i < UART3_Handle.lu32_RxCount; i++)
+                        {
+                            printfS("%02X ", guint8_t_RxBufferF[i]);
+                        }
+                        memset(guint8_t_RxBufferF, 0, sizeof(guint8_t_RxBufferF));
+                        System_Delay_MS(20);
+                        break;
                     }
-                    else if(strstr((char *)gu8_RxBuffer,"3"))
-                    {
-                        pack_len = PS_Empty(g_send_buff);
-                    }
-                    else if(strstr((char *)gu8_RxBuffer,"4"))
-                    {
-                        pack_len = PS_ValidTempleteNum(g_send_buff);
-                    }
-                    else if(strstr((char *)gu8_RxBuffer,"5"))
-                    {
-                        pack_len = PS_AuraLedConfig(g_send_buff, 0x04, 0, 0, 0);
-                        System_Delay_MS(500);
-                        pack_len = PS_AuraLedConfig(g_send_buff, 0x01, 0x6F, 0x02, 0x00);
-                    }
-										printfS("\r\nPackege:");
-                    for (int i = 0; i < pack_len; i++)
-                    printfS("%02X ", g_send_buff[i]);
-										
-                    HAL_UART_Transmit(&UART2_Handle, g_send_buff, pack_len, 0);
-                
-                    HAL_UART_Transmit_IT(&UART1_Handle, gu8_TxBuffer, UART1_Handle.lu32_RxCount, UART_TX_FIFO_1_2);
-										
-										/*
-										HAL_UART_Receive(&UART2_Handle, gu8_RxBuffer, sizeof(gu8_RxBuffer), 200);
-										HAL_UART_Transmit(&UART1_Handle, gu8_RxBuffer, UART1_Handle.lu32_RxCount, 0);  
-										memset(gu8_RxBuffer, 0, sizeof(gu8_RxBuffer));										
-										*/
-										
-                    while (!gu32_TxCpltStatus);  
-				
-                    gu32_TxCpltStatus =false;
-										
-										while(1)
-										{
-											memset(gu8_RxBuffer, 0, sizeof(gu8_RxBuffer));
-											memset(gu8_TxBuffer, 0, sizeof(gu8_TxBuffer));
-											HAL_UART_Receive_IT(&UART2_Handle, gu8_RxBuffer, sizeof(gu8_RxBuffer), UART_RX_FIFO_1_2);    // length should <= sizeof(gu8_RxBuffer)   
-													
-											while(1)  
-											{
-												while (!gu32_RxCpltStatus2);
-											
-												gu32_RxCpltStatus2=false;
-											
-												memcpy(gu8_TxBuffer, gu8_RxBuffer, UART2_Handle.lu32_RxCount);
-												printfS("\r\nFinger Result: ");
-												for (int i = 0; i < UART2_Handle.lu32_RxCount; i++)
-												{
-													printfS("%02X ", gu8_RxBuffer[i]);
-												}
-											
-												break;		   
-											}
-											break;
-										}
-				
-                    break;
-           
                 }
             }
         }break;
@@ -373,36 +359,36 @@ void APP_Uart_Test(enum_TEST_MODE_t fe_Mode)
             __HAL_LINK_DMA(UART1_Handle, HDMA_Tx, DMA_CH1_Handle);
             
             
-            gu32_DMA_Status = true;
+            guint32_t_DMA_Status = true;
             
             for(;;)
             {
-                if (gu32_DMA_Status) 
+                if (guint32_t_DMA_Status) 
                 {
-                    gu32_DMA_Status = false;
+                    guint32_t_DMA_Status = false;
                     
-                    memset(gu8_RxBuffer, 0, 512);
+                    memset(guint8_t_RxBuffer, 0, 512);
                 }
                 
-                lu8_ret=HAL_UART_Receive(&UART1_Handle, gu8_RxBuffer, sizeof(gu8_RxBuffer), 100);
+                luint8_t_ret=HAL_UART_Receive(&UART1_Handle, guint8_t_RxBuffer, sizeof(guint8_t_RxBuffer), 100);
 
-                lu8_ret=HAL_UART_Transmit_DMA(&UART1_Handle, gu8_RxBuffer, UART1_Handle.lu32_RxCount);
+                luint8_t_ret=HAL_UART_Transmit_DMA(&UART1_Handle, guint8_t_RxBuffer, UART1_Handle.lu32_RxCount);
 
             }
         }break;
 		case TEST_UART_ABORT:
     	{
-			 volatile uint8_t gu8_TestAbortCnt;
+			 volatile uint8_t guint8_t_TestAbortCnt;
 			 
-			 memset(gu8_TxBuffer, 0, 200);
+			 memset(guint8_t_TxBuffer, 0, 200);
 
-			 for(gu8_TestAbortCnt=0;gu8_TestAbortCnt<100;gu8_TestAbortCnt++)
+			 for(guint8_t_TestAbortCnt=0;guint8_t_TestAbortCnt<100;guint8_t_TestAbortCnt++)
 			 {
-				gu8_TxBuffer[gu8_TestAbortCnt] =gu8_TestAbortCnt;
+				guint8_t_TxBuffer[guint8_t_TestAbortCnt] =guint8_t_TestAbortCnt;
 
-				HAL_UART_Transmit(&UART2_Handle,&gu8_TxBuffer[gu8_TestAbortCnt],1,0);
+				HAL_UART_Transmit(&UART2_Handle,&guint8_t_TxBuffer[guint8_t_TestAbortCnt],1,0);
 
-				if(gu8_TestAbortCnt>=50)
+				if(guint8_t_TestAbortCnt>=50)
 				{
 					if(HAL_UART_Abort(&UART2_Handle)==HAL_OK)
 					{
@@ -417,21 +403,21 @@ void APP_Uart_Test(enum_TEST_MODE_t fe_Mode)
 		{
 			while(1)
 			{
-				HAL_UART_Receive_IT(&UART2_Handle, gu8_RxBuffer, sizeof(gu8_RxBuffer), UART_RX_FIFO_1_2);    // length should <= sizeof(gu8_RxBuffer)   
+				HAL_UART_Receive_IT(&UART2_Handle, guint8_t_RxBuffer, sizeof(guint8_t_RxBuffer), UART_RX_FIFO_1_2);    // length should <= sizeof(guint8_t_RxBuffer)   
 						
 				while(1)  
 				{
-					while (!gu32_RxCpltStatus2);
+					while (!guint32_t_RxCpltStatus2);
 				
-					gu32_RxCpltStatus2=false;
+					guint32_t_RxCpltStatus2=false;
 				
-					memcpy(gu8_TxBuffer, gu8_RxBuffer, UART2_Handle.lu32_RxCount);
+					memcpy(guint8_t_TxBuffer, guint8_t_RxBuffer, UART2_Handle.lu32_RxCount);
 				
-					HAL_UART_Transmit_IT(&UART2_Handle, gu8_TxBuffer, UART2_Handle.lu32_RxCount, UART_TX_FIFO_1_2); 
+					HAL_UART_Transmit_IT(&UART2_Handle, guint8_t_TxBuffer, UART2_Handle.lu32_RxCount, UART_TX_FIFO_1_2); 
 				
-					while (!gu32_TxCpltStatus2);  
+					while (!guint32_t_TxCpltStatus2);  
 				
-					gu32_TxCpltStatus2 =false;
+					guint32_t_TxCpltStatus2 =false;
 				
 					break;		   
 				}
@@ -441,21 +427,21 @@ void APP_Uart_Test(enum_TEST_MODE_t fe_Mode)
 		{
 			while(1)
 			{
-				HAL_UART_Receive_IT(&UART3_Handle, gu8_RxBuffer, sizeof(gu8_RxBuffer), UART_RX_FIFO_1_2);    // length should <= sizeof(gu8_RxBuffer)   
+				HAL_UART_Receive_IT(&UART3_Handle, guint8_t_RxBuffer, sizeof(guint8_t_RxBuffer), UART_RX_FIFO_1_2);    // length should <= sizeof(guint8_t_RxBuffer)   
 						
 				while(1)  
 				{
-					while (!gu32_RxCpltStatus3);
+					while (!guint32_t_RxCpltStatus3);
 				
-					gu32_RxCpltStatus3=false;
+					guint32_t_RxCpltStatus3=false;
 				
-					memcpy(gu8_TxBuffer, gu8_RxBuffer, UART3_Handle.lu32_RxCount);
+					memcpy(guint8_t_TxBuffer, guint8_t_RxBuffer, UART3_Handle.lu32_RxCount);
 				
-					HAL_UART_Transmit_IT(&UART3_Handle, gu8_TxBuffer, UART3_Handle.lu32_RxCount, UART_TX_FIFO_1_2);    
+					HAL_UART_Transmit_IT(&UART3_Handle, guint8_t_TxBuffer, UART3_Handle.lu32_RxCount, UART_TX_FIFO_1_2);    
 				
-					while (!gu32_TxCpltStatus3);  
+					while (!guint32_t_TxCpltStatus3);  
 				
-					gu32_TxCpltStatus3 =false;
+					guint32_t_TxCpltStatus3 =false;
 				
 					break;		   
 				}

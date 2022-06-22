@@ -2,6 +2,8 @@
 
 extern uint8_t PCD_IRQ_flagA ;
 
+uint8_t flag ;
+
 EXTI_HandleTypeDef EXTI_Line2_Handle;
 
 GPIO_InitTypeDef GPIO_PA2_Handle;

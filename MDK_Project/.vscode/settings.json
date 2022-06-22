@@ -1,0 +1,8 @@
+{
+	"files.associations": {
+		"finger.h": "c",
+		"si523_app.h": "c",
+		"nfc_iic.h": "c",
+		"app.h": "c"
+	}
+}
