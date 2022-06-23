@@ -13,22 +13,19 @@ uint8_t  IICReadData;
 void SI14TCH_Init(void)
 {
 	delay_ms(200); 
-	SI14TCH_WriteOneByte(Ch_hold1,0Xfe);     //delay_ms(10); //1111 1110 ch1 =0 通道一打开
+	//SI14TCH_WriteOneByte(Ch_hold1,0Xfe);     //delay_ms(10); //1111 1110 ch1 =0 通道一打开
 	
 	SI14TCH_WriteOneByte(CTRL2,   0X0f);     delay_ms(10); //0000 1111 enable software reset enable sleep mode
- //0000 0111 disable software reset enable sleep mode
- SI14TCH_WriteOneByte(CTRL2,   0X07);     delay_ms(10);
+	//0000 0111 disable software reset enable sleep mode
+	SI14TCH_WriteOneByte(CTRL2,   0X07);     delay_ms(10);
 	//灵敏度设置
-	SI14TCH_WriteOneByte(Sense1,  0X77);     //delay_ms(10); //0111 0111 低灵敏度
-	SI14TCH_WriteOneByte(Sense2,  0X77);     //delay_ms(10);
-	SI14TCH_WriteOneByte(Sense3,  0X77);     //delay_ms(10);
-	SI14TCH_WriteOneByte(Sense4,  0X77);     //delay_ms(10);
-	SI14TCH_WriteOneByte(Sense5,  0X77);     //delay_ms(10);
-	SI14TCH_WriteOneByte(Sense6,  0X77);     //delay_ms(10);
-
-	
+	SI14TCH_WriteOneByte(Sense1,  0XFF);     //delay_ms(10); //0111 0111 低灵敏度
+	SI14TCH_WriteOneByte(Sense2,  0XFF);     //delay_ms(10);
+	SI14TCH_WriteOneByte(Sense3,  0XFF);     //delay_ms(10);
+	SI14TCH_WriteOneByte(Sense4,  0XFF);     //delay_ms(10);
+	SI14TCH_WriteOneByte(Sense5,  0XFF);     //delay_ms(10);
+	SI14TCH_WriteOneByte(Sense6,  0XFF);     //delay_ms(10);
 	SI14TCH_WriteOneByte(CTRL1,   0X1B);
-
 
   SI14TCH_WriteOneByte(Ch_hold1,0X00);      //1111 1111 保持操作，不感测不校准
 	SI14TCH_WriteOneByte(Ch_hold2,0x30);      //0011 1111    0x30 -- 0x00
@@ -56,7 +53,7 @@ void Si14TouchKey_Init(void)
   SI14TCH_WriteOneByte(Sense4,  Si12T_Sens_User);
   SI14TCH_WriteOneByte(Sense5,  Si12T_Sens_User);
   SI14TCH_WriteOneByte(Sense6,  Si12T_Sens_User);
-	SI14TCH_WriteOneByte(Sense7,  Si12T_Sens_User);
+//	SI14TCH_WriteOneByte(Sense7,  Si12T_Sens_User);
   IICReadData=SI14TCH_ReadOneByte(0x02);
   
  
@@ -126,7 +123,6 @@ uint8_t SI14TCH_ReadOneByte(uint8_t ReadAddr)
 	uint8_t temp=0;
 	IIC_Start();
 	IIC_Send_Byte(SI14TCH_WRITE_ADDR);
-
 	IIC_Wait_Ack();
 	IIC_Send_Byte(ReadAddr);
 	IIC_Wait_Ack();
@@ -152,25 +148,26 @@ uint8_t SI14TCH_ReadOneByte(uint8_t ReadAddr)
      | t12  t11 t10  t9 | t8  t7  t6  t5 | t4  t3  t2  t1
 
 =====================================================================*/
-uint8_t data_buf[4] = {0};
+uint8_t data_buf[3] = {0};
 
 
 void SI12_ReadData(void)
 {
+	
 	//IIC_EN = 0 ; //使能 
 	
   delay_ms (50);
 	data_buf[0] = SI14TCH_ReadOneByte(Output1);
-	printf("\r\n output1=0x%2x",data_buf[0]); 
+	//printfS("\r\n output1=0x%2x",data_buf[0]); 
 	
 	data_buf[1] = SI14TCH_ReadOneByte(Output2);
-	 printf("   output2=0x%2x",data_buf[1]); 
+	//printfS("   output2=0x%2x",data_buf[1]); 
 	
 	data_buf[2] = SI14TCH_ReadOneByte(Output3);
-	 printf("   output3=0x%2x",data_buf[2]); 
+	//printfS("   output3=0x%2x",data_buf[2]); 
 	
-	data_buf[3] = SI14TCH_ReadOneByte(Output4);
-	 printf("   output4=0x%2x",data_buf[3]); 
+	//data_buf[3] = SI14TCH_ReadOneByte(Output4);
+	//printfS("   output4=0x%2x",data_buf[3]); 
 	
 	//IIC_EN = 1 ; //关闭 
 }
@@ -190,10 +187,10 @@ uint32_t SI14TCH_ReadData(void)
 	uint32_t SI14TCH_data_buf=0;
 	uint8_t data_SI14TCH;
 	
-	data_SI14TCH=SI14TCH_ReadOneByte(Output4);
-	SI14TCH_data_buf|=data_SI14TCH;
+	//data_SI14TCH=SI14TCH_ReadOneByte(Output4);
+	//SI14TCH_data_buf|=data_SI14TCH;
 	
-	SI14TCH_data_buf=SI14TCH_data_buf<<8;
+	//SI14TCH_data_buf=SI14TCH_data_buf<<8;
 	data_SI14TCH=SI14TCH_ReadOneByte(Output3);
 	SI14TCH_data_buf|=data_SI14TCH;
 	
@@ -220,7 +217,7 @@ uint8_t SI14TCH_Check(void)
   
   a=SI14TCH_ReadOneByte(Sense1);
 	temp=SI14TCH_ReadOneByte(Sense1);
-	printf("\r\n temp11111111111111111111=0x%02X \r\n",temp);
+	printfS("\r\nTemp:0x%02X",temp);
 	
 	if(temp==0xAA)
 	{

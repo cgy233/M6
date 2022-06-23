@@ -6,8 +6,7 @@
 #include "SI523_App.h"
 #include <stdlib.h>
 #include <stdio.h>
-
-//#include "led.h"
+#include "exti.h"
 //#include "SI523_interface.h"
 
 //***********************************//修改新增内容
@@ -1050,7 +1049,7 @@ void ACD_init_Fun(void)
 void ACD_Fun(void)
 {
 	//EXTI->IMR |= 0x00000008;	// Enable external interrupt
-	EXTI->IENR |=  EXTI_LINE_2;
+	EXTI->IENR |=  IRQ_EXTI_LINE;
 	PCD_IRQ_flagA = 0;	//clear IRQ flag
 	//LED_OperaSuccess();	// LED indicator
 	
@@ -1059,13 +1058,13 @@ void ACD_Fun(void)
 		if(PCD_IRQ_flagA)
 		{
 			printfS("\r\nPCD_IRQ_flagA");
-			EXTI->IENR &= ~EXTI_LINE_2;
+			EXTI->IENR &= ~IRQ_EXTI_LINE;
 			//EXTI->IMR &= 0xFFFFFFF7;		// Disable external interrupt			
 
 			switch( PCD_IRQ() )
 			{
 				case 0:	//Other_IRQ 			
-					printfS("Other IRQ Occur\r\n");
+					printfS("\r\nOther IRQ Occur");
 					PCD_SI523_TypeA_GetUID();
 					PcdReset();			//软复位				
 					//PcdPowerdown();			//硬复位
@@ -1081,7 +1080,7 @@ void ACD_Fun(void)
 				break;
 				
 				case 2:	//ACDTIMER_IRQ			
-					printfS("ACDTIMER_IRQ:Reconfigure the register \r\n");
+					printfS("\r\nACDTIMER_IRQ:Reconfigure the register");
 					PcdReset();			//软复位
 					//PcdPowerdown();		//硬复位
 					PCD_SI523_TypeA_Init();
@@ -1090,7 +1089,7 @@ void ACD_Fun(void)
 				
 			}		
 			
-			EXTI->IENR |=  EXTI_LINE_2;
+			EXTI->IENR |=  IRQ_EXTI_LINE;
 			//EXTI->IMR |= 0x00000008;		// Enable external interrupt
 			PCD_IRQ_flagA = 0;	
 		}

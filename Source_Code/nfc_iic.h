@@ -2,20 +2,28 @@
 #define __IIC_H
 #include "APP.h"
 
-// IO direction 
+// IO Si523 
+//#define IO_IIC_SDA GPIO_PIN_4
+//#define IO_IIC_SCL GPIO_PIN_5
+//#define IO_IIC_PORT GPIOA
 
-#define SDA_OUT()	{GPIOAB->DIR |= GPIO_PIN_4;}
-#define SDA_IN()	{GPIOAB->DIR &= ~GPIO_PIN_4;}
+// IO Si12T 
+#define IO_IIC_SDA GPIO_PIN_11
+#define IO_IIC_SCL GPIO_PIN_10
+#define IO_IIC_PORT GPIOB
+
+#define SDA_OUT()	{GPIOAB ->DIR |= IO_IIC_SDA;}
+#define SDA_IN()	{GPIOAB ->DIR &= ~IO_IIC_SDA;}
 HAL_GPIO_MODULE_ENABLED
 
 
 // IO definition 
-#define   IIC_SCL_L		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_CLEAR);
-#define   IIC_SCL_H		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
+#define   IIC_SCL_L		  HAL_GPIO_WritePin(IO_IIC_PORT, IO_IIC_SCL, GPIO_PIN_CLEAR);
+#define   IIC_SCL_H		  HAL_GPIO_WritePin(IO_IIC_PORT, IO_IIC_SCL, GPIO_PIN_SET);
 
-#define   IIC_SDA_L		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_CLEAR);
-#define   IIC_SDA_H		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_SET); 
-#define 	READ_SDA   HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_4) 	// SDA in
+#define   IIC_SDA_L		  HAL_GPIO_WritePin(IO_IIC_PORT, IO_IIC_SDA, GPIO_PIN_CLEAR);
+#define   IIC_SDA_H		  HAL_GPIO_WritePin(IO_IIC_PORT, IO_IIC_SDA, GPIO_PIN_SET); 
+#define 	READ_SDA   HAL_GPIO_ReadPin(IO_IIC_PORT, IO_IIC_SDA) 	// SDA in
 
 
 

@@ -23,7 +23,7 @@ V1.1 / 2017-10-19
 #define LED_RED 	HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0)
 #define LED_GREEN 	HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_1)
 
-void Gpio_Init(void);
+void LED_Init(void);
 void LED_PowerOn(void);
 void LED_OperaSuccess(void);
 void LED_OperaFail(void);

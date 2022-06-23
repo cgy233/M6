@@ -4,8 +4,11 @@
  //PA.6 --- SCK ---(SPI.MISO)
  //PA.4 --- SDA ---(SPI.CSN)
  
+// Si523
 #define SLA_ADDR 0x50
- 
+// Si12T
+//#define SLA_ADDR 0xD0
+
 //初始化IIC
 void IIC_Init(void)
 {					     
@@ -15,13 +18,13 @@ void IIC_Init(void)
 //	RCC_APB1PeriphClockCmd(RCC_APB1Periph_I2C1, ENABLE );
 //	RCC_I2CCLKConfig(RCC_I2C1CLK_SYSCLK);
 	
-	GPIO_InitStructure.Pin = GPIO_PIN_4 | GPIO_PIN_5 ;
+	GPIO_InitStructure.Pin = IO_IIC_SCL | IO_IIC_SDA ;
 	GPIO_InitStructure.Mode = GPIO_MODE_OUTPUT_PP;
 	GPIO_InitStructure.Pull = GPIO_PULLUP;			//Set output type
 	GPIO_InitStructure.Alternate = GPIO_FUNCTION_0;
-	HAL_GPIO_Init(GPIOA, &GPIO_InitStructure);
+	HAL_GPIO_Init(IO_IIC_PORT, &GPIO_InitStructure);
 	
- 	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4 | GPIO_PIN_5, GPIO_PIN_SET);	
+ 	HAL_GPIO_WritePin(IO_IIC_PORT, IO_IIC_SCL | IO_IIC_SDA, GPIO_PIN_SET);	
 }
 
 //产生IIC起始信号

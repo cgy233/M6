@@ -1,18 +1,29 @@
 #include "exti.h"
+#include  "Si14tch.h"
+#include  "delay.h"
 
 extern uint8_t PCD_IRQ_flagA ;
+extern uint8_t data_buf[4];
 
 uint8_t flag ;
 
-EXTI_HandleTypeDef EXTI_Line2_Handle;
+EXTI_HandleTypeDef EXTI_Handle;
 
-GPIO_InitTypeDef GPIO_PA2_Handle;
+GPIO_InitTypeDef GPIO_Handle;
 
 void EXTI_IRQHandler(void)
 {
+		PCD_IRQ_flagA = 1;
     printfS("\r\nEXTI_IRQHandler");
-		PCD_IRQ_flagA = 1;  
-    HAL_EXTI_IRQHandler(&EXTI_Line2_Handle);
+		HAL_EXTI_IRQHandler(&EXTI_Handle);
+		 
+
+     //if( (data_buf[3] & 0x03) != 0 )      flag = 13;  
+     //if( ((data_buf[3]>>2) & 0x03) != 0 ) flag = 14;
+			
+		 
+			
+		
 }
 
 void EXTIX_Init()
@@ -20,22 +31,23 @@ void EXTIX_Init()
 		System_Module_Enable(EN_EXTI);
 
     /* Initialization GPIO */
-    GPIO_PA2_Handle.Pin       = GPIO_PIN_2;
-    GPIO_PA2_Handle.Mode      = GPIO_MODE_INPUT;
-    GPIO_PA2_Handle.Pull      = GPIO_PULLUP;
-    GPIO_PA2_Handle.Alternate = GPIO_FUNCTION_0;
-
-    HAL_GPIO_Init(GPIOA, &GPIO_PA2_Handle);
+    GPIO_Handle.Pin       = IRQ_PIN;
+    GPIO_Handle.Mode      = GPIO_MODE_INPUT;
+    GPIO_Handle.Pull      = GPIO_PULLUP;
+    GPIO_Handle.Alternate = GPIO_FUNCTION_0;
+		
+    HAL_GPIO_Init(IRQ_PORT, &GPIO_Handle);
+		HAL_GPIO_WritePin(IRQ_PORT, IRQ_PIN, GPIO_PIN_CLEAR);
     
     /* Config EXTI */
-    EXTI_Line2_Handle.u32_Line    = EXTI_LINE_2;
-    EXTI_Line2_Handle.u32_Mode    = EXTI_MODE_INTERRUPT;
-    EXTI_Line2_Handle.u32_Trigger = EXTI_TRIGGER_FALLING;
-    EXTI_Line2_Handle.u32_GPIOSel = EXTI_GPIOA;
+    EXTI_Handle.u32_Line    = IRQ_EXTI_LINE;
+    EXTI_Handle.u32_Mode    = EXTI_MODE_INTERRUPT;
+    EXTI_Handle.u32_Trigger = EXTI_TRIGGER_FALLING;
+    EXTI_Handle.u32_GPIOSel = IRQ_EXTI_PORT;
 
-    HAL_EXTI_SetConfigLine(&EXTI_Line2_Handle);
+    HAL_EXTI_SetConfigLine(&EXTI_Handle);
 		
-		printfS("EXTI INIT OK.\n");
+		printfS("\n\rEXTI INIT OK.");
     HAL_EXTI_ClearAllPending();
 		//printfS("MCU Enter Lowpower, Press User Button To Wakeup MCU!\n");	
     //System_Enter_Stop_Mode(STOPENTRY_WFI);

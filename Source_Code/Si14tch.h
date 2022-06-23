@@ -16,7 +16,7 @@ TSM12寄存器定义
 #define Sense4               0x05    //channel 8 and 7
 #define Sense5               0x06    //channel 10 and 9
 #define Sense6               0x07    //channel 12 and 11
-#define Sense7               0x22    //channel 14 and 13  新增
+//#define Sense7               0x22    //channel 14 and 13  新增
 #define CTRL1                0x08    //通用控制寄存器1
 #define CTRL2                0x09		 //通用控制寄存器2
 #define Ref_rst1             0x0A    //通道参考复位控制寄存器
@@ -28,7 +28,7 @@ TSM12寄存器定义
 #define Output1              0x10     //channel 1 , 2 , 3 , 4
 #define Output2              0x11     //channel 5 , 6 , 7 , 8
 #define Output3              0x12     //channel 9 , 10 , 11 , 12
-#define Output4              0x13     //新增 channel 13 , 14 
+//#define Output4              0x13     //新增 channel 13 , 14 
 
 #define Si12T_Sens_User       0x99
 

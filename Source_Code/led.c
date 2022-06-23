@@ -8,10 +8,9 @@
 参    数：无
 返 回 值：无
 **************************************************************************************/
-void Gpio_Init(void)
+void LED_Init(void)
 {
 	GPIO_InitTypeDef  GPIO_InitStructure;		
-	//RCC_AHBPeriphClockCmd(RCC_AHBPeriph_GPIOA,ENABLE);	 	 //Enable clock of GPIOA 
 		
 	GPIO_InitStructure.Pin = GPIO_PIN_0|GPIO_PIN_1;	 //Config GPIOA.0 GPIOA.1
 	GPIO_InitStructure.Mode = GPIO_MODE_OUTPUT_PP; 			 //Set GPIO Direction : Out
