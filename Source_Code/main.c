@@ -2,7 +2,7 @@
  * @Author: cgy233 1781387847@qq.com
  * @Date: 2022-06-14 11:51:35
  * @LastEditors: cgy233 1781387847@qq.com
- * @LastEditTime: 2022-06-27 10:55:07
+ * @LastEditTime: 2022-06-28 15:38:58
  * @FilePath: \MDK_Projectd:\Ethan\Project\ACM32\ModulesDemo\UART\demo\Source_Code\main.c
  * @Description: 
  * 
@@ -88,18 +88,18 @@ void touch_read()
 					{
 						switch (flag)
 						{
-							case 1 :{ flag = 0; printfS("\r\n T1 TOUCH  4"); break; }
-							case 2 :{ flag = 0; printfS("\r\n T2 TOUCH  5"); break; }
-							case 3 :{ flag = 0; printfS("\r\n T3 TOUCH  7"); break; }
-							case 4 :{ flag = 0; printfS("\r\n T4 TOUCH  8"); break; }
-							case 5 :{ flag = 0; printfS("\r\n T5 TOUCH  *"); break; }
-							case 6 :{ flag = 0; printfS("\r\n T6 TOUCH  0"); break; }
-							case 7 :{ flag = 0; printfS("\r\n T7 TOUCH  #"); break; }
-							case 8 :{ flag = 0; printfS("\r\n T8 TOUCH  9"); break; }
-							case 9 :{ flag = 0; printfS("\r\n T9 TOUCH  6"); break; }
-							case 10:{ flag = 0; printfS("\r\n T10 TOUCH 3"); break; }
-							case 11:{ flag = 0; printfS("\r\n T11 TOUCH 2"); break; }
-							case 12:{ flag = 0; printfS("\r\n T12 TOUCH 1"); break; }	
+							case 1 :{ flag = 0; printfS("\r\n T1 TOUCH  9"); break; }
+							case 2 :{ flag = 0; printfS("\r\n T2 TOUCH  8"); break; }
+							case 3 :{ flag = 0; printfS("\r\n T3 TOUCH  5"); break; }
+							case 4 :{ flag = 0; printfS("\r\n T4 TOUCH  6"); break; }
+							case 5 :{ flag = 0; printfS("\r\n T5 TOUCH  3"); break; }
+							case 6 :{ flag = 0; printfS("\r\n T6 TOUCH  2"); break; }
+							case 7 :{ flag = 0; printfS("\r\n T7 TOUCH  1"); break; }
+							case 8 :{ flag = 0; printfS("\r\n T8 TOUCH  4"); break; }
+							case 9 :{ flag = 0; printfS("\r\n T9 TOUCH  7"); break; }
+							case 10:{ flag = 0; printfS("\r\n T10 TOUCH *"); break; }
+							case 11:{ flag = 0; printfS("\r\n T11 TOUCH 0"); break; }
+							case 12:{ flag = 0; printfS("\r\n T12 TOUCH #"); break; }	
 						}
 					do
 					{
@@ -135,15 +135,15 @@ static uint8_t guint8_t_UART3Test[] = {"This is UART3 Test Data"};
  ************************************************************************/ 
 void Uart_Init(void) 
 {
-    UART2_Handle.Instance        = UART2;    
-    UART2_Handle.Init.BaudRate   = 115200; 
-    UART2_Handle.Init.WordLength = UART_WORDLENGTH_8B;
-    UART2_Handle.Init.StopBits   = UART_STOPBITS_1;
-    UART2_Handle.Init.Parity     = UART_PARITY_NONE;
-    UART2_Handle.Init.Mode       = UART_MODE_TX_RX_DEBUG;
-    UART2_Handle.Init.HwFlowCtl  = UART_HWCONTROL_NONE;
+    UART1_Handle.Instance        = UART1;    
+    UART1_Handle.Init.BaudRate   = 115200; 
+    UART1_Handle.Init.WordLength = UART_WORDLENGTH_8B;
+    UART1_Handle.Init.StopBits   = UART_STOPBITS_1;
+    UART1_Handle.Init.Parity     = UART_PARITY_NONE;
+    UART1_Handle.Init.Mode       = UART_MODE_TX_RX_DEBUG;
+    UART1_Handle.Init.HwFlowCtl  = UART_HWCONTROL_NONE;
     
-    HAL_UART_Init(&UART2_Handle);
+    HAL_UART_Init(&UART1_Handle);
     
     /* UART_DEBUG_ENABLE control printfS */     
     //printfS("MCU is running, HCLK=%dHz, PCLK=%dHz\n", System_Get_SystemClock(), System_Get_APBClock());       
@@ -168,14 +168,14 @@ int main(void)
 	delay_ms(200);
 
 	/* Touck TEST */
-//	LED_Init();
+	LED_Init();
 //	LED_On_Off(5, 1);
 //	LED_On_Off(11, 1);
-//	IIC_Init();
-//	delay_ms(200);	
-//		EXTIX_Init();
-//	delay_ms(200);
-//	touch_read();
+	// IIC_Init();
+	// delay_ms(200);
+	// EXTIX_Init();
+	// delay_ms(200);
+	// touch_read();
 	
 	/* UARTx Tx */
 	//delay_ms(1000);
@@ -186,7 +186,7 @@ int main(void)
 		
 	/* Finger TEST */
   /* Select Mode: TEST_LOOP、TEST_UART1_IT、TEST_DMA、TEST_UART_ABORT、TEST_UART2,TEST_UART3*/
-	APP_Uart_Test(TEST_UART1_IT);
+	//APP_Uart_Test(TEST_UART1_IT);
 
 	/* Si523 ACD TEST */
 	EXTIX_Init();

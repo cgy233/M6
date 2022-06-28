@@ -73,15 +73,15 @@ void UART3_IRQHandler(void)
 **********************************************************************************/
 void UART2_Init(void) 
 {
-    UART1_Handle.Instance        = UART1;    
-    UART1_Handle.Init.BaudRate   = 57600; 
-    UART1_Handle.Init.WordLength = UART_WORDLENGTH_8B;
-    UART1_Handle.Init.StopBits   = UART_STOPBITS_2;
-    UART1_Handle.Init.Parity     = UART_PARITY_NONE;
-    UART1_Handle.Init.Mode       = UART_MODE_TX_RX;
-    UART1_Handle.Init.HwFlowCtl  = UART_HWCONTROL_NONE;
+    UART2_Handle.Instance        = UART2;    
+    UART2_Handle.Init.BaudRate   = 57600; 
+    UART2_Handle.Init.WordLength = UART_WORDLENGTH_8B;
+    UART2_Handle.Init.StopBits   = UART_STOPBITS_2;
+    UART2_Handle.Init.Parity     = UART_PARITY_NONE;
+    UART2_Handle.Init.Mode       = UART_MODE_TX_RX;
+    UART2_Handle.Init.HwFlowCtl  = UART_HWCONTROL_NONE;
     
-    HAL_UART_Init(&UART1_Handle);               
+    HAL_UART_Init(&UART2_Handle);               
 }
 
 /*********************************************************************************
@@ -121,11 +121,11 @@ void HAL_UART_MspInit(UART_HandleTypeDef *huart)
        
         /* Initialization GPIO */
         /* A9:Tx  A10:Rx */
-        GPIO_InitStruct.Pin       = GPIO_PIN_6 | GPIO_PIN_7;
+        GPIO_InitStruct.Pin       = GPIO_PIN_9 | GPIO_PIN_10;
         GPIO_InitStruct.Mode      = GPIO_MODE_AF_PP;
         GPIO_InitStruct.Pull      = GPIO_PULLUP;
-        GPIO_InitStruct.Alternate = GPIO_FUNCTION_1;       
-				HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+        GPIO_InitStruct.Alternate = GPIO_FUNCTION_2;       
+				HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 		
         /* NVIC Config */
         NVIC_ClearPendingIRQ(UART1_IRQn);

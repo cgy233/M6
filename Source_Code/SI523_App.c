@@ -1036,7 +1036,7 @@ void ACD_init_Fun(void)
 {
 	PCD_SI523_TypeA_Init();	//
 	
-	//PCD_ACD_AutoCalc(); //自动获取阈值
+	PCD_ACD_AutoCalc(); //自动获取阈值
 	
 	PCD_ACD_Init();
 }
@@ -1118,7 +1118,7 @@ void PCD_ACD_AutoCalc(void)
 	delay_us(200);
 	
 	I_SI523_IO_Write(ACDConfigSelReg, (ACDConfigK << 2) | 0x40);		//手动设置一个K值
-	I_SI523_IO_Write(ACDConfigReg, 0x29);
+	I_SI523_IO_Write(ACDConfigReg, 0x0f);
 		
 	while(1)
 	{
@@ -1221,7 +1221,7 @@ void PCD_ACD_Init(void)
 	I_SI523_IO_Write(ACDConfigReg, ACDConfigRegI_Val );	
 	I_SI523_IO_Write(ACDConfigSelReg, (ACDConfigK << 2) | 0x40);
 	//I_SI523_IO_Write(ACDConfigReg, ACDConfigRegK_Val );
-	I_SI523_IO_Write(ACDConfigReg, 0x29 );
+	I_SI523_IO_Write(ACDConfigReg, 0x2e );
 	I_SI523_IO_Write(ACDConfigSelReg, (ACDConfigM << 2) | 0x40);
 	I_SI523_IO_Write(ACDConfigReg, ACDConfigRegM_Val );
 	I_SI523_IO_Write(ACDConfigSelReg, (ACDConfigO << 2) | 0x40);
