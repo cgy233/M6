@@ -15,15 +15,7 @@ void EXTI_IRQHandler(void)
 {
 		PCD_IRQ_flagA = 1;
     printfS("\r\nEXTI_IRQHandler");
-		HAL_EXTI_IRQHandler(&EXTI_Handle);
-		 
-
-     //if( (data_buf[3] & 0x03) != 0 )      flag = 13;  
-     //if( ((data_buf[3]>>2) & 0x03) != 0 ) flag = 14;
-			
-		 
-			
-		
+		HAL_EXTI_IRQHandler(&EXTI_Handle);			
 }
 
 void EXTIX_Init()

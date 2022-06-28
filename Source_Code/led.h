@@ -13,21 +13,28 @@ V1.1 / 2017-10-19
 
 #include "ACM32Fxx_HAL.h"
 
+// PORT A
+#define GPIO_LED_0 GPIO_PIN_1
+#define GPIO_LED_POUND GPIO_PIN_8
 
-#define LED1_On()		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_SET)	//PA0 = 0
-#define LED1_Off()	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_CLEAR)		//PA0 = 1
+// PORT C
+#define GPIO_LED_1 GPIO_PIN_3
+#define GPIO_LED_4 GPIO_PIN_2
+#define GPIO_LED_5 GPIO_PIN_6
+#define GPIO_LED_8 GPIO_PIN_7
+#define GPIO_LED_START GPIO_PIN_8
 
-#define LED2_On()		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_1, GPIO_PIN_SET)	//PA1 = 0
-#define LED2_Off()	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_1, GPIO_PIN_CLEAR)		//PA1 = 1
+// PORT D
+#define GPIO_LED_2 GPIO_PIN_9
+#define GPIO_LED_6 GPIO_PIN_12
+#define GPIO_LED_7 GPIO_PIN_10
+#define GPIO_LED_9 GPIO_PIN_11
 
-#define LED_RED 	HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0)
-#define LED_GREEN 	HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_1)
+// PORT E
+#define GPIO_LED_3 GPIO_PIN_7
 
 void LED_Init(void);
-void LED_PowerOn(void);
-void LED_OperaSuccess(void);
-void LED_OperaFail(void);
-
+void LED_On_Off(uint8_t led_num, uint8_t on_off);
 
 #endif
 
