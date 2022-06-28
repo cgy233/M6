@@ -208,9 +208,6 @@ void ACD_Fun(void);
 void PCD_ACD_AutoCalc(void);
 void PCD_ACD_Init(void);
 char PCD_IRQ(void);
-
-
-
 #endif
 
 
