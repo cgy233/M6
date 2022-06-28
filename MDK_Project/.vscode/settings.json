@@ -3,6 +3,8 @@
 		"finger.h": "c",
 		"si523_app.h": "c",
 		"nfc_iic.h": "c",
-		"app.h": "c"
+		"app.h": "c",
+		"exti.h": "c",
+		"acm32fxx_hal.h": "c"
 	}
 }

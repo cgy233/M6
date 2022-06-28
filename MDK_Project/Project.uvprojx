@@ -474,16 +474,6 @@
               <FilePath>..\Source_Code\main.c</FilePath>
             </File>
             <File>
-              <FileName>SI523_App.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Source_Code\SI523_App.c</FilePath>
-            </File>
-            <File>
-              <FileName>SI523_App.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Source_Code\SI523_App.h</FilePath>
-            </File>
-            <File>
               <FileName>delay.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\delay.c</FilePath>
@@ -503,15 +493,15 @@
               <FileType>5</FileType>
               <FilePath>..\Source_Code\exti.h</FilePath>
             </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>SourceCode/RFID</GroupName>
+          <Files>
             <File>
-              <FileName>finger.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\finger.c</FilePath>
-            </File>
-            <File>
-              <FileName>finger.h</FileName>
+              <FileName>nfc_iic.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\finger.h</FilePath>
+              <FilePath>..\Source_Code\nfc_iic.h</FilePath>
             </File>
             <File>
               <FileName>nfc_iic.c</FileName>
@@ -519,19 +509,39 @@
               <FilePath>..\Source_Code\nfc_iic.c</FilePath>
             </File>
             <File>
-              <FileName>nfc_iic.h</FileName>
+              <FileName>SI523_App.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\Source_Code\nfc_iic.h</FilePath>
+              <FilePath>..\Source_Code\SI523_App.h</FilePath>
             </File>
             <File>
-              <FileName>Si14tch.c</FileName>
+              <FileName>SI523_App.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Source_Code\Si14tch.c</FilePath>
+              <FilePath>..\Source_Code\SI523_App.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>SourceCode/Finger</GroupName>
+          <Files>
+            <File>
+              <FileName>finger.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\finger.h</FilePath>
             </File>
             <File>
-              <FileName>Si14tch.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Source_Code\Si14tch.h</FilePath>
+              <FileName>finger.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\finger.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>SourceCode/Touch</GroupName>
+          <Files>
+            <File>
+              <FileName>led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source_Code\led.c</FilePath>
             </File>
             <File>
               <FileName>led.h</FileName>
@@ -539,9 +549,14 @@
               <FilePath>..\Source_Code\led.h</FilePath>
             </File>
             <File>
-              <FileName>led.c</FileName>
+              <FileName>Si14tch.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source_Code\Si14tch.h</FilePath>
+            </File>
+            <File>
+              <FileName>Si14tch.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Source_Code\led.c</FilePath>
+              <FilePath>..\Source_Code\Si14tch.c</FilePath>
             </File>
           </Files>
         </Group>
