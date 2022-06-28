@@ -15,7 +15,26 @@ void EXTI_IRQHandler(void)
 {
 		PCD_IRQ_flagA = 1;
     printfS("\r\nEXTI_IRQHandler");
-		HAL_EXTI_IRQHandler(&EXTI_Handle);			
+		HAL_EXTI_IRQHandler(&EXTI_Handle);
+		EXTI->IENR &=  ~IRQ_EXTI_LINE;
+		SI12_ReadData();   // ??Output??
+		 
+		 if( (data_buf[0] & 0x03)  != 0 )   flag = 1;
+		 if( ((data_buf[0] >>2) & 0x03) != 0 ) flag = 2;
+		 if( ((data_buf[0] >>4) & 0x03) != 0 ) flag = 3;
+		 if( ((data_buf[0] >>6) & 0x03) != 0 ) flag = 4;
+		 
+		 
+		 if( (data_buf[1] & 0x03) != 0 )      flag = 5;
+		 if( ((data_buf[1]>>2) & 0x03) != 0 ) flag = 6;  
+		 if( ((data_buf[1]>>4) & 0x03) != 0 ) flag = 7; 
+		 if( ((data_buf[1]>>6) & 0x03) != 0 ) flag = 8;  
+		 
+		 if( (data_buf[2] & 0x03) != 0 )      flag = 9;  
+		 if( ((data_buf[2]>>2) & 0x03) != 0 ) flag = 10; 
+		 if( ((data_buf[2]>>4) & 0x03) != 0 ) flag = 11; 
+		 if( ((data_buf[2]>>6) & 0x03) != 0 ) flag = 12;
+		 EXTI->IENR |=  IRQ_EXTI_LINE;
 }
 
 void EXTIX_Init()

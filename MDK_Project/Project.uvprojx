@@ -474,16 +474,6 @@
               <FilePath>..\Source_Code\main.c</FilePath>
             </File>
             <File>
-              <FileName>delay.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\delay.c</FilePath>
-            </File>
-            <File>
-              <FileName>delay.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\delay.h</FilePath>
-            </File>
-            <File>
               <FileName>exti.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Source_Code\exti.c</FilePath>
@@ -492,6 +482,16 @@
               <FileName>exti.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\Source_Code\exti.h</FilePath>
+            </File>
+            <File>
+              <FileName>delay.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source_Code\delay.c</FilePath>
+            </File>
+            <File>
+              <FileName>delay.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source_Code\delay.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -524,14 +524,14 @@
           <GroupName>SourceCode/Finger</GroupName>
           <Files>
             <File>
-              <FileName>finger.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\finger.h</FilePath>
-            </File>
-            <File>
               <FileName>finger.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\finger.c</FilePath>
+              <FilePath>..\Source_Code\finger.c</FilePath>
+            </File>
+            <File>
+              <FileName>finger.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source_Code\finger.h</FilePath>
             </File>
           </Files>
         </Group>

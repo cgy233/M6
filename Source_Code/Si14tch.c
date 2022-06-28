@@ -156,7 +156,7 @@ void SI12_ReadData(void)
 	
 	//IIC_EN = 0 ; //Ê¹ÄÜ 
 	
-	delay_ms (20);
+	//delay_ms (20);
 	data_buf[0] = SI14TCH_ReadOneByte(Output1);
 	//printfS("\r\n output1=0x%2x",data_buf[0]); 
 	

@@ -40,7 +40,6 @@ void touch_read()
 	 	while(SI14TCH_Check())
 		{
 			delay_ms(500);
-			//LED_OperaFail();
 			if(times > 5)
 			{
 				printfS("\r\nNO CHECK SI14TCH!");
@@ -48,44 +47,18 @@ void touch_read()
 			}
 			else times++;
 		}
-	
-  // SI14TCH_hard_Reset();
 
 	delay_ms(200);
 	SI14TCH_Init(); 
 	
 	EXTI->IENR |=  IRQ_EXTI_LINE;
   delay_ms(500);
-		
-		//LED_OperaFail();
-		//GPIO_SetBits(GPIOA, GPIO_Pin_0); 
 			
   while(1)
 		{
-			
-				//if (PCD_IRQ_flagA)
-				if (1)
-				{
-					EXTI->IENR &=  ~IRQ_EXTI_LINE;
-					
-					SI12_ReadData();
-			 
-					if( (data_buf[0] & 0x03)  != 0 )   flag = 1;
-					if( ((data_buf[0] >>2) & 0x03) != 0 ) flag = 2;
-					if( ((data_buf[0] >>4) & 0x03) != 0 ) flag = 3;
-					if( ((data_buf[0] >>6) & 0x03) != 0 ) flag = 4;
-							 
-					if( (data_buf[1] & 0x03) != 0 )      flag = 5;
-					if( ((data_buf[1]>>2) & 0x03) != 0 ) flag = 6;  
-					if( ((data_buf[1]>>4) & 0x03) != 0 ) flag = 7; 
-					if( ((data_buf[1]>>6) & 0x03) != 0 ) flag = 8;  
-			 
-					if( (data_buf[2] & 0x03) != 0 )      flag = 9;  
-					if( ((data_buf[2]>>2) & 0x03) != 0 ) flag = 10; 
-					if( ((data_buf[2]>>4) & 0x03) != 0 ) flag = 11; 
-					if( ((data_buf[2]>>6) & 0x03) != 0 ) flag = 12;
 					if(flag !=0)
 					{
+						EXTI->IENR &=  ~IRQ_EXTI_LINE;
 						switch (flag)
 						{
 							case 1 :{ flag = 0; printfS("\r\n T1 TOUCH  9"); break; }
@@ -101,26 +74,15 @@ void touch_read()
 							case 11:{ flag = 0; printfS("\r\n T11 TOUCH 0"); break; }
 							case 12:{ flag = 0; printfS("\r\n T12 TOUCH #"); break; }	
 						}
-					do
-					{
-						// delay_ms (25);
-						SI12_ReadData();   //¶ÁÈ¡¼Ä´æÆ÷output1,2,3Êý¾Ý
-					}while(data_buf [0]!=0 ||data_buf [1]!=0||data_buf [2]!=0||data_buf [3]!=0);
-
-					//GPIO_SetBits(GPIOA,GPIO_Pin_0);
-					EXTI->IENR |=  IRQ_EXTI_LINE;
+						do
+						{
+							delay_ms (25);
+							SI12_ReadData();   //¶ÁÈ¡¼Ä´æÆ÷output1,2,3Êý¾Ý
+						}while(data_buf [0]!=0 ||data_buf [1]!=0||data_buf [2]!=0||data_buf [3]!=0);
+						EXTI->IENR |=  IRQ_EXTI_LINE;
 					// printfS("\r\nTOUCH END!");
-			}		
-			else
-			{	
-				//GPIO_SetBits(GPIOA,GPIO_Pin_0);
-				//printfS("\r\nNO TOUCH !");
-				// delay_ms(100);
-			}	
+					}		
 		}
-
-			// delay_ms(500);
-	}
 	
 }
 UART_HandleTypeDef UART1_Handle;
@@ -171,11 +133,12 @@ int main(void)
 	LED_Init();
 //	LED_On_Off(5, 1);
 //	LED_On_Off(11, 1);
-	// IIC_Init();
-	// delay_ms(200);
-	// EXTIX_Init();
-	// delay_ms(200);
-	// touch_read();
+	 IIC_Init();
+	 delay_ms(200);
+	 EXTIX_Init();
+	 delay_ms(200);
+	
+	 touch_read();
 	
 	/* UARTx Tx */
 	//delay_ms(1000);
@@ -189,22 +152,22 @@ int main(void)
 	//APP_Uart_Test(TEST_UART1_IT);
 
 	/* Si523 ACD TEST */
-	EXTIX_Init();
-	ACD_init_Fun();
-	ACD_Fun();
+	//EXTIX_Init();
+	//ACD_init_Fun();
+	//ACD_Fun();
 	//PCD_SI523_TypeA_Init();
 	//PCD_SI523_TypeA();
 	
 	//IIC_Init();
 	while(1)
 	{
-		uint8_t temp;
-		//SI14TCH_WriteOneByte(Output1,0xBB);
-  
-		a=SI14TCH_ReadOneByte(Output1);
-		temp=SI14TCH_ReadOneByte(Output1);
-		printfS("\r\nTemp:0x%02X",temp);
-		delay_us(200);
+//		uint8_t temp;
+//		SI14TCH_WriteOneByte(Output1,0xBB);
+//  
+//		a=SI14TCH_ReadOneByte(Output1);
+//		temp=SI14TCH_ReadOneByte(Output1);
+//		printfS("\r\nTemp:0x%02X",temp);
+		delay_ms(200);
 
 	}
 }
