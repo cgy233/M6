@@ -35,6 +35,7 @@ V1.1 / 2017-10-19
 
 void LED_Init(void);
 void LED_On_Off(uint8_t led_num, uint8_t on_off);
+void led_flicker(uint8_t led_num);
 
 #endif
 

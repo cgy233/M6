@@ -18,9 +18,9 @@
 //#define IO_IIC_PORT GPIOA
 
 // IO Si12T 
- #define IO_IIC_SDA GPIO_PIN_11
- #define IO_IIC_SCL GPIO_PIN_10
- #define IO_IIC_PORT GPIOB
+#define IO_IIC_SDA GPIO_PIN_11
+#define IO_IIC_SCL GPIO_PIN_10
+#define IO_IIC_PORT GPIOB
 
 #define SDA_OUT()	{GPIOAB ->DIR |= IO_IIC_SDA;}
 #define SDA_IN()	{GPIOAB ->DIR &= ~IO_IIC_SDA;}

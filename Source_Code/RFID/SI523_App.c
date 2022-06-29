@@ -1049,7 +1049,7 @@ void ACD_init_Fun(void)
 void ACD_Fun(void)
 {
 	//EXTI->IMR |= 0x00000008;	// Enable external interrupt
-	EXTI->IENR |=  IRQ_EXTI_LINE;
+	EXTI->IENR |=  RF_IRQ_EXTI_LINE;
 	PCD_IRQ_flagA = 0;	//clear IRQ flag
 	//LED_OperaSuccess();	// LED indicator
 	
@@ -1058,7 +1058,7 @@ void ACD_Fun(void)
 		if(PCD_IRQ_flagA)
 		{
 			printfS("\r\nPCD_IRQ_flagA");
-			EXTI->IENR &= ~IRQ_EXTI_LINE;
+			EXTI->IENR &= ~RF_IRQ_EXTI_LINE;
 			//EXTI->IMR &= 0xFFFFFFF7;		// Disable external interrupt			
 
 			switch( PCD_IRQ() )
@@ -1089,7 +1089,7 @@ void ACD_Fun(void)
 				
 			}		
 			
-			EXTI->IENR |=  IRQ_EXTI_LINE;
+			EXTI->IENR |=  RF_IRQ_EXTI_LINE;
 			//EXTI->IMR |= 0x00000008;		// Enable external interrupt
 			PCD_IRQ_flagA = 0;	
 		}
@@ -1118,7 +1118,7 @@ void PCD_ACD_AutoCalc(void)
 	delay_us(200);
 	
 	I_SI523_IO_Write(ACDConfigSelReg, (ACDConfigK << 2) | 0x40);		//手动设置一个K值
-	I_SI523_IO_Write(ACDConfigReg, 0x0f);
+	I_SI523_IO_Write(ACDConfigReg, 0x2f);
 		
 	while(1)
 	{

@@ -13,18 +13,19 @@ uint8_t  IICReadData;
 void SI14TCH_Init(void)
 {
 	delay_ms(200); 
-	//SI14TCH_WriteOneByte(Ch_hold1,0Xfe);     //delay_ms(10); //1111 1110 ch1 =0 通道一打开
+	SI14TCH_WriteOneByte(Ch_hold1,0Xfe);     //delay_ms(10); //1111 1110 ch1 =0 通道一打开
 	
 	SI14TCH_WriteOneByte(CTRL2,   0X0f);     delay_ms(10); //0000 1111 enable software reset enable sleep mode
 	//0000 0111 disable software reset enable sleep mode
 	SI14TCH_WriteOneByte(CTRL2,   0X07);     delay_ms(10);
 	//灵敏度设置
-	SI14TCH_WriteOneByte(Sense1,  0X77);     //delay_ms(10); //0111 0111 低灵敏度
-	SI14TCH_WriteOneByte(Sense2,  0X77);     //delay_ms(10);
-	SI14TCH_WriteOneByte(Sense3,  0X77);     //delay_ms(10);
-	SI14TCH_WriteOneByte(Sense4,  0X77);     //delay_ms(10);
-	SI14TCH_WriteOneByte(Sense5,  0X77);     //delay_ms(10);
-	SI14TCH_WriteOneByte(Sense6,  0X77);     //delay_ms(10);
+	SI14TCH_WriteOneByte(Sense1,  0X99);     //delay_ms(10); //0111 0111 低灵敏度
+	SI14TCH_WriteOneByte(Sense2,  0X99);     //delay_ms(10);
+	SI14TCH_WriteOneByte(Sense3,  0X99);     //delay_ms(10);
+	SI14TCH_WriteOneByte(Sense4,  0X99);     //delay_ms(10);
+	SI14TCH_WriteOneByte(Sense5,  0X99);     //delay_ms(10);
+	SI14TCH_WriteOneByte(Sense6,  0X99);     //delay_ms(10);
+	// SI14TCH_WriteOneByte(CTRL1,   0X0B);
 	SI14TCH_WriteOneByte(CTRL1,   0X0B);
 
 	SI14TCH_WriteOneByte(Ch_hold1,0X00);      //1111 1111 保持操作，不感测不校准

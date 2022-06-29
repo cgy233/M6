@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>..\Core_Drivers\CMSIS;..\Core_Drivers\Device;..\Core_Drivers\Device\other;..\Core_Drivers\HAL_Driver;..\Core_Drivers\HAL_Driver\Src;..\Core_Drivers\HAL_Driver\Inc;..\Source_Code\APP;..\Source_Code\BSP_Driver;..\Source_Code\IC_Driver;..\..\..\Core_Drivers\CMSIS;..\..\..\Core_Drivers\Device;..\..\..\Core_Drivers\HAL_Driver\Inc;..\Source_Code\main</IncludePath>
+              <IncludePath>..\Core_Drivers\CMSIS;..\Core_Drivers\Device;..\Core_Drivers\Device\other;..\Core_Drivers\HAL_Driver;..\Core_Drivers\HAL_Driver\Src;..\Core_Drivers\HAL_Driver\Inc;..\Source_Code\APP;..\Source_Code\BSP_Driver;..\Source_Code\IC_Driver;..\..\..\Core_Drivers\CMSIS;..\..\..\Core_Drivers\Device;..\..\..\Core_Drivers\HAL_Driver\Inc;..\Source_Code\main;..\Source_Code\RFID;..\Source_Code\Finger;..\Source_Code\Touch;..\Source_Code</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -474,14 +474,14 @@
               <FilePath>..\Source_Code\main.c</FilePath>
             </File>
             <File>
-              <FileName>exti.c</FileName>
+              <FileName>nfc_iic.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Source_Code\exti.c</FilePath>
+              <FilePath>..\Source_Code\RFID\nfc_iic.c</FilePath>
             </File>
             <File>
-              <FileName>exti.h</FileName>
+              <FileName>nfc_iic.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\Source_Code\exti.h</FilePath>
+              <FilePath>..\Source_Code\RFID\nfc_iic.h</FilePath>
             </File>
             <File>
               <FileName>delay.c</FileName>
@@ -499,24 +499,24 @@
           <GroupName>SourceCode/RFID</GroupName>
           <Files>
             <File>
-              <FileName>nfc_iic.h</FileName>
+              <FileName>exti.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\Source_Code\nfc_iic.h</FilePath>
+              <FilePath>..\Source_Code\RFID\exti.h</FilePath>
             </File>
             <File>
-              <FileName>nfc_iic.c</FileName>
+              <FileName>exti.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Source_Code\nfc_iic.c</FilePath>
-            </File>
-            <File>
-              <FileName>SI523_App.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Source_Code\SI523_App.h</FilePath>
+              <FilePath>..\Source_Code\RFID\exti.c</FilePath>
             </File>
             <File>
               <FileName>SI523_App.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Source_Code\SI523_App.c</FilePath>
+              <FilePath>..\Source_Code\RFID\SI523_App.c</FilePath>
+            </File>
+            <File>
+              <FileName>SI523_App.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source_Code\RFID\SI523_App.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -526,12 +526,12 @@
             <File>
               <FileName>finger.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Source_Code\finger.c</FilePath>
+              <FilePath>..\Source_Code\Finger\finger.c</FilePath>
             </File>
             <File>
               <FileName>finger.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\Source_Code\finger.h</FilePath>
+              <FilePath>..\Source_Code\Finger\finger.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -541,22 +541,42 @@
             <File>
               <FileName>led.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Source_Code\led.c</FilePath>
+              <FilePath>..\Source_Code\Touch\led.c</FilePath>
             </File>
             <File>
               <FileName>led.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\Source_Code\led.h</FilePath>
-            </File>
-            <File>
-              <FileName>Si14tch.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Source_Code\Si14tch.h</FilePath>
+              <FilePath>..\Source_Code\Touch\led.h</FilePath>
             </File>
             <File>
               <FileName>Si14tch.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Source_Code\Si14tch.c</FilePath>
+              <FilePath>..\Source_Code\Touch\Si14tch.c</FilePath>
+            </File>
+            <File>
+              <FileName>Si14tch.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source_Code\Touch\Si14tch.h</FilePath>
+            </File>
+            <File>
+              <FileName>tk_exti.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source_Code\Touch\tk_exti.c</FilePath>
+            </File>
+            <File>
+              <FileName>tk_exti.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source_Code\Touch\tk_exti.h</FilePath>
+            </File>
+            <File>
+              <FileName>touch.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Source_Code\Touch\touch.c</FilePath>
+            </File>
+            <File>
+              <FileName>touch.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Source_Code\Touch\touch.h</FilePath>
             </File>
           </Files>
         </Group>

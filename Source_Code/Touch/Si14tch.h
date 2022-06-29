@@ -1,7 +1,17 @@
+/*
+ * @Author: cgy233 1781387847@qq.com
+ * @Date: 2022-06-22 17:05:10
+ * @LastEditors: cgy233 1781387847@qq.com
+ * @LastEditTime: 2022-06-29 14:22:55
+ * @FilePath: \MDK_Projectd:\Ethan\Project\ACM32\ModulesDemo\UART\demo\Source_Code\Touch\Si14tch.h
+ * @Description: 
+ * 
+ * Copyright (c) 2022 by cgy233 1781387847@qq.com, All Rights Reserved. 
+ */
 #include "nfc_iic.h"
 #include "ACM32Fxx_HAL.h"
 /*======================================================
-TSM12¼Ä´æÆ÷¶¨Òå
+TSM12å¯„å­˜å™¨å®šä¹‰
 =======================================================*/
 #define SI14TCH_WRITE_ADDR     0xD0    // if ID_SEL =0 Address = 0xD0 else Address = 0xF0  b[7:1]=address b0 = R/W  1 == R 0==W
 #define SI14TCH_READ_ADDR      0XD1
@@ -10,29 +20,29 @@ TSM12¼Ä´æÆ÷¶¨Òå
 #define SI14TCH_READ_ADDR2     0xF1
 
 
-#define Sense1               0x02    //channel 2 and 1  ÁéÃô¶È¿ØÖÆ¼Ä´æÆ÷
+#define Sense1               0x02    //channel 2 and 1  çµæ•åº¦æ§åˆ¶å¯„å­˜å™¨
 #define Sense2               0x03    //channel 4 and 3
 #define Sense3               0x04    //channel 6 and 5
 #define Sense4               0x05    //channel 8 and 7
 #define Sense5               0x06    //channel 10 and 9
 #define Sense6               0x07    //channel 12 and 11
-//#define Sense7               0x22    //channel 14 and 13  ĞÂÔö
-#define CTRL1                0x08    //Í¨ÓÃ¿ØÖÆ¼Ä´æÆ÷1
-#define CTRL2                0x09		 //Í¨ÓÃ¿ØÖÆ¼Ä´æÆ÷2
-#define Ref_rst1             0x0A    //Í¨µÀ²Î¿¼¸´Î»¿ØÖÆ¼Ä´æÆ÷
+//#define Sense7               0x22    //channel 14 and 13  æ–°å¢
+#define CTRL1                0x08    //é€šç”¨æ§åˆ¶å¯„å­˜å™¨1
+#define CTRL2                0x09		 //é€šç”¨æ§åˆ¶å¯„å­˜å™¨2
+#define Ref_rst1             0x0A    //é€šé“å‚è€ƒå¤ä½æ§åˆ¶å¯„å­˜å™¨
 #define Ref_rst2             0x0B
-#define Ch_hold1             0x0C    //Í¨µÀ¸ĞÓ¦¿ØÖÆ¼Ä´æÆ÷
+#define Ch_hold1             0x0C    //é€šé“æ„Ÿåº”æ§åˆ¶å¯„å­˜å™¨
 #define Ch_hold2             0x0D
-#define Cal_hold1            0x0E    //Í¨µÀĞ£×¼¿ØÖÆ¼Ä´æÆ÷
+#define Cal_hold1            0x0E    //é€šé“æ ¡å‡†æ§åˆ¶å¯„å­˜å™¨
 #define Cal_hold2            0x0F
 #define Output1              0x10     //channel 1 , 2 , 3 , 4
 #define Output2              0x11     //channel 5 , 6 , 7 , 8
 #define Output3              0x12     //channel 9 , 10 , 11 , 12
-//#define Output4              0x13     //ĞÂÔö channel 13 , 14 
+//#define Output4              0x13     //æ–°å¢ channel 13 , 14 
 
 #define Si12T_Sens_User       0x99
 
-//TSM12²Ù×÷º¯Êı
+//TSM12æ“ä½œå‡½æ•°
 void SI14TCH_Init(void);
 
 void SI14TCH_WriteOneByte(uint8_t WriteAddr,uint8_t DataToWrite);

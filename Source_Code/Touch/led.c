@@ -1,3 +1,13 @@
+/*
+ * @Author: cgy233 1781387847@qq.com
+ * @Date: 2022-06-22 17:06:02
+ * @LastEditors: cgy233 1781387847@qq.com
+ * @LastEditTime: 2022-06-29 15:38:08
+ * @FilePath: \MDK_Projectd:\Ethan\Project\ACM32\ModulesDemo\UART\demo\Source_Code\Touch\led.c
+ * @Description: 
+ * 
+ * Copyright (c) 2022 by cgy233 1781387847@qq.com, All Rights Reserved. 
+ */
 #include "led.h"
 #include "delay.h"
 #include  "nfc_iic.h"
@@ -83,5 +93,13 @@ void LED_On_Off(uint8_t led_num, uint8_t on_off)
 		}
 	}
 	
+}
+
+void led_flicker(uint8_t led_num)
+{
+	// LED_On_Off(led_num, 1);
+	// delay_ms(50);
+	// LED_On_Off(led_num, 0);
+	// delay_ms(200);
 }
 
