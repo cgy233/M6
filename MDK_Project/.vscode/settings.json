@@ -5,6 +5,7 @@
 		"nfc_iic.h": "c",
 		"app.h": "c",
 		"exti.h": "c",
-		"acm32fxx_hal.h": "c"
+		"acm32fxx_hal.h": "c",
+		"delay.h": "c"
 	}
 }

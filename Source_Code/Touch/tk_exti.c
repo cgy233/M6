@@ -2,8 +2,8 @@
  * @Author: cgy233 1781387847@qq.com
  * @Date: 2022-06-20 15:33:34
  * @LastEditors: cgy233 1781387847@qq.com
- * @LastEditTime: 2022-06-29 09:55:15
- * @FilePath: \MDK_Projectd:\Ethan\Project\ACM32\ModulesDemo\UART\demo\Source_Code\exti.c
+ * @LastEditTime: 2022-06-30 14:41:30
+ * @FilePath: \MDK_Projectd:\Ethan\Project\ACM32\ModulesDemo\UART\demo\Source_Code\Touch\tk_exti.c
  * @Description: 
  * 
  * Copyright (c) 2022 by cgy233 1781387847@qq.com, All Rights Reserved. 
@@ -47,7 +47,7 @@ void EXTI_IRQHandler(void)
 
 void TK_EXTI_Init()
 {
-		System_Module_Enable(EN_EXTI);
+	System_Module_Enable(EN_EXTI);
 
     /* Initialization GPIO */
     TK_GPIO_Handle.Pin       = TK_IRQ_PIN;

@@ -2,7 +2,7 @@
  * @Author: cgy233 1781387847@qq.com
  * @Date: 2022-06-14 11:51:35
  * @LastEditors: cgy233 1781387847@qq.com
- * @LastEditTime: 2022-06-29 09:16:15
+ * @LastEditTime: 2022-06-30 16:01:33
  * @FilePath: \MDK_Projectd:\Ethan\Project\ACM32\ModulesDemo\UART\demo\Source_Code\main.c
  * @Description: 
  * 
@@ -21,7 +21,7 @@
 #include "SI523_App.h"
 #include "finger.h"
 #include "touch.h"
-
+#include "led.h"
 
 uint8_t  PCD_IRQ_flagA = 0;
 
@@ -51,7 +51,6 @@ void Uart_Init(void)
     //printfS("MCU is running, HCLK=%dHz, PCLK=%dHz\n", System_Get_SystemClock(), System_Get_APBClock());       
 }
 
-
 /*********************************************************************************
 * Function    : main
 * Description : 
@@ -70,8 +69,9 @@ int main(void)
 	delay_ms(200);
 
 	/* Touck TEST */
-	touch();
-	
+	touch_init();
+	// App_KeyReg(1);
+
 	/* UARTx Tx */
 	//delay_ms(1000);
 	//uint8_t test_buff[] = {0xEF, 0x01, 0xFF, 0xFF, 0xFF, 0xFF, 0x01, 0x00, 0x08, 0x31, 0x00, 0x01, 0x03, 0x00, 0x0F, 0x00, 0x4D};
@@ -84,29 +84,28 @@ int main(void)
 	//APP_Uart_Test(TEST_UART1_IT);
 
 	/* Si523 ACD TEST */
-	//RF_EXTI_Init();
-	//ACD_init_Fun();
-	//ACD_Fun();
-	//PCD_SI523_TypeA_Init();
-	//PCD_SI523_TypeA();
+	// LED_Init();
+	// RF_EXTI_Init();
+	// delay_ms(200);
+	// ACD_init_Fun();
+	// ACD_Fun();
+	// PCD_SI523_TypeA_Init();
+	// delay_ms(200);
+	// printfS("\r\nSi523 Version:%02X",I_SI523_IO_Read(VersionReg));
+	// PCD_SI523_TypeA();
 	
 	while(1)
 	{
 //    Si12T
-//		uint8_t temp;
-//		SI14TCH_WriteOneByte(Output1,0xBB);
-//  
-//		a=SI14TCH_ReadOneByte(Output1);
-//		temp=SI14TCH_ReadOneByte(Output1);
-//		printfS("\r\nTemp:0x%02X",temp);
+	App_KeyReg(1);
 		
 // 		Si523
-//		uint8_t temp;
-//		I_SI523_IO_Write(ACDConfigSelReg, (ACDConfigK << 2) | 0x40);		//手动设置一个K值
-//		I_SI523_IO_Write(ACDConfigReg, 0x0F);
-//		temp = I_SI523_IO_Read(ACDConfigK);
-//		printfS("\r\nK:0x%02X",temp);
-		delay_ms(200);
+		// uint8_t temp;
+		// I_SI523_IO_Write(ACDConfigSelReg, (ACDConfigK << 2) | 0x40);		//手动设置一个K值
+		// I_SI523_IO_Write(ACDConfigReg, 0x2e);
+		// temp = I_SI523_IO_Read(VersionReg);
+		// printfS("\r\nSi523 Version:0x%02X",I_SI523_IO_Read(VersionReg));
+		// delay_ms(200);
 
 	}
 }

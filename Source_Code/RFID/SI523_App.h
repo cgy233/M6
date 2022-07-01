@@ -1,15 +1,16 @@
+
 #ifndef _SI523_APP_H
 #define _SI523_APP_H
 
 #include "stdbool.h"
 
-#define  RFCfgReg_Val  0x68
+#define  RFCfgReg_Val  0x78
 #define  DivIEnReg_Val  0xC0
 #define  ComIEnReg_Val  0x80
 #define  IRQMODE  0x01
 #define  EXTI_Trigger_Mode  0x0C
 #define  ACDConfigRegA_Val  0x02
-#define  ACDConfigRegB_Val  0xA8
+#define  ACDConfigRegB_Val  0xE8
 #define  ACDConfigRegD_Val  0x04
 #define  ACDConfigRegH_Val  0x26
 #define  ACDConfigRegI_Val  0x00
@@ -168,9 +169,7 @@ void PCD_SI523_TypeB_Init(void);		//读B卡初始化
 char PCD_SI523_TypeB_GetUID(void);		//读B卡
 char PCD_SI523_IdentityCard_GetUID(void);		//读身份证
 
-
 void PCD_SI523_TypeA(void);
-
 void PCD_SI523_TypeB(void);
 		
 //***********************************//修改新增内容
@@ -184,7 +183,6 @@ void I_SI523_SiModifyReg(unsigned char RegAddr, unsigned char ModifyVal, unsigne
 
 
 
-//===============ACD相关寄存器与函数==================
 
 #define ACDConfigA			 0x00
 #define ACDConfigB			 0x01
@@ -208,8 +206,8 @@ void ACD_Fun(void);
 void PCD_ACD_AutoCalc(void);
 void PCD_ACD_Init(void);
 char PCD_IRQ(void);
+
+
 #endif
-
-
 
 

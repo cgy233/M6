@@ -2,8 +2,8 @@
  * @Author: cgy233 1781387847@qq.com
  * @Date: 2022-06-20 15:33:34
  * @LastEditors: cgy233 1781387847@qq.com
- * @LastEditTime: 2022-06-29 09:55:15
- * @FilePath: \MDK_Projectd:\Ethan\Project\ACM32\ModulesDemo\UART\demo\Source_Code\exti.c
+ * @LastEditTime: 2022-06-30 14:41:18
+ * @FilePath: \MDK_Projectd:\Ethan\Project\ACM32\ModulesDemo\UART\demo\Source_Code\RFID\exti.c
  * @Description: 
  * 
  * Copyright (c) 2022 by cgy233 1781387847@qq.com, All Rights Reserved. 
@@ -21,7 +21,7 @@ GPIO_InitTypeDef RF_GPIO_Handle;
 void RF_EXTI_IRQHandler(void)
 {
 		PCD_IRQ_flagA = 1;
-    printfS("\r\nEXTI_IRQHandler");
+    // printfS("\r\nEXTI_IRQHandler");
 		HAL_EXTI_IRQHandler(&RF_EXTI_Handle);
 }
 

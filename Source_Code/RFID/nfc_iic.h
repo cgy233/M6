@@ -2,8 +2,8 @@
  * @Author: cgy233 1781387847@qq.com
  * @Date: 2022-06-17 17:46:34
  * @LastEditors: cgy233 1781387847@qq.com
- * @LastEditTime: 2022-06-28 15:42:20
- * @FilePath: \MDK_Projectd:\Ethan\Project\ACM32\ModulesDemo\UART\demo\Source_Code\nfc_iic.h
+ * @LastEditTime: 2022-06-30 14:40:59
+ * @FilePath: \MDK_Projectd:\Ethan\Project\ACM32\ModulesDemo\UART\demo\Source_Code\RFID\nfc_iic.h
  * @Description: 
  * 
  * Copyright (c) 2022 by cgy233 1781387847@qq.com, All Rights Reserved. 
@@ -13,9 +13,9 @@
 #include "APP.h"
 
 // IO Si523 
-//#define IO_IIC_SDA GPIO_PIN_4
-//#define IO_IIC_SCL GPIO_PIN_5
-//#define IO_IIC_PORT GPIOA
+// #define IO_IIC_SDA GPIO_PIN_4
+// #define IO_IIC_SCL GPIO_PIN_5
+// #define IO_IIC_PORT GPIOA
 
 // IO Si12T 
 #define IO_IIC_SDA GPIO_PIN_11

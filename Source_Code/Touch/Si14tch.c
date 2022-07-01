@@ -19,12 +19,12 @@ void SI14TCH_Init(void)
 	//0000 0111 disable software reset enable sleep mode
 	SI14TCH_WriteOneByte(CTRL2,   0X07);     delay_ms(10);
 	//¡È√Ù∂»…Ë÷√
-	SI14TCH_WriteOneByte(Sense1,  0X99);     //delay_ms(10); //0111 0111 µÕ¡È√Ù∂»
-	SI14TCH_WriteOneByte(Sense2,  0X99);     //delay_ms(10);
-	SI14TCH_WriteOneByte(Sense3,  0X99);     //delay_ms(10);
-	SI14TCH_WriteOneByte(Sense4,  0X99);     //delay_ms(10);
-	SI14TCH_WriteOneByte(Sense5,  0X99);     //delay_ms(10);
-	SI14TCH_WriteOneByte(Sense6,  0X99);     //delay_ms(10);
+	SI14TCH_WriteOneByte(Sense1,  0X77);     //delay_ms(10); //0111 0111 µÕ¡È√Ù∂»
+	SI14TCH_WriteOneByte(Sense2,  0X77);     //delay_ms(10);
+	SI14TCH_WriteOneByte(Sense3,  0X77);     //delay_ms(10);
+	SI14TCH_WriteOneByte(Sense4,  0X77);     //delay_ms(10);
+	SI14TCH_WriteOneByte(Sense5,  0X77);     //delay_ms(10);
+	SI14TCH_WriteOneByte(Sense6,  0X77);     //delay_ms(10);
 	// SI14TCH_WriteOneByte(CTRL1,   0X0B);
 	SI14TCH_WriteOneByte(CTRL1,   0X0B);
 
@@ -62,7 +62,7 @@ void Si14TouchKey_Init(void)
   SI14TCH_WriteOneByte(Ch_hold1,0x00);  
   SI14TCH_WriteOneByte(Ch_hold2,0x30);  
   SI14TCH_WriteOneByte(Ref_rst1,0X00);     
-	SI14TCH_WriteOneByte(Ref_rst2,0X00);  
+  SI14TCH_WriteOneByte(Ref_rst2,0X00);  
   
   SI14TCH_WriteOneByte(Cal_hold1,0Xff);     
   SI14TCH_WriteOneByte(Cal_hold2,0x0f);     

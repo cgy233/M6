@@ -12,6 +12,7 @@
 //***********************************//修改新增内容
 extern uint8_t PCD_IRQ_flagA ;
 unsigned char ACDConfigRegK_Val = 0x2c ;
+unsigned char PCDKCONFIG = 0x0f;
 unsigned char ACDConfigRegC_Val ;
 
 /////////////////////////////////////////////////////////////////////
@@ -594,7 +595,7 @@ char PCD_SI523_TypeA_GetUID(void)
 	unsigned char UID_complate1 = 0;
 	unsigned char UID_complate2 = 0;
 
-	// printfS("\r\nTest_Si522_GetUID");
+	// printfS("\r\nTest_Si523_GetUID");
 	I_SI523_IO_Write(RFCfgReg, RFCfgReg_Val); //复位接收增益
 	
 	//寻卡
@@ -730,7 +731,7 @@ char PCD_SI523_TypeA_GetUID(void)
 //		printf("\r\nHalt:ok");
 //	}	
 	
-	delay_us(100);
+	// delay_us(100);
 	return 0;
 }
 
@@ -1034,9 +1035,9 @@ void I_SI523_SiModifyReg(unsigned char RegAddr, unsigned char ModifyVal, unsigne
  ================================*/
 void ACD_init_Fun(void)
 {
-	PCD_SI523_TypeA_Init();	//
+	PCD_SI523_TypeA_Init();
 	
-	PCD_ACD_AutoCalc(); //自动获取阈值
+	// PCD_ACD_AutoCalc(); //自动获取阈值
 	
 	PCD_ACD_Init();
 }
@@ -1057,7 +1058,7 @@ void ACD_Fun(void)
 	{	
 		if(PCD_IRQ_flagA)
 		{
-			printfS("\r\nPCD_IRQ_flagA");
+			// printfS("\r\nPCD_IRQ_flagA");
 			EXTI->IENR &= ~RF_IRQ_EXTI_LINE;
 			//EXTI->IMR &= 0xFFFFFFF7;		// Disable external interrupt			
 
@@ -1067,7 +1068,7 @@ void ACD_Fun(void)
 					printfS("\r\nOther IRQ Occur");
 					PCD_SI523_TypeA_GetUID();
 					PcdReset();			//软复位				
-					//PcdPowerdown();			//硬复位
+					// PcdPowerdown();			//硬复位
 					PCD_SI523_TypeA_Init();
 					PCD_ACD_Init();
 					break;
@@ -1118,7 +1119,7 @@ void PCD_ACD_AutoCalc(void)
 	delay_us(200);
 	
 	I_SI523_IO_Write(ACDConfigSelReg, (ACDConfigK << 2) | 0x40);		//手动设置一个K值
-	I_SI523_IO_Write(ACDConfigReg, 0x2f);
+	I_SI523_IO_Write(ACDConfigReg, PCDKCONFIG);
 		
 	while(1)
 	{
@@ -1220,8 +1221,8 @@ void PCD_ACD_Init(void)
 	I_SI523_IO_Write(ACDConfigSelReg, (ACDConfigI << 2) | 0x40);
 	I_SI523_IO_Write(ACDConfigReg, ACDConfigRegI_Val );	
 	I_SI523_IO_Write(ACDConfigSelReg, (ACDConfigK << 2) | 0x40);
-	//I_SI523_IO_Write(ACDConfigReg, ACDConfigRegK_Val );
-	I_SI523_IO_Write(ACDConfigReg, 0x2e );
+	// I_SI523_IO_Write(ACDConfigReg, ACDConfigRegK_Val );
+	I_SI523_IO_Write(ACDConfigReg, PCDKCONFIG);
 	I_SI523_IO_Write(ACDConfigSelReg, (ACDConfigM << 2) | 0x40);
 	I_SI523_IO_Write(ACDConfigReg, ACDConfigRegM_Val );
 	I_SI523_IO_Write(ACDConfigSelReg, (ACDConfigO << 2) | 0x40);
