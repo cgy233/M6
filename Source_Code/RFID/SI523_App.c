@@ -12,7 +12,7 @@
 //***********************************//修改新增内容
 extern uint8_t PCD_IRQ_flagA ;
 unsigned char ACDConfigRegK_Val = 0x2c ;
-unsigned char PCDKCONFIG = 0x0f;
+unsigned char PCDKCONFIG = 0x4f;
 unsigned char ACDConfigRegC_Val ;
 
 /////////////////////////////////////////////////////////////////////

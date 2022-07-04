@@ -69,7 +69,7 @@ int main(void)
 	delay_ms(200);
 
 	/* Touck TEST */
-	touch_init();
+	// touch_init();
 	// App_KeyReg(1);
 
 	/* UARTx Tx */
@@ -85,10 +85,10 @@ int main(void)
 
 	/* Si523 ACD TEST */
 	// LED_Init();
-	// RF_EXTI_Init();
-	// delay_ms(200);
-	// ACD_init_Fun();
-	// ACD_Fun();
+	RF_EXTI_Init();
+	delay_ms(200);
+	ACD_init_Fun();
+	ACD_Fun();
 	// PCD_SI523_TypeA_Init();
 	// delay_ms(200);
 	// printfS("\r\nSi523 Version:%02X",I_SI523_IO_Read(VersionReg));
@@ -97,7 +97,7 @@ int main(void)
 	while(1)
 	{
 //    Si12T
-	App_KeyReg(1);
+	// App_KeyReg(1);
 		
 // 		Si523
 		// uint8_t temp;

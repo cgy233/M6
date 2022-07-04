@@ -18,7 +18,7 @@ EXTI_HandleTypeDef RF_EXTI_Handle;
 
 GPIO_InitTypeDef RF_GPIO_Handle;
 
-void RF_EXTI_IRQHandler(void)
+void EXTI_IRQHandler(void)
 {
 		PCD_IRQ_flagA = 1;
     // printfS("\r\nEXTI_IRQHandler");

@@ -20,7 +20,7 @@ EXTI_HandleTypeDef TK_EXTI_Handle;
 
 GPIO_InitTypeDef TK_GPIO_Handle;
 
-void EXTI_IRQHandler(void)
+void TK_EXTI_IRQHandler(void)
 {
     //printfS("\r\nEXTI_IRQHandler");
 		HAL_EXTI_IRQHandler(&TK_EXTI_Handle);
