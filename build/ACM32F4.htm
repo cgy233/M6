@@ -1,0 +1,3092 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+<title>Static Call Graph - [.\build\ACM32F4.axf]</title></head>
+<body><HR>
+<H1>Static Call Graph for image .\build\ACM32F4.axf</H1><HR>
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6180002: Last Updated: Thu Jul 28 11:15:22 2022
+<BR><P>
+<H3>Maximum Stack Usage =        388 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
+Call chain for Maximum Stack Depth:</H3>
+main &rArr; rtthread_startup &rArr; rt_thread_idle_init &rArr; rt_thread_init &rArr; _thread_init &rArr; rt_timer_init &rArr; rt_object_init &rArr; rt_exit_critical &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+<P>
+<H3>
+Mutually Recursive functions
+</H3> <LI><a href="#[1]">NMI_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[1]">NMI_Handler</a><BR>
+ <LI><a href="#[3]">MemManage_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[3]">MemManage_Handler</a><BR>
+ <LI><a href="#[4]">BusFault_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[4]">BusFault_Handler</a><BR>
+ <LI><a href="#[5]">UsageFault_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[5]">UsageFault_Handler</a><BR>
+ <LI><a href="#[7]">DebugMon_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[7]">DebugMon_Handler</a><BR>
+ <LI><a href="#[16]">ADC_IRQHandler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[16]">ADC_IRQHandler</a><BR>
+ <LI><a href="#[99]">rt_assert_handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[b2]">rt_kprintf</a><BR>
+</UL>
+<P>
+<H3>
+Function Pointers
+</H3><UL>
+ <LI><a href="#[59]">ACD_Fun</a> from si523_app.o(.text.ACD_Fun) referenced from si523_app.o(.rti_fn.6)
+ <LI><a href="#[58]">ACD_init_Fun</a> from si523_app.o(.text.ACD_init_Fun) referenced from si523_app.o(.rti_fn.6)
+ <LI><a href="#[16]">ADC_IRQHandler</a> from startup_acm32f4.o(.text) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[29]">AES_IRQHandler</a> from startup_acm32f4.o(.text) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[4]">BusFault_Handler</a> from startup_acm32f4.o(.text) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[2e]">CAN1_IRQHandler</a> from startup_acm32f4.o(.text) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[2f]">CAN2_IRQHandler</a> from startup_acm32f4.o(.text) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[11]">CLKRDY_IRQHandler</a> from startup_acm32f4.o(.text) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[2b]">DAC_IRQHandler</a> from startup_acm32f4.o(.text) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[13]">DMA_IRQHandler</a> from drv_uart.o(.text.DMA_IRQHandler) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[7]">DebugMon_Handler</a> from startup_acm32f4.o(.text) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[c]">EFC_IRQHandler</a> from startup_acm32f4.o(.text) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[f]">EXTI_IRQHandler</a> from drv_gpio.o(.text.EXTI_IRQHandler) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[30]">FPU_IRQHandler</a> from startup_acm32f4.o(.text) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[d]">GPIOAB_IRQHandler</a> from startup_acm32f4.o(.text) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[e]">GPIOCD_IRQHandler</a> from startup_acm32f4.o(.text) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[2d]">GPIOEF_IRQHandler</a> from startup_acm32f4.o(.text) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[2]">HardFault_Handler</a> from context_rvds.o(.text) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[21]">I2C1_IRQHandler</a> from startup_acm32f4.o(.text) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[22]">I2C2_IRQHandler</a> from startup_acm32f4.o(.text) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[2c]">I2S_IRQHandler</a> from startup_acm32f4.o(.text) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[27]">LPUART_IRQHandler</a> from startup_acm32f4.o(.text) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[3]">MemManage_Handler</a> from startup_acm32f4.o(.text) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[1]">NMI_Handler</a> from startup_acm32f4.o(.text) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[8]">PendSV_Handler</a> from context_rvds.o(.text) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[5a]">RF_EXTI_Init</a> from exti.o(.text.RF_EXTI_Init) referenced from exti.o(.rti_fn.6)
+ <LI><a href="#[15]">RSV_IRQHandler</a> from startup_acm32f4.o(.text) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[b]">RTC_IRQHandler</a> from startup_acm32f4.o(.text) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[0]">Reset_Handler</a> from startup_acm32f4.o(.text) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[23]">SPI1_IRQHandler</a> from startup_acm32f4.o(.text) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[24]">SPI2_IRQHandler</a> from startup_acm32f4.o(.text) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[28]">SPI3_IRQHandler</a> from startup_acm32f4.o(.text) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[32]">SPI4_IRQHandler</a> from startup_acm32f4.o(.text) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[10]">SRAM_PARITY_IRQHandler</a> from startup_acm32f4.o(.text) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[6]">SVC_Handler</a> from syscall_rvds.o(.text) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[9]">SysTick_Handler</a> from board.o(.text.SysTick_Handler) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[34]">System_Core_Config</a> from system_acm32f4.o(.text.System_Core_Config) referenced from startup_acm32f4.o(.text)
+ <LI><a href="#[1d]">TIM14_IRQHandler</a> from startup_acm32f4.o(.text) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[1e]">TIM15_IRQHandler</a> from startup_acm32f4.o(.text) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[1f]">TIM16_IRQHandler</a> from startup_acm32f4.o(.text) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[20]">TIM17_IRQHandler</a> from startup_acm32f4.o(.text) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[17]">TIM1_BRK_UP_TRG_COM_IRQHandler</a> from startup_acm32f4.o(.text) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[18]">TIM1_CC_IRQHandler</a> from startup_acm32f4.o(.text) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[19]">TIM2_IRQHandler</a> from startup_acm32f4.o(.text) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[1a]">TIM3_IRQHandler</a> from startup_acm32f4.o(.text) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[31]">TIM4_IRQHandler</a> from startup_acm32f4.o(.text) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[1b]">TIM6_IRQHandler</a> from startup_acm32f4.o(.text) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[1c]">TIM7_IRQHandler</a> from startup_acm32f4.o(.text) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[25]">UART1_IRQHandler</a> from drv_uart.o(.text.UART1_IRQHandler) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[26]">UART2_IRQHandler</a> from drv_uart.o(.text.UART2_IRQHandler) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[14]">UART3_IRQHandler</a> from drv_uart.o(.text.UART3_IRQHandler) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[12]">UART4_IRQHandler</a> from drv_uart.o(.text.UART4_IRQHandler) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[2a]">USB_IRQHandler</a> from startup_acm32f4.o(.text) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[5]">UsageFault_Handler</a> from startup_acm32f4.o(.text) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[a]">WDT_IRQHandler</a> from startup_acm32f4.o(.text) referenced from startup_acm32f4.o(RESET)
+ <LI><a href="#[35]">__main</a> from entry.o(.ARM.Collect$$$$00000000) referenced from startup_acm32f4.o(.text)
+ <LI><a href="#[42]">_pin_attach_irq</a> from drv_gpio.o(.text._pin_attach_irq) referenced from drv_gpio.o(.rodata._acm32_pin_ops)
+ <LI><a href="#[5c]">_pin_cmd</a> from pin.o(.text._pin_cmd) referenced from pin.o(FSymTab)
+ <LI><a href="#[4c]">_pin_control</a> from pin.o(.text._pin_control) referenced from pin.o(.rodata.pin_ops)
+ <LI><a href="#[43]">_pin_dettach_irq</a> from drv_gpio.o(.text._pin_dettach_irq) referenced from drv_gpio.o(.rodata._acm32_pin_ops)
+ <LI><a href="#[44]">_pin_irq_enable</a> from drv_gpio.o(.text._pin_irq_enable) referenced from drv_gpio.o(.rodata._acm32_pin_ops)
+ <LI><a href="#[3f]">_pin_mode</a> from drv_gpio.o(.text._pin_mode) referenced from drv_gpio.o(.rodata._acm32_pin_ops)
+ <LI><a href="#[41]">_pin_read</a> from drv_gpio.o(.text._pin_read) referenced from drv_gpio.o(.rodata._acm32_pin_ops)
+ <LI><a href="#[4a]">_pin_read</a> from pin.o(.text._pin_read) referenced from pin.o(.rodata.pin_ops)
+ <LI><a href="#[40]">_pin_write</a> from drv_gpio.o(.text._pin_write) referenced from drv_gpio.o(.rodata._acm32_pin_ops)
+ <LI><a href="#[4b]">_pin_write</a> from pin.o(.text._pin_write) referenced from pin.o(.rodata.pin_ops)
+ <LI><a href="#[36]">_thread_exit</a> from thread.o(.text._thread_exit) referenced 2 times from thread.o(.text._thread_init)
+ <LI><a href="#[37]">_thread_timeout</a> from thread.o(.text._thread_timeout) referenced 2 times from thread.o(.text._thread_init)
+ <LI><a href="#[3b]">_timer_thread_entry</a> from timer.o(.text._timer_thread_entry) referenced 2 times from timer.o(.text.rt_system_timer_thread_init)
+ <LI><a href="#[45]">_uart_configure</a> from drv_uart.o(.text._uart_configure) referenced from drv_uart.o(.rodata.acm32_uart_ops)
+ <LI><a href="#[46]">_uart_control</a> from drv_uart.o(.text._uart_control) referenced from drv_uart.o(.rodata.acm32_uart_ops)
+ <LI><a href="#[49]">_uart_dma_transmit</a> from drv_uart.o(.text._uart_dma_transmit) referenced from drv_uart.o(.rodata.acm32_uart_ops)
+ <LI><a href="#[48]">_uart_getc</a> from drv_uart.o(.text._uart_getc) referenced from drv_uart.o(.rodata.acm32_uart_ops)
+ <LI><a href="#[47]">_uart_putc</a> from drv_uart.o(.text._uart_putc) referenced from drv_uart.o(.rodata.acm32_uart_ops)
+ <LI><a href="#[60]">clear</a> from cmd.o(.text.clear) referenced from cmd.o(FSymTab)
+ <LI><a href="#[5f]">cmd_free</a> from msh.o(.text.cmd_free) referenced from msh.o(FSymTab)
+ <LI><a href="#[6b]">cmd_list</a> from cmd.o(.text.cmd_list) referenced from cmd.o(FSymTab)
+ <LI><a href="#[5e]">cmd_ps</a> from msh.o(.text.cmd_ps) referenced from msh.o(FSymTab)
+ <LI><a href="#[39]">finsh_rx_ind</a> from shell.o(.text.finsh_rx_ind) referenced 2 times from shell.o(.text.finsh_set_device)
+ <LI><a href="#[57]">finsh_system_init</a> from shell.o(.text.finsh_system_init) referenced from shell.o(.rti_fn.6)
+ <LI><a href="#[3a]">finsh_thread_entry</a> from shell.o(.text.finsh_thread_entry) referenced 2 times from shell.o(.text.finsh_system_init)
+ <LI><a href="#[3e]">fputc</a> from syscalls.o(.text.fputc) referenced from printf8.o(i.__0printf$8)
+ <LI><a href="#[6a]">list_device</a> from cmd.o(.text.list_device) referenced from cmd.o(FSymTab)
+ <LI><a href="#[64]">list_event</a> from cmd.o(.text.list_event) referenced from cmd.o(FSymTab)
+ <LI><a href="#[66]">list_mailbox</a> from cmd.o(.text.list_mailbox) referenced from cmd.o(FSymTab)
+ <LI><a href="#[68]">list_mempool</a> from cmd.o(.text.list_mempool) referenced from cmd.o(FSymTab)
+ <LI><a href="#[67]">list_msgqueue</a> from cmd.o(.text.list_msgqueue) referenced from cmd.o(FSymTab)
+ <LI><a href="#[65]">list_mutex</a> from cmd.o(.text.list_mutex) referenced from cmd.o(FSymTab)
+ <LI><a href="#[63]">list_sem</a> from cmd.o(.text.list_sem) referenced from cmd.o(FSymTab)
+ <LI><a href="#[62]">list_thread</a> from cmd.o(.text.list_thread) referenced from cmd.o(FSymTab)
+ <LI><a href="#[69]">list_timer</a> from cmd.o(.text.list_timer) referenced from cmd.o(FSymTab)
+ <LI><a href="#[33]">main</a> from components.o(.text.$Sub$$main) referenced from entry9a.o(.ARM.Collect$$$$0000000B)
+ <LI><a href="#[3d]">main_thread_entry</a> from components.o(.text.main_thread_entry) referenced 2 times from components.o(.text.rtthread_startup)
+ <LI><a href="#[5d]">msh_help</a> from msh.o(.text.msh_help) referenced from msh.o(FSymTab)
+ <LI><a href="#[55]">rt_hw_pin_init</a> from drv_gpio.o(.text.rt_hw_pin_init) referenced from drv_gpio.o(.rti_fn.1)
+ <LI><a href="#[4f]">rt_serial_close</a> from serial.o(.text.rt_serial_close) referenced from serial.o(.rodata.serial_ops)
+ <LI><a href="#[52]">rt_serial_control</a> from serial.o(.text.rt_serial_control) referenced from serial.o(.rodata.serial_ops)
+ <LI><a href="#[4d]">rt_serial_init</a> from serial.o(.text.rt_serial_init) referenced from serial.o(.rodata.serial_ops)
+ <LI><a href="#[4e]">rt_serial_open</a> from serial.o(.text.rt_serial_open) referenced from serial.o(.rodata.serial_ops)
+ <LI><a href="#[50]">rt_serial_read</a> from serial.o(.text.rt_serial_read) referenced from serial.o(.rodata.serial_ops)
+ <LI><a href="#[51]">rt_serial_write</a> from serial.o(.text.rt_serial_write) referenced from serial.o(.rodata.serial_ops)
+ <LI><a href="#[3c]">rt_thread_idle_entry</a> from idle.o(.text.rt_thread_idle_entry) referenced 2 times from idle.o(.text.rt_thread_idle_init)
+ <LI><a href="#[56]">rti_board_end</a> from components.o(.text.rti_board_end) referenced from components.o(.rti_fn.1.end)
+ <LI><a href="#[54]">rti_board_start</a> from components.o(.text.rti_board_start) referenced from components.o(.rti_fn.0.end)
+ <LI><a href="#[5b]">rti_end</a> from components.o(.text.rti_end) referenced from components.o(.rti_fn.6.end)
+ <LI><a href="#[53]">rti_start</a> from components.o(.text.rti_start) referenced from components.o(.rti_fn.0)
+ <LI><a href="#[38]">uart_rx_indicate_cb</a> from drv_uart.o(.text.uart_rx_indicate_cb) referenced 2 times from drv_uart.o(.text._uart_control)
+ <LI><a href="#[61]">version</a> from cmd.o(.text.version) referenced from cmd.o(FSymTab)
+</UL>
+<P>
+<H3>
+Global Symbols
+</H3>
+<P><STRONG><a name="[35]"></a>__main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry.o(.ARM.Collect$$$$00000000))
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(.text)
+</UL>
+<P><STRONG><a name="[12a]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
+
+<P><STRONG><a name="[6c]"></a>_main_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
+<BR><BR>[Calls]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[7f]"></a>__main_after_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
+<BR><BR>[Called By]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[12b]"></a>_main_clock</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7b.o(.ARM.Collect$$$$00000008))
+
+<P><STRONG><a name="[12c]"></a>_main_cpp_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8b.o(.ARM.Collect$$$$0000000A))
+
+<P><STRONG><a name="[12d]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry9a.o(.ARM.Collect$$$$0000000B))
+
+<P><STRONG><a name="[12e]"></a>__rt_final_cpp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10a.o(.ARM.Collect$$$$0000000D))
+
+<P><STRONG><a name="[12f]"></a>__rt_final_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry11a.o(.ARM.Collect$$$$0000000F))
+
+<P><STRONG><a name="[0]"></a>Reset_Handler</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, startup_acm32f4.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[1]"></a>NMI_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_acm32f4.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[3]"></a>MemManage_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_acm32f4.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MemManage_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MemManage_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[4]"></a>BusFault_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_acm32f4.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BusFault_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BusFault_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[5]"></a>UsageFault_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_acm32f4.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UsageFault_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UsageFault_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[7]"></a>DebugMon_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_acm32f4.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DebugMon_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DebugMon_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[16]"></a>ADC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_acm32f4.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_IRQHandler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_IRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[29]"></a>AES_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_acm32f4.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[2e]"></a>CAN1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_acm32f4.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[2f]"></a>CAN2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_acm32f4.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[11]"></a>CLKRDY_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_acm32f4.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[2b]"></a>DAC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_acm32f4.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[c]"></a>EFC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_acm32f4.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[30]"></a>FPU_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_acm32f4.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[d]"></a>GPIOAB_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_acm32f4.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[e]"></a>GPIOCD_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_acm32f4.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[2d]"></a>GPIOEF_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_acm32f4.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[21]"></a>I2C1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_acm32f4.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[22]"></a>I2C2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_acm32f4.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[2c]"></a>I2S_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_acm32f4.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[27]"></a>LPUART_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_acm32f4.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[15]"></a>RSV_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_acm32f4.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[b]"></a>RTC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_acm32f4.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[23]"></a>SPI1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_acm32f4.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[24]"></a>SPI2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_acm32f4.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[28]"></a>SPI3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_acm32f4.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[32]"></a>SPI4_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_acm32f4.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[10]"></a>SRAM_PARITY_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_acm32f4.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[1d]"></a>TIM14_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_acm32f4.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[1e]"></a>TIM15_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_acm32f4.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[1f]"></a>TIM16_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_acm32f4.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[20]"></a>TIM17_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_acm32f4.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[17]"></a>TIM1_BRK_UP_TRG_COM_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_acm32f4.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[18]"></a>TIM1_CC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_acm32f4.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[19]"></a>TIM2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_acm32f4.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[1a]"></a>TIM3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_acm32f4.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[31]"></a>TIM4_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_acm32f4.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[1b]"></a>TIM6_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_acm32f4.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[1c]"></a>TIM7_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_acm32f4.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[2a]"></a>USB_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_acm32f4.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[a]"></a>WDT_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_acm32f4.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[8f]"></a>rt_hw_interrupt_disable</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, context_rvds.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_serial_isr
+<LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_serial_write
+<LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_serial_read
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_sem_take
+<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_detach
+<LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_stop
+<LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_delete
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_sem_release
+<LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mutex_release
+<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mutex_take
+<LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_data_queue_deinit
+<LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_exit_critical
+<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_enter_critical
+<LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_data_queue_reset
+<LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_data_queue_peek
+<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_data_queue_pop
+<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_data_queue_push
+<LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_resume
+<LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_completion_done
+<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_schedule
+<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_start
+<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_control
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_suspend
+<LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_interrupt_get_nest
+<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_completion_wait
+<LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_completion_init
+<LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_thread
+<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_control
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_soft_timer_check
+<LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_timer_thread_entry
+<LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_sleep
+<LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_detach
+<LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_thread_timeout
+<LI><a href="#[36]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_thread_exit
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_schedule_insert_thread
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_schedule_remove_thread
+<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_allocate
+<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_delete
+<LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_idle_entry
+<LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_detach
+<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_init
+<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_find
+<LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_system_scheduler_start
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtthread_startup
+<LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_check
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_device
+<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_timer
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_mempool
+<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_msgqueue
+<LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_mailbox
+<LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_mutex
+<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_event
+<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_sem
+<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_tick_increase
+<LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_pin_irq_enable
+<LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_pin_dettach_irq
+<LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_pin_attach_irq
+<LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_IRQHandler
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_interrupt_leave
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_interrupt_enter
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_isr
+</UL>
+
+<P><STRONG><a name="[90]"></a>rt_hw_interrupt_enable</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, context_rvds.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_serial_isr
+<LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_serial_write
+<LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_serial_read
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_sem_take
+<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_detach
+<LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_stop
+<LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_delete
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_sem_release
+<LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mutex_release
+<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mutex_take
+<LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_data_queue_deinit
+<LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_exit_critical
+<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_enter_critical
+<LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_data_queue_reset
+<LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_data_queue_peek
+<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_data_queue_pop
+<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_data_queue_push
+<LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_resume
+<LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_completion_done
+<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_schedule
+<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_start
+<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_control
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_suspend
+<LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_interrupt_get_nest
+<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_completion_wait
+<LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_completion_init
+<LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_thread
+<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_control
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_soft_timer_check
+<LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_timer_thread_entry
+<LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_sleep
+<LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_detach
+<LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_thread_timeout
+<LI><a href="#[36]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_thread_exit
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_schedule_insert_thread
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_schedule_remove_thread
+<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_allocate
+<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_delete
+<LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_idle_entry
+<LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_detach
+<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_init
+<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_find
+<LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_system_scheduler_start
+<LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_check
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_device
+<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_timer
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_mempool
+<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_msgqueue
+<LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_mailbox
+<LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_mutex
+<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_event
+<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_sem
+<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_tick_increase
+<LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_pin_irq_enable
+<LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_pin_dettach_irq
+<LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_pin_attach_irq
+<LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_IRQHandler
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_interrupt_leave
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_interrupt_enter
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_isr
+</UL>
+
+<P><STRONG><a name="[114]"></a>rt_hw_context_switch</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, context_rvds.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_schedule
+</UL>
+
+<P><STRONG><a name="[113]"></a>rt_hw_context_switch_interrupt</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, context_rvds.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_schedule
+</UL>
+
+<P><STRONG><a name="[8]"></a>PendSV_Handler</STRONG> (Thumb, 192 bytes, Stack size 0 bytes, context_rvds.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_trustzone_context_store
+<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_trustzone_context_load
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[119]"></a>rt_hw_context_switch_to</STRONG> (Thumb, 76 bytes, Stack size 0 bytes, context_rvds.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_system_scheduler_start
+</UL>
+
+<P><STRONG><a name="[130]"></a>rt_hw_interrupt_thread_switch</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, context_rvds.o(.text), UNUSED)
+
+<P><STRONG><a name="[2]"></a>HardFault_Handler</STRONG> (Thumb, 72 bytes, Stack size 0 bytes, context_rvds.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 364<LI>Call Chain = HardFault_Handler &rArr; rt_hw_hard_fault_exception &rArr; list_thread &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_hard_fault_exception
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[131]"></a>tzcall</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, syscall_rvds.o(.text), UNUSED)
+
+<P><STRONG><a name="[6]"></a>SVC_Handler</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, syscall_rvds.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 156<LI>Call Chain = SVC_Handler &rArr; tzcall_entry &rArr; rt_secure_svc_handle &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;syscall_entry
+<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tzcall_entry
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[74]"></a>__aeabi_uldivmod</STRONG> (Thumb, 98 bytes, Stack size 40 bytes, uldiv.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = __aeabi_uldivmod
+</UL>
+<BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsr
+<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
+</UL>
+<BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Init
+<LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+
+<P><STRONG><a name="[7d]"></a>__rt_ctype_table</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, ctype_o.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msh_isint
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strtol
+</UL>
+
+<P><STRONG><a name="[b6]"></a>toupper</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, toupper.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_pin_cmd_conv
+</UL>
+
+<P><STRONG><a name="[78]"></a>__aeabi_memset</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, memseta.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_memset
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_memset$wrapper
+<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
+</UL>
+
+<P><STRONG><a name="[132]"></a>__aeabi_memset4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+
+<P><STRONG><a name="[133]"></a>__aeabi_memset8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+
+<P><STRONG><a name="[77]"></a>__aeabi_memclr</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, memseta.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_strncpy
+</UL>
+
+<P><STRONG><a name="[134]"></a>__aeabi_memclr4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+
+<P><STRONG><a name="[135]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+
+<P><STRONG><a name="[79]"></a>_memset$wrapper</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, memseta.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
+</UL>
+
+<P><STRONG><a name="[d9]"></a>strncpy</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, strncpy.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = strncpy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;finsh_thread_entry
+</UL>
+
+<P><STRONG><a name="[da]"></a>strlen</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, strlen.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msh_auto_complete
+<LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;finsh_thread_entry
+</UL>
+
+<P><STRONG><a name="[ca]"></a>strcmp</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, strcmp.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = strcmp
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cmd_list
+</UL>
+
+<P><STRONG><a name="[db]"></a>memcmp</STRONG> (Thumb, 26 bytes, Stack size 12 bytes, memcmp.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = memcmp
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;finsh_thread_entry
+</UL>
+
+<P><STRONG><a name="[b8]"></a>strncat</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, strncat.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = strncat
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_pin_cmd_conv
+</UL>
+
+<P><STRONG><a name="[e3]"></a>strncmp</STRONG> (Thumb, 30 bytes, Stack size 12 bytes, strncmp.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = strncmp
+</UL>
+<BR>[Called By]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msh_exec
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msh_auto_complete
+</UL>
+
+<P><STRONG><a name="[7a]"></a>atoi</STRONG> (Thumb, 26 bytes, Stack size 16 bytes, atoi.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = atoi &rArr; strtol &rArr; _strtoul
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strtol
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_errno_addr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_pin_cmd
+</UL>
+
+<P><STRONG><a name="[76]"></a>__aeabi_llsl</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, llshl.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+</UL>
+
+<P><STRONG><a name="[136]"></a>_ll_shift_l</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llshl.o(.text), UNUSED)
+
+<P><STRONG><a name="[75]"></a>__aeabi_llsr</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, llushr.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+</UL>
+
+<P><STRONG><a name="[137]"></a>_ll_ushift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llushr.o(.text), UNUSED)
+
+<P><STRONG><a name="[7c]"></a>strtol</STRONG> (Thumb, 112 bytes, Stack size 32 bytes, strtol.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = strtol &rArr; _strtoul
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_ctype_table
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_strtoul
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_errno_addr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;atoi
+</UL>
+
+<P><STRONG><a name="[6d]"></a>__scatterload</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, init.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main_after_scatterload
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_main_scatterload
+</UL>
+
+<P><STRONG><a name="[138]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
+
+<P><STRONG><a name="[7e]"></a>_strtoul</STRONG> (Thumb, 158 bytes, Stack size 40 bytes, _strtoul.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = _strtoul
+</UL>
+<BR>[Calls]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_chval
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_errno_addr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strtol
+</UL>
+
+<P><STRONG><a name="[80]"></a>_chval</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, _chval.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_strtoul
+</UL>
+
+<P><STRONG><a name="[139]"></a>__decompress</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
+
+<P><STRONG><a name="[13a]"></a>__decompress1</STRONG> (Thumb, 86 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
+
+<P><STRONG><a name="[33]"></a>main</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, components.o(.text.$Sub$$main))
+<BR><BR>[Stack]<UL><LI>Max Depth = 388<LI>Call Chain = main &rArr; rtthread_startup &rArr; rt_thread_idle_init &rArr; rt_thread_init &rArr; _thread_init &rArr; rt_timer_init &rArr; rt_object_init &rArr; rt_exit_critical &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtthread_startup
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> entry9a.o(.ARM.Collect$$$$0000000B)
+</UL>
+<P><STRONG><a name="[59]"></a>ACD_Fun</STRONG> (Thumb, 144 bytes, Stack size 0 bytes, si523_app.o(.text.ACD_Fun))
+<BR><BR>[Stack]<UL><LI>Max Depth = 252<LI>Call Chain = ACD_Fun &rArr; PCD_SI523_TypeA_Init &rArr; delay_ms &rArr; rt_thread_mdelay &rArr; rt_thread_sleep &rArr; rt_timer_start &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PCD_IRQ
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PCD_ACD_Init
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdReset
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PCD_SI523_TypeA_Init
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PCD_SI523_TypeA_GetUID
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I_SI523_IO_Read
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I_SI523_IO_Write
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> si523_app.o(.rti_fn.6)
+</UL>
+<P><STRONG><a name="[58]"></a>ACD_init_Fun</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, si523_app.o(.text.ACD_init_Fun))
+<BR><BR>[Stack]<UL><LI>Max Depth = 252<LI>Call Chain = ACD_init_Fun &rArr; PCD_SI523_TypeA_Init &rArr; delay_ms &rArr; rt_thread_mdelay &rArr; rt_thread_sleep &rArr; rt_timer_start &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PCD_ACD_AutoCalc
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PCD_SI523_TypeA_Init
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> si523_app.o(.rti_fn.6)
+</UL>
+<P><STRONG><a name="[8c]"></a>CalulateCRC</STRONG> (Thumb, 112 bytes, Stack size 16 bytes, si523_app.o(.text.CalulateCRC))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = CalulateCRC &rArr; I_SI523_IO_Read &rArr; SI523_I2C_LL_ReadRawRC &rArr; IIC_Read_Byte
+</UL>
+<BR>[Calls]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I_SI523_IO_Read
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I_SI523_IO_Write
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdSelect3
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdSelect2
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdSelect1
+</UL>
+
+<P><STRONG><a name="[13]"></a>DMA_IRQHandler</STRONG> (Thumb, 206 bytes, Stack size 24 bytes, drv_uart.o(.text.DMA_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 324<LI>Call Chain = DMA_IRQHandler &rArr; rt_hw_serial_isr &rArr; rt_data_queue_pop &rArr; rt_timer_start &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_serial_isr
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Receive_DMA
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_interrupt_leave
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_interrupt_enter
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[f]"></a>EXTI_IRQHandler</STRONG> (Thumb, 80 bytes, Stack size 16 bytes, drv_gpio.o(.text.EXTI_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = EXTI_IRQHandler &rArr; rt_interrupt_leave
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_interrupt_leave
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_interrupt_enter
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[93]"></a>HAL_DMA_Init</STRONG> (Thumb, 210 bytes, Stack size 16 bytes, hal_dma.o(.text.HAL_DMA_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = HAL_DMA_Init &rArr; System_Module_Enable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System_Module_Enable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_uart_control
+</UL>
+
+<P><STRONG><a name="[9a]"></a>HAL_DMA_Start_IT</STRONG> (Thumb, 140 bytes, Stack size 16 bytes, hal_dma.o(.text.HAL_DMA_Start_IT))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = HAL_DMA_Start_IT
+</UL>
+<BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Receive_DMA
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Transmit_DMA
+</UL>
+
+<P><STRONG><a name="[af]"></a>HAL_EFlash_Init</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, hal_eflash.o(.text.HAL_EFlash_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System_Clock_Init
+</UL>
+
+<P><STRONG><a name="[ac]"></a>HAL_EXTI_ClearAllPending</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, hal_exti.o(.text.HAL_EXTI_ClearAllPending))
+<BR><BR>[Called By]<UL><LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RF_EXTI_Init
+</UL>
+
+<P><STRONG><a name="[ab]"></a>HAL_EXTI_SetConfigLine</STRONG> (Thumb, 278 bytes, Stack size 8 bytes, hal_exti.o(.text.HAL_EXTI_SetConfigLine))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = HAL_EXTI_SetConfigLine
+</UL>
+<BR>[Called By]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_pin_irq_enable
+<LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RF_EXTI_Init
+</UL>
+
+<P><STRONG><a name="[95]"></a>HAL_GPIO_Init</STRONG> (Thumb, 866 bytes, Stack size 56 bytes, hal_gpio.o(.text.HAL_GPIO_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = HAL_GPIO_Init &rArr; System_Module_Enable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System_Module_Enable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_pin_irq_enable
+<LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_pin_mode
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_MspInit
+<LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RF_EXTI_Init
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I_SI523_IO_Init
+</UL>
+
+<P><STRONG><a name="[9f]"></a>HAL_GPIO_ReadPin</STRONG> (Thumb, 62 bytes, Stack size 0 bytes, hal_gpio.o(.text.HAL_GPIO_ReadPin))
+<BR><BR>[Called By]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_pin_read
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IIC_Read_Byte
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IIC_Wait_Ack
+</UL>
+
+<P><STRONG><a name="[9d]"></a>HAL_GPIO_WritePin</STRONG> (Thumb, 102 bytes, Stack size 0 bytes, hal_gpio.o(.text.HAL_GPIO_WritePin))
+<BR><BR>[Called By]<UL><LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_pin_write
+<LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RF_EXTI_Init
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdReset
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I_SI523_IO_Init
+<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SI523_I2C_LL_ReadRawRC
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SI523_I2C_LL_WriteRawRC
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IIC_Read_Byte
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IIC_Send_Byte
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IIC_Wait_Ack
+</UL>
+
+<P><STRONG><a name="[96]"></a>HAL_UART_Init</STRONG> (Thumb, 344 bytes, Stack size 32 bytes, hal_uart.o(.text.HAL_UART_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 140<LI>Call Chain = HAL_UART_Init &rArr; HAL_UART_MspInit &rArr; HAL_GPIO_Init &rArr; System_Module_Enable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System_Get_APBClock
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_MspInit
+<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_uart_configure
+</UL>
+
+<P><STRONG><a name="[97]"></a>HAL_UART_MspInit</STRONG> (Thumb, 176 bytes, Stack size 48 bytes, drv_uart.o(.text.HAL_UART_MspInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 108<LI>Call Chain = HAL_UART_MspInit &rArr; HAL_GPIO_Init &rArr; System_Module_Enable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System_Module_Enable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Init
+</UL>
+
+<P><STRONG><a name="[92]"></a>HAL_UART_Receive_DMA</STRONG> (Thumb, 130 bytes, Stack size 8 bytes, hal_uart.o(.text.HAL_UART_Receive_DMA))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = HAL_UART_Receive_DMA &rArr; HAL_DMA_Start_IT
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_DMA_Start_IT
+</UL>
+<BR>[Called By]<UL><LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_IRQHandler
+<LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_uart_control
+</UL>
+
+<P><STRONG><a name="[9b]"></a>HAL_UART_Transmit_DMA</STRONG> (Thumb, 124 bytes, Stack size 8 bytes, hal_uart.o(.text.HAL_UART_Transmit_DMA))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = HAL_UART_Transmit_DMA &rArr; HAL_DMA_Start_IT
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_DMA_Start_IT
+</UL>
+<BR>[Called By]<UL><LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_uart_dma_transmit
+</UL>
+
+<P><STRONG><a name="[9c]"></a>IIC_Read_Byte</STRONG> (Thumb, 158 bytes, Stack size 24 bytes, nfc_iic.o(.text.IIC_Read_Byte))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = IIC_Read_Byte
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SI523_I2C_LL_ReadRawRC
+</UL>
+
+<P><STRONG><a name="[a0]"></a>IIC_Send_Byte</STRONG> (Thumb, 94 bytes, Stack size 16 bytes, nfc_iic.o(.text.IIC_Send_Byte))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = IIC_Send_Byte
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SI523_I2C_LL_ReadRawRC
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SI523_I2C_LL_WriteRawRC
+</UL>
+
+<P><STRONG><a name="[a1]"></a>IIC_Wait_Ack</STRONG> (Thumb, 158 bytes, Stack size 16 bytes, nfc_iic.o(.text.IIC_Wait_Ack))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = IIC_Wait_Ack
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SI523_I2C_LL_ReadRawRC
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SI523_I2C_LL_WriteRawRC
+</UL>
+
+<P><STRONG><a name="[a2]"></a>I_SI523_IO_Init</STRONG> (Thumb, 78 bytes, Stack size 48 bytes, nfc_iic.o(.text.I_SI523_IO_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 108<LI>Call Chain = I_SI523_IO_Init &rArr; HAL_GPIO_Init &rArr; System_Module_Enable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PCD_SI523_TypeA_Init
+</UL>
+
+<P><STRONG><a name="[82]"></a>I_SI523_IO_Read</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, nfc_iic.o(.text.I_SI523_IO_Read))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = I_SI523_IO_Read &rArr; SI523_I2C_LL_ReadRawRC &rArr; IIC_Read_Byte
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SI523_I2C_LL_ReadRawRC
+</UL>
+<BR>[Called By]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PCD_IRQ
+<LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ACD_Fun
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PCD_ACD_AutoCalc
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdReset
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PCD_SI523_TypeA_Init
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdSelect3
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdSelect2
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdSelect1
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdAnticoll
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdRequest
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdComMF522
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalulateCRC
+</UL>
+
+<P><STRONG><a name="[83]"></a>I_SI523_IO_Write</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, nfc_iic.o(.text.I_SI523_IO_Write))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = I_SI523_IO_Write &rArr; SI523_I2C_LL_WriteRawRC &rArr; IIC_Send_Byte
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SI523_I2C_LL_WriteRawRC
+</UL>
+<BR>[Called By]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PCD_IRQ
+<LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ACD_Fun
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PCD_ACD_Init
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PCD_ACD_AutoCalc
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdReset
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PCD_SI523_TypeA_Init
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PCD_SI523_TypeA_GetUID
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdSelect3
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdSelect2
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdSelect1
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdAnticoll
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdRequest
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdComMF522
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalulateCRC
+</UL>
+
+<P><STRONG><a name="[8b]"></a>PCD_ACD_AutoCalc</STRONG> (Thumb, 100 bytes, Stack size 0 bytes, si523_app.o(.text.PCD_ACD_AutoCalc))
+<BR><BR>[Stack]<UL><LI>Max Depth = 244<LI>Call Chain = PCD_ACD_AutoCalc &rArr; delay_ms &rArr; rt_thread_mdelay &rArr; rt_thread_sleep &rArr; rt_timer_start &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I_SI523_IO_Read
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I_SI523_IO_Write
+</UL>
+<BR>[Called By]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ACD_init_Fun
+</UL>
+
+<P><STRONG><a name="[8a]"></a>PCD_ACD_Init</STRONG> (Thumb, 228 bytes, Stack size 8 bytes, si523_app.o(.text.PCD_ACD_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = PCD_ACD_Init &rArr; I_SI523_IO_Write &rArr; SI523_I2C_LL_WriteRawRC &rArr; IIC_Send_Byte
+</UL>
+<BR>[Calls]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I_SI523_IO_Write
+</UL>
+<BR>[Called By]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ACD_Fun
+</UL>
+
+<P><STRONG><a name="[86]"></a>PCD_IRQ</STRONG> (Thumb, 92 bytes, Stack size 8 bytes, si523_app.o(.text.PCD_IRQ))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = PCD_IRQ &rArr; I_SI523_IO_Read &rArr; SI523_I2C_LL_ReadRawRC &rArr; IIC_Read_Byte
+</UL>
+<BR>[Calls]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I_SI523_IO_Read
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I_SI523_IO_Write
+</UL>
+<BR>[Called By]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ACD_Fun
+</UL>
+
+<P><STRONG><a name="[84]"></a>PCD_SI523_TypeA_GetUID</STRONG> (Thumb, 448 bytes, Stack size 64 bytes, si523_app.o(.text.PCD_SI523_TypeA_GetUID))
+<BR><BR>[Stack]<UL><LI>Max Depth = 192<LI>Call Chain = PCD_SI523_TypeA_GetUID &rArr; PcdSelect3 &rArr; PcdComMF522 &rArr; I_SI523_IO_Read &rArr; SI523_I2C_LL_ReadRawRC &rArr; IIC_Read_Byte
+</UL>
+<BR>[Calls]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdSelect3
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdSelect2
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdSelect1
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdAnticoll
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdRequest
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I_SI523_IO_Write
+</UL>
+<BR>[Called By]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ACD_Fun
+</UL>
+
+<P><STRONG><a name="[89]"></a>PCD_SI523_TypeA_Init</STRONG> (Thumb, 148 bytes, Stack size 8 bytes, si523_app.o(.text.PCD_SI523_TypeA_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 252<LI>Call Chain = PCD_SI523_TypeA_Init &rArr; delay_ms &rArr; rt_thread_mdelay &rArr; rt_thread_sleep &rArr; rt_timer_start &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I_SI523_IO_Read
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I_SI523_IO_Write
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I_SI523_IO_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ACD_Fun
+<LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ACD_init_Fun
+</UL>
+
+<P><STRONG><a name="[a6]"></a>PcdAnticoll</STRONG> (Thumb, 138 bytes, Stack size 48 bytes, si523_app.o(.text.PcdAnticoll))
+<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = PcdAnticoll &rArr; PcdComMF522 &rArr; I_SI523_IO_Read &rArr; SI523_I2C_LL_ReadRawRC &rArr; IIC_Read_Byte
+</UL>
+<BR>[Calls]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdComMF522
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I_SI523_IO_Read
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I_SI523_IO_Write
+</UL>
+<BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PCD_SI523_TypeA_GetUID
+</UL>
+
+<P><STRONG><a name="[aa]"></a>PcdComMF522</STRONG> (Thumb, 324 bytes, Stack size 32 bytes, si523_app.o(.text.PcdComMF522))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = PcdComMF522 &rArr; I_SI523_IO_Read &rArr; SI523_I2C_LL_ReadRawRC &rArr; IIC_Read_Byte
+</UL>
+<BR>[Calls]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I_SI523_IO_Read
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I_SI523_IO_Write
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdSelect3
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdSelect2
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdSelect1
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdAnticoll
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdRequest
+</UL>
+
+<P><STRONG><a name="[a5]"></a>PcdRequest</STRONG> (Thumb, 96 bytes, Stack size 48 bytes, si523_app.o(.text.PcdRequest))
+<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = PcdRequest &rArr; PcdComMF522 &rArr; I_SI523_IO_Read &rArr; SI523_I2C_LL_ReadRawRC &rArr; IIC_Read_Byte
+</UL>
+<BR>[Calls]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdComMF522
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I_SI523_IO_Read
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I_SI523_IO_Write
+</UL>
+<BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PCD_SI523_TypeA_GetUID
+</UL>
+
+<P><STRONG><a name="[88]"></a>PcdReset</STRONG> (Thumb, 62 bytes, Stack size 8 bytes, si523_app.o(.text.PcdReset))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = PcdReset &rArr; I_SI523_IO_Read &rArr; SI523_I2C_LL_ReadRawRC &rArr; IIC_Read_Byte
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I_SI523_IO_Read
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I_SI523_IO_Write
+</UL>
+<BR>[Called By]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ACD_Fun
+</UL>
+
+<P><STRONG><a name="[a7]"></a>PcdSelect1</STRONG> (Thumb, 118 bytes, Stack size 48 bytes, si523_app.o(.text.PcdSelect1))
+<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = PcdSelect1 &rArr; PcdComMF522 &rArr; I_SI523_IO_Read &rArr; SI523_I2C_LL_ReadRawRC &rArr; IIC_Read_Byte
+</UL>
+<BR>[Calls]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdComMF522
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalulateCRC
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I_SI523_IO_Read
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I_SI523_IO_Write
+</UL>
+<BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PCD_SI523_TypeA_GetUID
+</UL>
+
+<P><STRONG><a name="[a8]"></a>PcdSelect2</STRONG> (Thumb, 118 bytes, Stack size 48 bytes, si523_app.o(.text.PcdSelect2))
+<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = PcdSelect2 &rArr; PcdComMF522 &rArr; I_SI523_IO_Read &rArr; SI523_I2C_LL_ReadRawRC &rArr; IIC_Read_Byte
+</UL>
+<BR>[Calls]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdComMF522
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalulateCRC
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I_SI523_IO_Read
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I_SI523_IO_Write
+</UL>
+<BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PCD_SI523_TypeA_GetUID
+</UL>
+
+<P><STRONG><a name="[a9]"></a>PcdSelect3</STRONG> (Thumb, 118 bytes, Stack size 48 bytes, si523_app.o(.text.PcdSelect3))
+<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = PcdSelect3 &rArr; PcdComMF522 &rArr; I_SI523_IO_Read &rArr; SI523_I2C_LL_ReadRawRC &rArr; IIC_Read_Byte
+</UL>
+<BR>[Calls]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdComMF522
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalulateCRC
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I_SI523_IO_Read
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I_SI523_IO_Write
+</UL>
+<BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PCD_SI523_TypeA_GetUID
+</UL>
+
+<P><STRONG><a name="[5a]"></a>RF_EXTI_Init</STRONG> (Thumb, 88 bytes, Stack size 16 bytes, exti.o(.text.RF_EXTI_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 76<LI>Call Chain = RF_EXTI_Init &rArr; HAL_GPIO_Init &rArr; System_Module_Enable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_EXTI_ClearAllPending
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_EXTI_SetConfigLine
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System_Module_Enable
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> exti.o(.rti_fn.6)
+</UL>
+<P><STRONG><a name="[a3]"></a>SI523_I2C_LL_ReadRawRC</STRONG> (Thumb, 240 bytes, Stack size 16 bytes, nfc_iic.o(.text.SI523_I2C_LL_ReadRawRC))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = SI523_I2C_LL_ReadRawRC &rArr; IIC_Read_Byte
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IIC_Read_Byte
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IIC_Send_Byte
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IIC_Wait_Ack
+</UL>
+<BR>[Called By]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I_SI523_IO_Read
+</UL>
+
+<P><STRONG><a name="[a4]"></a>SI523_I2C_LL_WriteRawRC</STRONG> (Thumb, 172 bytes, Stack size 16 bytes, nfc_iic.o(.text.SI523_I2C_LL_WriteRawRC))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = SI523_I2C_LL_WriteRawRC &rArr; IIC_Send_Byte
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IIC_Send_Byte
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IIC_Wait_Ack
+</UL>
+<BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I_SI523_IO_Write
+</UL>
+
+<P><STRONG><a name="[9]"></a>SysTick_Handler</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, board.o(.text.SysTick_Handler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 268<LI>Call Chain = SysTick_Handler &rArr; rt_tick_increase &rArr; rt_timer_check &rArr; rt_timer_start &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_tick_increase
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_interrupt_leave
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_interrupt_enter
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[ae]"></a>System_Clock_Init</STRONG> (Thumb, 618 bytes, Stack size 32 bytes, system_acm32f4.o(.text.System_Clock_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = System_Clock_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_EFlash_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System_Init
+</UL>
+
+<P><STRONG><a name="[34]"></a>System_Core_Config</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, system_acm32f4.o(.text.System_Core_Config))
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(.text)
+</UL>
+<P><STRONG><a name="[98]"></a>System_Get_APBClock</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, system_acm32f4.o(.text.System_Get_APBClock))
+<BR><BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Init
+</UL>
+
+<P><STRONG><a name="[103]"></a>System_Get_SystemClock</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, system_acm32f4.o(.text.System_Get_SystemClock))
+<BR><BR>[Called By]<UL><LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_board_init
+</UL>
+
+<P><STRONG><a name="[b0]"></a>System_Init</STRONG> (Thumb, 74 bytes, Stack size 8 bytes, system_acm32f4.o(.text.System_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = System_Init &rArr; System_Clock_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System_Clock_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_board_init
+</UL>
+
+<P><STRONG><a name="[94]"></a>System_Module_Enable</STRONG> (Thumb, 62 bytes, Stack size 4 bytes, system_acm32f4.o(.text.System_Module_Enable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = System_Module_Enable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_DMA_Init
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_MspInit
+<LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RF_EXTI_Init
+</UL>
+
+<P><STRONG><a name="[25]"></a>UART1_IRQHandler</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, drv_uart.o(.text.UART1_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 324<LI>Call Chain = UART1_IRQHandler &rArr; uart_isr &rArr; rt_hw_serial_isr &rArr; rt_data_queue_pop &rArr; rt_timer_start &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_interrupt_leave
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_interrupt_enter
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_isr
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[26]"></a>UART2_IRQHandler</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, drv_uart.o(.text.UART2_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 324<LI>Call Chain = UART2_IRQHandler &rArr; uart_isr &rArr; rt_hw_serial_isr &rArr; rt_data_queue_pop &rArr; rt_timer_start &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_interrupt_leave
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_interrupt_enter
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_isr
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[14]"></a>UART3_IRQHandler</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, drv_uart.o(.text.UART3_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 324<LI>Call Chain = UART3_IRQHandler &rArr; uart_isr &rArr; rt_hw_serial_isr &rArr; rt_data_queue_pop &rArr; rt_timer_start &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_interrupt_leave
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_interrupt_enter
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_isr
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[12]"></a>UART4_IRQHandler</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, drv_uart.o(.text.UART4_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 324<LI>Call Chain = UART4_IRQHandler &rArr; uart_isr &rArr; rt_hw_serial_isr &rArr; rt_data_queue_pop &rArr; rt_timer_start &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_interrupt_leave
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_interrupt_enter
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_isr
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_acm32f4.o(RESET)
+</UL>
+<P><STRONG><a name="[112]"></a>__rt_ffs</STRONG> (Thumb, 56 bytes, Stack size 0 bytes, kservice.o(.text.__rt_ffs))
+<BR><BR>[Called By]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_schedule
+<LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_system_scheduler_start
+</UL>
+
+<P><STRONG><a name="[5f]"></a>cmd_free</STRONG> (Thumb, 64 bytes, Stack size 24 bytes, msh.o(.text.cmd_free))
+<BR><BR>[Stack]<UL><LI>Max Depth = 284<LI>Call Chain = cmd_free &rArr; rt_memory_info &rArr; rt_mutex_take &rArr; rt_timer_start &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_kprintf
+<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_memory_info
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> msh.o(FSymTab)
+</UL>
+<P><STRONG><a name="[6b]"></a>cmd_list</STRONG> (Thumb, 344 bytes, Stack size 8 bytes, cmd.o(.text.cmd_list))
+<BR><BR>[Stack]<UL><LI>Max Depth = 364<LI>Call Chain = cmd_list &rArr; list_thread &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_thread
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_kprintf
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_device
+<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_timer
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_mempool
+<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_msgqueue
+<LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_mailbox
+<LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_mutex
+<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_event
+<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_sem
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcmp
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> cmd.o(FSymTab)
+</UL>
+<P><STRONG><a name="[5e]"></a>cmd_ps</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, msh.o(.text.cmd_ps))
+<BR><BR>[Stack]<UL><LI>Max Depth = 364<LI>Call Chain = cmd_ps &rArr; list_thread &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_thread
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> msh.o(FSymTab)
+</UL>
+<P><STRONG><a name="[85]"></a>delay_ms</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, delay.o(.text.delay_ms))
+<BR><BR>[Stack]<UL><LI>Max Depth = 244<LI>Call Chain = delay_ms &rArr; rt_thread_mdelay &rArr; rt_thread_sleep &rArr; rt_timer_start &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_mdelay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ACD_Fun
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PCD_ACD_AutoCalc
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PCD_SI523_TypeA_Init
+</UL>
+
+<P><STRONG><a name="[9e]"></a>delay_us</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, delay.o(.text.delay_us))
+<BR><BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;$Super$$main
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PCD_ACD_AutoCalc
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdReset
+<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SI523_I2C_LL_ReadRawRC
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SI523_I2C_LL_WriteRawRC
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IIC_Read_Byte
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IIC_Send_Byte
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IIC_Wait_Ack
+</UL>
+
+<P><STRONG><a name="[cc]"></a>finsh_getchar</STRONG> (Thumb, 132 bytes, Stack size 24 bytes, shell.o(.text.finsh_getchar))
+<BR><BR>[Stack]<UL><LI>Max Depth = 268<LI>Call Chain = finsh_getchar &rArr; rt_sem_take &rArr; rt_timer_start &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_sem_take
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_device_read
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;finsh_thread_entry
+</UL>
+
+<P><STRONG><a name="[d0]"></a>finsh_set_device</STRONG> (Thumb, 140 bytes, Stack size 16 bytes, shell.o(.text.finsh_set_device))
+<BR><BR>[Stack]<UL><LI>Max Depth = 236<LI>Call Chain = finsh_set_device &rArr; rt_device_find &rArr; rt_object_find &rArr; rt_exit_critical &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_device_find
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_memset
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_kprintf
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_device_close
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_device_open
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_device_set_rx_indicate
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;finsh_thread_entry
+</UL>
+
+<P><STRONG><a name="[57]"></a>finsh_system_init</STRONG> (Thumb, 176 bytes, Stack size 24 bytes, shell.o(.text.finsh_system_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 340<LI>Call Chain = finsh_system_init &rArr; rt_thread_create &rArr; rt_object_allocate &rArr; rt_malloc &rArr; rt_mutex_take &rArr; rt_timer_start &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_startup
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_create
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_sem_init
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_kprintf
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_calloc
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> shell.o(.rti_fn.6)
+</UL>
+<P><STRONG><a name="[3a]"></a>finsh_thread_entry</STRONG> (Thumb, 1480 bytes, Stack size 0 bytes, shell.o(.text.finsh_thread_entry))
+<BR><BR>[Stack]<UL><LI>Max Depth = 268<LI>Call Chain = finsh_thread_entry &rArr; finsh_getchar &rArr; rt_sem_take &rArr; rt_timer_start &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_memcpy
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_memset
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msh_exec
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_console_get_device
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_kprintf
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msh_auto_complete
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_memmove
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;finsh_set_device
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;finsh_getchar
+<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memcmp
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strncpy
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> shell.o(.text.finsh_system_init)
+</UL>
+<P><STRONG><a name="[3e]"></a>fputc</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, syscalls.o(.text.fputc))
+<BR><BR>[Stack]<UL><LI>Max Depth = 156<LI>Call Chain = fputc &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_kprintf
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> printf8.o(i.__0printf$8)
+</UL>
+<P><STRONG><a name="[6a]"></a>list_device</STRONG> (Thumb, 236 bytes, Stack size 80 bytes, cmd.o(.text.list_device))
+<BR><BR>[Stack]<UL><LI>Max Depth = 228<LI>Call Chain = list_device &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_kprintf
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_get_information
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cmd_list
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> cmd.o(FSymTab)
+</UL>
+<P><STRONG><a name="[64]"></a>list_event</STRONG> (Thumb, 340 bytes, Stack size 80 bytes, cmd.o(.text.list_event))
+<BR><BR>[Stack]<UL><LI>Max Depth = 228<LI>Call Chain = list_event &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_kprintf
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_get_information
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cmd_list
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> cmd.o(FSymTab)
+</UL>
+<P><STRONG><a name="[66]"></a>list_mailbox</STRONG> (Thumb, 364 bytes, Stack size 88 bytes, cmd.o(.text.list_mailbox))
+<BR><BR>[Stack]<UL><LI>Max Depth = 236<LI>Call Chain = list_mailbox &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_kprintf
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_get_information
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cmd_list
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> cmd.o(FSymTab)
+</UL>
+<P><STRONG><a name="[68]"></a>list_mempool</STRONG> (Thumb, 356 bytes, Stack size 88 bytes, cmd.o(.text.list_mempool))
+<BR><BR>[Stack]<UL><LI>Max Depth = 236<LI>Call Chain = list_mempool &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_kprintf
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_get_information
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cmd_list
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> cmd.o(FSymTab)
+</UL>
+<P><STRONG><a name="[67]"></a>list_msgqueue</STRONG> (Thumb, 356 bytes, Stack size 80 bytes, cmd.o(.text.list_msgqueue))
+<BR><BR>[Stack]<UL><LI>Max Depth = 228<LI>Call Chain = list_msgqueue &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_kprintf
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_get_information
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cmd_list
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> cmd.o(FSymTab)
+</UL>
+<P><STRONG><a name="[65]"></a>list_mutex</STRONG> (Thumb, 236 bytes, Stack size 88 bytes, cmd.o(.text.list_mutex))
+<BR><BR>[Stack]<UL><LI>Max Depth = 236<LI>Call Chain = list_mutex &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_kprintf
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_get_information
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cmd_list
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> cmd.o(FSymTab)
+</UL>
+<P><STRONG><a name="[63]"></a>list_sem</STRONG> (Thumb, 348 bytes, Stack size 80 bytes, cmd.o(.text.list_sem))
+<BR><BR>[Stack]<UL><LI>Max Depth = 228<LI>Call Chain = list_sem &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_kprintf
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_get_information
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cmd_list
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> cmd.o(FSymTab)
+</UL>
+<P><STRONG><a name="[62]"></a>list_thread</STRONG> (Thumb, 360 bytes, Stack size 208 bytes, cmd.o(.text.list_thread))
+<BR><BR>[Stack]<UL><LI>Max Depth = 356<LI>Call Chain = list_thread &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_memcpy
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_kprintf
+<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_strerror
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_get_information
+</UL>
+<BR>[Called By]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_hard_fault_exception
+<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cmd_list
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cmd_ps
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> cmd.o(FSymTab)
+</UL>
+<P><STRONG><a name="[69]"></a>list_timer</STRONG> (Thumb, 292 bytes, Stack size 80 bytes, cmd.o(.text.list_timer))
+<BR><BR>[Stack]<UL><LI>Max Depth = 228<LI>Call Chain = list_timer &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_tick_get
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_kprintf
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_get_information
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cmd_list
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> cmd.o(FSymTab)
+</UL>
+<P><STRONG><a name="[e2]"></a>$Super$$main</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, main.o(.text.main))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = $Super$$main &rArr; __2printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main_thread_entry
+</UL>
+
+<P><STRONG><a name="[3d]"></a>main_thread_entry</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, components.o(.text.main_thread_entry))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = main_thread_entry &rArr; $Super$$main &rArr; __2printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;$Super$$main
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> components.o(.text.rtthread_startup)
+</UL>
+<P><STRONG><a name="[de]"></a>msh_auto_complete</STRONG> (Thumb, 268 bytes, Stack size 32 bytes, msh.o(.text.msh_auto_complete))
+<BR><BR>[Stack]<UL><LI>Max Depth = 180<LI>Call Chain = msh_auto_complete &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_kprintf
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_strncpy
+<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strncmp
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;finsh_thread_entry
+</UL>
+
+<P><STRONG><a name="[df]"></a>msh_exec</STRONG> (Thumb, 480 bytes, Stack size 80 bytes, msh.o(.text.msh_exec))
+<BR><BR>[Stack]<UL><LI>Max Depth = 228<LI>Call Chain = msh_exec &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_memset
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_kprintf
+<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strncmp
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;finsh_thread_entry
+</UL>
+
+<P><STRONG><a name="[5d]"></a>msh_help</STRONG> (Thumb, 90 bytes, Stack size 16 bytes, msh.o(.text.msh_help))
+<BR><BR>[Stack]<UL><LI>Max Depth = 164<LI>Call Chain = msh_help &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_kprintf
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> msh.o(FSymTab)
+</UL>
+<P><STRONG><a name="[b4]"></a>msh_isint</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, msh_parse.o(.text.msh_isint))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = msh_isint
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_ctype_table
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_pin_cmd
+</UL>
+
+<P><STRONG><a name="[99]"></a>rt_assert_handler</STRONG> (Thumb, 64 bytes, Stack size 16 bytes, kservice.o(.text.rt_assert_handler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16 + In Cycle
+<LI>Call Chain = rt_assert_handler &rArr;  rt_kprintf (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_kprintf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_serial_isr
+<LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_serial_register
+<LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_serial_control
+<LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_serial_write
+<LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_serial_read
+<LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_serial_close
+<LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_serial_open
+<LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_serial_init
+<LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_pin_control
+<LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_pin_write
+<LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_pin_read
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_pin_cmd_conv
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_pin_cmd
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_sem_take
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_init
+<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_detach
+<LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_stop
+<LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_delete
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_sem_release
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_startup
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_sem_init
+<LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mutex_release
+<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mutex_take
+<LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mutex_init
+<LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_data_queue_deinit
+<LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_data_queue_reset
+<LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_data_queue_peek
+<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_data_queue_pop
+<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_data_queue_push
+<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_data_queue_init
+<LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_resume
+<LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_completion_done
+<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_schedule
+<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_start
+<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_control
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_suspend
+<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_completion_wait
+<LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_completion_init
+<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_control
+<LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_device_write
+<LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_sleep
+<LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_detach
+<LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_thread_timeout
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_thread_init
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_schedule_insert_thread
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_schedule_remove_thread
+<LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;plug_holes
+<LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_smem_free
+<LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_smem_alloc
+<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_allocate
+<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_delete
+<LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_init
+<LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_detach
+<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_is_systemobject
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_get_type
+<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_init
+<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_find
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtthread_startup
+<LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;finsh_system_init
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_device_close
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_device_open
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;finsh_set_device
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_device_read
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;finsh_getchar
+<LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;finsh_rx_ind
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_device_set_rx_indicate
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_MspInit
+<LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_uart_init
+<LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_uart_dma_transmit
+<LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_uart_getc
+<LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_uart_putc
+<LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_uart_control
+<LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_uart_configure
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_isr
+</UL>
+
+<P><STRONG><a name="[d4]"></a>rt_calloc</STRONG> (Thumb, 30 bytes, Stack size 16 bytes, kservice.o(.text.rt_calloc))
+<BR><BR>[Stack]<UL><LI>Max Depth = 276<LI>Call Chain = rt_calloc &rArr; rt_malloc &rArr; rt_mutex_take &rArr; rt_timer_start &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_memset
+<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_malloc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;finsh_system_init
+</UL>
+
+<P><STRONG><a name="[e7]"></a>rt_completion_done</STRONG> (Thumb, 76 bytes, Stack size 16 bytes, completion.o(.text.rt_completion_done))
+<BR><BR>[Stack]<UL><LI>Max Depth = 196<LI>Call Chain = rt_completion_done &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_resume
+<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_schedule
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_serial_isr
+</UL>
+
+<P><STRONG><a name="[e9]"></a>rt_completion_init</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, completion.o(.text.rt_completion_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = rt_completion_init &rArr; rt_assert_handler &rArr;  rt_kprintf (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_serial_open
+</UL>
+
+<P><STRONG><a name="[ea]"></a>rt_completion_wait</STRONG> (Thumb, 352 bytes, Stack size 32 bytes, completion.o(.text.rt_completion_wait))
+<BR><BR>[Stack]<UL><LI>Max Depth = 236<LI>Call Chain = rt_completion_wait &rArr; rt_timer_start &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_schedule
+<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_start
+<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_control
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_suspend
+<LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_interrupt_get_nest
+<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_critical_level
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_self
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_kprintf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_serial_write
+</UL>
+
+<P><STRONG><a name="[106]"></a>rt_components_board_init</STRONG> (Thumb, 44 bytes, Stack size 16 bytes, components.o(.text.rt_components_board_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = rt_components_board_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_board_init
+</UL>
+
+<P><STRONG><a name="[d8]"></a>rt_console_get_device</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, kservice.o(.text.rt_console_get_device))
+<BR><BR>[Called By]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;finsh_thread_entry
+</UL>
+
+<P><STRONG><a name="[ef]"></a>rt_console_set_device</STRONG> (Thumb, 52 bytes, Stack size 16 bytes, kservice.o(.text.rt_console_set_device))
+<BR><BR>[Stack]<UL><LI>Max Depth = 236<LI>Call Chain = rt_console_set_device &rArr; rt_device_find &rArr; rt_object_find &rArr; rt_exit_critical &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_device_find
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_device_close
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_device_open
+</UL>
+<BR>[Called By]<UL><LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_board_init
+</UL>
+
+<P><STRONG><a name="[eb]"></a>rt_critical_level</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, scheduler.o(.text.rt_critical_level))
+<BR><BR>[Called By]<UL><LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_sem_take
+<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mutex_take
+<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_data_queue_pop
+<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_data_queue_push
+<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_completion_wait
+</UL>
+
+<P><STRONG><a name="[f0]"></a>rt_data_queue_deinit</STRONG> (Thumb, 96 bytes, Stack size 8 bytes, dataqueue.o(.text.rt_data_queue_deinit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 268<LI>Call Chain = rt_data_queue_deinit &rArr; rt_free &rArr; rt_mutex_take &rArr; rt_timer_start &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_data_queue_reset
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_free
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_serial_close
+</UL>
+
+<P><STRONG><a name="[f3]"></a>rt_data_queue_init</STRONG> (Thumb, 124 bytes, Stack size 24 bytes, dataqueue.o(.text.rt_data_queue_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 284<LI>Call Chain = rt_data_queue_init &rArr; rt_malloc &rArr; rt_mutex_take &rArr; rt_timer_start &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_malloc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_serial_open
+</UL>
+
+<P><STRONG><a name="[f4]"></a>rt_data_queue_peek</STRONG> (Thumb, 128 bytes, Stack size 16 bytes, dataqueue.o(.text.rt_data_queue_peek))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = rt_data_queue_peek &rArr; rt_assert_handler &rArr;  rt_kprintf (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_serial_isr
+</UL>
+
+<P><STRONG><a name="[f5]"></a>rt_data_queue_pop</STRONG> (Thumb, 756 bytes, Stack size 48 bytes, dataqueue.o(.text.rt_data_queue_pop))
+<BR><BR>[Stack]<UL><LI>Max Depth = 252<LI>Call Chain = rt_data_queue_pop &rArr; rt_timer_start &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_resume
+<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_schedule
+<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_start
+<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_control
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_suspend
+<LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_interrupt_get_nest
+<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_critical_level
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_self
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_kprintf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_serial_isr
+</UL>
+
+<P><STRONG><a name="[f6]"></a>rt_data_queue_push</STRONG> (Thumb, 528 bytes, Stack size 48 bytes, dataqueue.o(.text.rt_data_queue_push))
+<BR><BR>[Stack]<UL><LI>Max Depth = 252<LI>Call Chain = rt_data_queue_push &rArr; rt_timer_start &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_resume
+<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_schedule
+<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_start
+<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_control
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_suspend
+<LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_interrupt_get_nest
+<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_critical_level
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_self
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_kprintf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_serial_write
+</UL>
+
+<P><STRONG><a name="[f1]"></a>rt_data_queue_reset</STRONG> (Thumb, 190 bytes, Stack size 24 bytes, dataqueue.o(.text.rt_data_queue_reset))
+<BR><BR>[Stack]<UL><LI>Max Depth = 212<LI>Call Chain = rt_data_queue_reset &rArr; rt_exit_critical &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_exit_critical
+<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_enter_critical
+<LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_resume
+<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_schedule
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_data_queue_deinit
+</UL>
+
+<P><STRONG><a name="[d3]"></a>rt_device_close</STRONG> (Thumb, 116 bytes, Stack size 8 bytes, device.o(.text.rt_device_close))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = rt_device_close &rArr; rt_object_get_type &rArr; rt_assert_handler &rArr;  rt_kprintf (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_get_type
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;finsh_set_device
+<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_console_set_device
+</UL>
+
+<P><STRONG><a name="[d1]"></a>rt_device_find</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, device.o(.text.rt_device_find))
+<BR><BR>[Stack]<UL><LI>Max Depth = 220<LI>Call Chain = rt_device_find &rArr; rt_object_find &rArr; rt_exit_critical &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_find
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;finsh_set_device
+<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_console_set_device
+</UL>
+
+<P><STRONG><a name="[d2]"></a>rt_device_open</STRONG> (Thumb, 204 bytes, Stack size 16 bytes, device.o(.text.rt_device_open))
+<BR><BR>[Stack]<UL><LI>Max Depth = 164<LI>Call Chain = rt_device_open &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_kprintf
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_get_type
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;finsh_set_device
+<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_console_set_device
+</UL>
+
+<P><STRONG><a name="[fa]"></a>rt_device_pin_register</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, pin.o(.text.rt_device_pin_register))
+<BR><BR>[Stack]<UL><LI>Max Depth = 244<LI>Call Chain = rt_device_pin_register &rArr; rt_device_register &rArr; rt_object_init &rArr; rt_exit_critical &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_device_register
+</UL>
+<BR>[Called By]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_pin_init
+</UL>
+
+<P><STRONG><a name="[cd]"></a>rt_device_read</STRONG> (Thumb, 116 bytes, Stack size 24 bytes, device.o(.text.rt_device_read))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = rt_device_read &rArr; rt_object_get_type &rArr; rt_assert_handler &rArr;  rt_kprintf (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_set_errno
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_get_type
+</UL>
+<BR>[Called By]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;finsh_getchar
+</UL>
+
+<P><STRONG><a name="[fb]"></a>rt_device_register</STRONG> (Thumb, 46 bytes, Stack size 16 bytes, device.o(.text.rt_device_register))
+<BR><BR>[Stack]<UL><LI>Max Depth = 236<LI>Call Chain = rt_device_register &rArr; rt_object_init &rArr; rt_exit_critical &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_init
+<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_find
+</UL>
+<BR>[Called By]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_serial_register
+<LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_device_pin_register
+</UL>
+
+<P><STRONG><a name="[c8]"></a>rt_device_set_rx_indicate</STRONG> (Thumb, 72 bytes, Stack size 16 bytes, device.o(.text.rt_device_set_rx_indicate))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = rt_device_set_rx_indicate &rArr; rt_object_get_type &rArr; rt_assert_handler &rArr;  rt_kprintf (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_get_type
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;finsh_set_device
+<LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_uart_control
+</UL>
+
+<P><STRONG><a name="[fe]"></a>rt_device_write</STRONG> (Thumb, 116 bytes, Stack size 24 bytes, device.o(.text.rt_device_write))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = rt_device_write &rArr; rt_object_get_type &rArr; rt_assert_handler &rArr;  rt_kprintf (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_set_errno
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_get_type
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_kprintf
+</UL>
+
+<P><STRONG><a name="[f7]"></a>rt_enter_critical</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, scheduler.o(.text.rt_enter_critical))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = rt_enter_critical
+</UL>
+<BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_data_queue_reset
+<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_init
+<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_find
+</UL>
+
+<P><STRONG><a name="[f8]"></a>rt_exit_critical</STRONG> (Thumb, 62 bytes, Stack size 8 bytes, scheduler.o(.text.rt_exit_critical))
+<BR><BR>[Stack]<UL><LI>Max Depth = 188<LI>Call Chain = rt_exit_critical &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_schedule
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_data_queue_reset
+<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_init
+<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_find
+</UL>
+
+<P><STRONG><a name="[f2]"></a>rt_free</STRONG> (Thumb, 174 bytes, Stack size 24 bytes, kservice.o(.text.rt_free))
+<BR><BR>[Stack]<UL><LI>Max Depth = 260<LI>Call Chain = rt_free &rArr; rt_mutex_take &rArr; rt_timer_start &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mutex_release
+<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mutex_take
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_self
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_kprintf
+<LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_smem_free
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_serial_close
+<LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_data_queue_deinit
+<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_delete
+<LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_idle_entry
+</UL>
+
+<P><STRONG><a name="[102]"></a>rt_hw_board_init</STRONG> (Thumb, 100 bytes, Stack size 8 bytes, board.o(.text.rt_hw_board_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 308<LI>Call Chain = rt_hw_board_init &rArr; rt_hw_uart_init &rArr; rt_hw_serial_register &rArr; rt_device_register &rArr; rt_object_init &rArr; rt_exit_critical &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System_Get_SystemClock
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System_Init
+<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_components_board_init
+<LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_system_heap_init
+<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_console_set_device
+<LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_uart_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtthread_startup
+</UL>
+
+<P><STRONG><a name="[109]"></a>rt_hw_console_output</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, kservice.o(.text.rt_hw_console_output))
+<BR><BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_kprintf
+</UL>
+
+<P><STRONG><a name="[70]"></a>rt_hw_hard_fault_exception</STRONG> (Thumb, 796 bytes, Stack size 8 bytes, cpuport.o(.text.rt_hw_hard_fault_exception))
+<BR><BR>[Stack]<UL><LI>Max Depth = 364<LI>Call Chain = rt_hw_hard_fault_exception &rArr; list_thread &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_thread
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_self
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_kprintf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFault_Handler
+</UL>
+
+<P><STRONG><a name="[55]"></a>rt_hw_pin_init</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, drv_gpio.o(.text.rt_hw_pin_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 252<LI>Call Chain = rt_hw_pin_init &rArr; rt_device_pin_register &rArr; rt_device_register &rArr; rt_object_init &rArr; rt_exit_critical &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_device_pin_register
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> drv_gpio.o(.rti_fn.1)
+</UL>
+<P><STRONG><a name="[91]"></a>rt_hw_serial_isr</STRONG> (Thumb, 764 bytes, Stack size 48 bytes, serial.o(.text.rt_hw_serial_isr))
+<BR><BR>[Stack]<UL><LI>Max Depth = 300<LI>Call Chain = rt_hw_serial_isr &rArr; rt_data_queue_pop &rArr; rt_timer_start &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_data_queue_peek
+<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_data_queue_pop
+<LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_completion_done
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_kprintf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_IRQHandler
+<LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_uart_dma_transmit
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_isr
+</UL>
+
+<P><STRONG><a name="[107]"></a>rt_hw_serial_register</STRONG> (Thumb, 68 bytes, Stack size 24 bytes, serial.o(.text.rt_hw_serial_register))
+<BR><BR>[Stack]<UL><LI>Max Depth = 260<LI>Call Chain = rt_hw_serial_register &rArr; rt_device_register &rArr; rt_object_init &rArr; rt_exit_critical &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_device_register
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_uart_init
+</UL>
+
+<P><STRONG><a name="[bf]"></a>rt_hw_stack_init</STRONG> (Thumb, 80 bytes, Stack size 16 bytes, cpuport.o(.text.rt_hw_stack_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = rt_hw_stack_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_thread_init
+</UL>
+
+<P><STRONG><a name="[104]"></a>rt_hw_uart_init</STRONG> (Thumb, 220 bytes, Stack size 40 bytes, drv_uart.o(.text.rt_hw_uart_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 300<LI>Call Chain = rt_hw_uart_init &rArr; rt_hw_serial_register &rArr; rt_device_register &rArr; rt_object_init &rArr; rt_exit_critical &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_serial_register
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_board_init
+</UL>
+
+<P><STRONG><a name="[8d]"></a>rt_interrupt_enter</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, irq.o(.text.rt_interrupt_enter))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = rt_interrupt_enter
+</UL>
+<BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
+<LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_IRQHandler
+<LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_IRQHandler
+<LI><a href="#[12]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART4_IRQHandler
+<LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART3_IRQHandler
+<LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART2_IRQHandler
+<LI><a href="#[25]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART1_IRQHandler
+</UL>
+
+<P><STRONG><a name="[ec]"></a>rt_interrupt_get_nest</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, irq.o(.text.rt_interrupt_get_nest))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = rt_interrupt_get_nest
+</UL>
+<BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_sem_take
+<LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mutex_release
+<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mutex_take
+<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_data_queue_pop
+<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_data_queue_push
+<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_completion_wait
+<LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_set_errno
+<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_allocate
+<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_find
+</UL>
+
+<P><STRONG><a name="[8e]"></a>rt_interrupt_leave</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, irq.o(.text.rt_interrupt_leave))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = rt_interrupt_leave
+</UL>
+<BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
+<LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_IRQHandler
+<LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_IRQHandler
+<LI><a href="#[12]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART4_IRQHandler
+<LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART3_IRQHandler
+<LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART2_IRQHandler
+<LI><a href="#[25]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART1_IRQHandler
+</UL>
+
+<P><STRONG><a name="[b2]"></a>rt_kprintf</STRONG> (Thumb, 96 bytes, Stack size 24 bytes, kservice.o(.text.rt_kprintf))
+<BR><BR>[Stack]<UL><LI>Max Depth = 148<LI>Call Chain = rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_device_write
+<LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_console_output
+<LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_vsnprintf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_serial_isr
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_pin_cmd
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_sem_take
+<LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mutex_release
+<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mutex_take
+<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_data_queue_pop
+<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_data_queue_push
+<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_schedule
+<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_completion_wait
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_secure_svc_handle
+<LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_thread
+<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_hard_fault_exception
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msh_exec
+<LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fputc
+<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_free
+<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_malloc
+<LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_smem_init
+<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_allocate
+<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_find
+<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cmd_list
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_device
+<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_timer
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_mempool
+<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_msgqueue
+<LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_mailbox
+<LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_mutex
+<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_event
+<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_sem
+<LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_show_version
+<LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clear
+<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_memory_info
+<LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cmd_free
+<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msh_help
+<LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;finsh_system_init
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msh_auto_complete
+<LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;finsh_thread_entry
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_device_open
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;finsh_set_device
+<LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_system_heap_init
+</UL>
+
+<P><STRONG><a name="[e6]"></a>rt_malloc</STRONG> (Thumb, 186 bytes, Stack size 24 bytes, kservice.o(.text.rt_malloc))
+<BR><BR>[Stack]<UL><LI>Max Depth = 260<LI>Call Chain = rt_malloc &rArr; rt_mutex_take &rArr; rt_timer_start &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mutex_release
+<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mutex_take
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_self
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_kprintf
+<LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_smem_alloc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_serial_open
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_create
+<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_data_queue_init
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_calloc
+<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_allocate
+</UL>
+
+<P><STRONG><a name="[dc]"></a>rt_memcpy</STRONG> (Thumb, 124 bytes, Stack size 0 bytes, kservice.o(.text.rt_memcpy))
+<BR><BR>[Called By]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_serial_read
+<LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_thread
+<LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;finsh_thread_entry
+</UL>
+
+<P><STRONG><a name="[dd]"></a>rt_memmove</STRONG> (Thumb, 58 bytes, Stack size 0 bytes, kservice.o(.text.rt_memmove))
+<BR><BR>[Called By]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;finsh_thread_entry
+</UL>
+
+<P><STRONG><a name="[c9]"></a>rt_memory_info</STRONG> (Thumb, 174 bytes, Stack size 24 bytes, kservice.o(.text.rt_memory_info))
+<BR><BR>[Stack]<UL><LI>Max Depth = 260<LI>Call Chain = rt_memory_info &rArr; rt_mutex_take &rArr; rt_timer_start &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mutex_release
+<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mutex_take
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_self
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_kprintf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cmd_free
+</UL>
+
+<P><STRONG><a name="[be]"></a>rt_memset</STRONG> (Thumb, 94 bytes, Stack size 8 bytes, kservice.o(.text.rt_memset))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = rt_memset
+</UL>
+<BR>[Calls]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_serial_open
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msh_exec
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_calloc
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_thread_init
+<LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_smem_init
+<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_allocate
+<LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;finsh_thread_entry
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;finsh_set_device
+</UL>
+
+<P><STRONG><a name="[10b]"></a>rt_mutex_init</STRONG> (Thumb, 64 bytes, Stack size 16 bytes, ipc.o(.text.rt_mutex_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 236<LI>Call Chain = rt_mutex_init &rArr; rt_object_init &rArr; rt_exit_critical &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_system_heap_init
+</UL>
+
+<P><STRONG><a name="[101]"></a>rt_mutex_release</STRONG> (Thumb, 376 bytes, Stack size 24 bytes, ipc.o(.text.rt_mutex_release))
+<BR><BR>[Stack]<UL><LI>Max Depth = 228<LI>Call Chain = rt_mutex_release &rArr; rt_thread_control &rArr; rt_thread_startup &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_resume
+<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_schedule
+<LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_interrupt_get_nest
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_control
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_self
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_kprintf
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_get_type
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_free
+<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_malloc
+<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_memory_info
+</UL>
+
+<P><STRONG><a name="[ff]"></a>rt_mutex_take</STRONG> (Thumb, 576 bytes, Stack size 32 bytes, ipc.o(.text.rt_mutex_take))
+<BR><BR>[Stack]<UL><LI>Max Depth = 236<LI>Call Chain = rt_mutex_take &rArr; rt_timer_start &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_schedule
+<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_start
+<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_control
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_suspend
+<LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_interrupt_get_nest
+<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_critical_level
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_control
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_self
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_kprintf
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_get_type
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_free
+<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_malloc
+<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_memory_info
+</UL>
+
+<P><STRONG><a name="[10d]"></a>rt_object_allocate</STRONG> (Thumb, 214 bytes, Stack size 24 bytes, object.o(.text.rt_object_allocate))
+<BR><BR>[Stack]<UL><LI>Max Depth = 284<LI>Call Chain = rt_object_allocate &rArr; rt_malloc &rArr; rt_mutex_take &rArr; rt_timer_start &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_interrupt_get_nest
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_memset
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_kprintf
+<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_malloc
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_strncpy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_create
+</UL>
+
+<P><STRONG><a name="[10e]"></a>rt_object_delete</STRONG> (Thumb, 116 bytes, Stack size 8 bytes, object.o(.text.rt_object_delete))
+<BR><BR>[Stack]<UL><LI>Max Depth = 268<LI>Call Chain = rt_object_delete &rArr; rt_free &rArr; rt_mutex_take &rArr; rt_timer_start &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_free
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_create
+<LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_idle_entry
+</UL>
+
+<P><STRONG><a name="[10f]"></a>rt_object_detach</STRONG> (Thumb, 72 bytes, Stack size 8 bytes, object.o(.text.rt_object_detach))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = rt_object_detach &rArr; rt_assert_handler &rArr;  rt_kprintf (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_detach
+<LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_idle_entry
+</UL>
+
+<P><STRONG><a name="[f9]"></a>rt_object_find</STRONG> (Thumb, 150 bytes, Stack size 24 bytes, object.o(.text.rt_object_find))
+<BR><BR>[Stack]<UL><LI>Max Depth = 212<LI>Call Chain = rt_object_find &rArr; rt_exit_critical &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_exit_critical
+<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_enter_critical
+<LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_interrupt_get_nest
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_kprintf
+<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_strncmp
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_device_find
+<LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_device_register
+</UL>
+
+<P><STRONG><a name="[e0]"></a>rt_object_get_information</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, object.o(.text.rt_object_get_information))
+<BR><BR>[Called By]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_thread
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_device
+<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_timer
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_mempool
+<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_msgqueue
+<LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_mailbox
+<LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_mutex
+<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_event
+<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_sem
+</UL>
+
+<P><STRONG><a name="[c1]"></a>rt_object_get_type</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, object.o(.text.rt_object_get_type))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = rt_object_get_type &rArr; rt_assert_handler &rArr;  rt_kprintf (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_sem_take
+<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_detach
+<LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_stop
+<LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_delete
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_sem_release
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_startup
+<LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mutex_release
+<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mutex_take
+<LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_resume
+<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_start
+<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_control
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_suspend
+<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_control
+<LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_device_write
+<LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_sleep
+<LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_detach
+<LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_thread_timeout
+<LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_smem_free
+<LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_smem_alloc
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_device_close
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_device_open
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_device_read
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_device_set_rx_indicate
+</UL>
+
+<P><STRONG><a name="[fd]"></a>rt_object_init</STRONG> (Thumb, 184 bytes, Stack size 32 bytes, object.o(.text.rt_object_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 220<LI>Call Chain = rt_object_init &rArr; rt_exit_critical &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_exit_critical
+<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_enter_critical
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_strncpy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_init
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_sem_init
+<LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_device_register
+<LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mutex_init
+<LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_smem_init
+<LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_init
+</UL>
+
+<P><STRONG><a name="[111]"></a>rt_object_is_systemobject</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, object.o(.text.rt_object_is_systemobject))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = rt_object_is_systemobject &rArr; rt_assert_handler &rArr;  rt_kprintf (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_detach
+<LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_delete
+<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_control
+<LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_detach
+<LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_smem_free
+<LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_smem_alloc
+<LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_idle_entry
+</UL>
+
+<P><STRONG><a name="[bc]"></a>rt_schedule</STRONG> (Thumb, 644 bytes, Stack size 32 bytes, scheduler.o(.text.rt_schedule))
+<BR><BR>[Stack]<UL><LI>Max Depth = 180<LI>Call Chain = rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_context_switch_interrupt
+<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_context_switch
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_kprintf
+<LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_ffs
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_sem_take
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_sem_release
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_startup
+<LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mutex_release
+<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mutex_take
+<LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_exit_critical
+<LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_data_queue_reset
+<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_data_queue_pop
+<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_data_queue_push
+<LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_completion_done
+<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_start
+<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_completion_wait
+<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_control
+<LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_timer_thread_entry
+<LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_sleep
+<LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_thread_timeout
+<LI><a href="#[36]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_thread_exit
+<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_tick_increase
+</UL>
+
+<P><STRONG><a name="[c2]"></a>rt_schedule_insert_thread</STRONG> (Thumb, 134 bytes, Stack size 8 bytes, scheduler.o(.text.rt_schedule_insert_thread))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = rt_schedule_insert_thread &rArr; rt_assert_handler &rArr;  rt_kprintf (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_resume
+<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_control
+<LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_thread_timeout
+</UL>
+
+<P><STRONG><a name="[b9]"></a>rt_schedule_remove_thread</STRONG> (Thumb, 106 bytes, Stack size 8 bytes, scheduler.o(.text.rt_schedule_remove_thread))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = rt_schedule_remove_thread &rArr; rt_assert_handler &rArr;  rt_kprintf (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_delete
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_suspend
+<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_control
+<LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_detach
+<LI><a href="#[36]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_thread_exit
+</UL>
+
+<P><STRONG><a name="[72]"></a>rt_secure_svc_handle</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, trustzone.o(.text.rt_secure_svc_handle))
+<BR><BR>[Stack]<UL><LI>Max Depth = 156<LI>Call Chain = rt_secure_svc_handle &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_kprintf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tzcall_entry
+</UL>
+
+<P><STRONG><a name="[d6]"></a>rt_sem_init</STRONG> (Thumb, 136 bytes, Stack size 24 bytes, ipc.o(.text.rt_sem_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 244<LI>Call Chain = rt_sem_init &rArr; rt_object_init &rArr; rt_exit_critical &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;finsh_system_init
+</UL>
+
+<P><STRONG><a name="[cf]"></a>rt_sem_release</STRONG> (Thumb, 156 bytes, Stack size 24 bytes, ipc.o(.text.rt_sem_release))
+<BR><BR>[Stack]<UL><LI>Max Depth = 204<LI>Call Chain = rt_sem_release &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_resume
+<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_schedule
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_get_type
+</UL>
+<BR>[Called By]<UL><LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;finsh_rx_ind
+</UL>
+
+<P><STRONG><a name="[ce]"></a>rt_sem_take</STRONG> (Thumb, 496 bytes, Stack size 40 bytes, ipc.o(.text.rt_sem_take))
+<BR><BR>[Stack]<UL><LI>Max Depth = 244<LI>Call Chain = rt_sem_take &rArr; rt_timer_start &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_schedule
+<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_start
+<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_control
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_suspend
+<LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_interrupt_get_nest
+<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_critical_level
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_self
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_kprintf
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_get_type
+</UL>
+<BR>[Called By]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;finsh_getchar
+</UL>
+
+<P><STRONG><a name="[fc]"></a>rt_set_errno</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, kservice.o(.text.rt_set_errno))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = rt_set_errno &rArr; rt_interrupt_get_nest
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_interrupt_get_nest
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_self
+</UL>
+<BR>[Called By]<UL><LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_serial_write
+<LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_serial_read
+<LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_device_write
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_device_read
+</UL>
+
+<P><STRONG><a name="[115]"></a>rt_show_version</STRONG> (Thumb, 56 bytes, Stack size 16 bytes, kservice.o(.text.rt_show_version))
+<BR><BR>[Stack]<UL><LI>Max Depth = 164<LI>Call Chain = rt_show_version &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_kprintf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtthread_startup
+<LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;version
+</UL>
+
+<P><STRONG><a name="[10a]"></a>rt_smem_alloc</STRONG> (Thumb, 448 bytes, Stack size 24 bytes, mem.o(.text.rt_smem_alloc))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = rt_smem_alloc &rArr; rt_object_is_systemobject &rArr; rt_assert_handler &rArr;  rt_kprintf (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_is_systemobject
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_get_type
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_malloc
+</UL>
+
+<P><STRONG><a name="[100]"></a>rt_smem_free</STRONG> (Thumb, 268 bytes, Stack size 16 bytes, mem.o(.text.rt_smem_free))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = rt_smem_free &rArr; plug_holes &rArr; rt_assert_handler &rArr;  rt_kprintf (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;plug_holes
+<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_is_systemobject
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_get_type
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_free
+</UL>
+
+<P><STRONG><a name="[116]"></a>rt_smem_init</STRONG> (Thumb, 140 bytes, Stack size 32 bytes, mem.o(.text.rt_smem_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 252<LI>Call Chain = rt_smem_init &rArr; rt_object_init &rArr; rt_exit_critical &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_memset
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_kprintf
+<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_system_heap_init
+</UL>
+
+<P><STRONG><a name="[c3]"></a>rt_soft_timer_check</STRONG> (Thumb, 270 bytes, Stack size 48 bytes, timer.o(.text.rt_soft_timer_check))
+<BR><BR>[Stack]<UL><LI>Max Depth = 252<LI>Call Chain = rt_soft_timer_check &rArr; rt_timer_start &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_start
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_tick_get
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_timer_thread_entry
+</UL>
+
+<P><STRONG><a name="[117]"></a>rt_sprintf</STRONG> (Thumb, 36 bytes, Stack size 24 bytes, kservice.o(.text.rt_sprintf))
+<BR><BR>[Stack]<UL><LI>Max Depth = 148<LI>Call Chain = rt_sprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_vsnprintf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_idle_init
+</UL>
+
+<P><STRONG><a name="[b3]"></a>rt_strcmp</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, kservice.o(.text.rt_strcmp))
+<BR><BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_pin_cmd
+</UL>
+
+<P><STRONG><a name="[e1]"></a>rt_strerror</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, kservice.o(.text.rt_strerror))
+<BR><BR>[Called By]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_thread
+</UL>
+
+<P><STRONG><a name="[b7]"></a>rt_strlen</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, kservice.o(.text.rt_strlen))
+<BR><BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_pin_cmd_conv
+</UL>
+
+<P><STRONG><a name="[110]"></a>rt_strncmp</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, kservice.o(.text.rt_strncmp))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = rt_strncmp
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_find
+</UL>
+
+<P><STRONG><a name="[e4]"></a>rt_strncpy</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, kservice.o(.text.rt_strncpy))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = rt_strncpy
+</UL>
+<BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_allocate
+<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_init
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msh_auto_complete
+</UL>
+
+<P><STRONG><a name="[105]"></a>rt_system_heap_init</STRONG> (Thumb, 152 bytes, Stack size 24 bytes, kservice.o(.text.rt_system_heap_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 276<LI>Call Chain = rt_system_heap_init &rArr; rt_smem_init &rArr; rt_object_init &rArr; rt_exit_critical &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mutex_init
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_kprintf
+<LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_smem_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_board_init
+</UL>
+
+<P><STRONG><a name="[125]"></a>rt_system_scheduler_init</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, scheduler.o(.text.rt_system_scheduler_init))
+<BR><BR>[Called By]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtthread_startup
+</UL>
+
+<P><STRONG><a name="[118]"></a>rt_system_scheduler_start</STRONG> (Thumb, 110 bytes, Stack size 16 bytes, scheduler.o(.text.rt_system_scheduler_start))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = rt_system_scheduler_start
+</UL>
+<BR>[Calls]<UL><LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_context_switch_to
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+<LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_ffs
+</UL>
+<BR>[Called By]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtthread_startup
+</UL>
+
+<P><STRONG><a name="[124]"></a>rt_system_timer_init</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, timer.o(.text.rt_system_timer_init))
+<BR><BR>[Called By]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtthread_startup
+</UL>
+
+<P><STRONG><a name="[11a]"></a>rt_system_timer_thread_init</STRONG> (Thumb, 80 bytes, Stack size 24 bytes, timer.o(.text.rt_system_timer_thread_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 348<LI>Call Chain = rt_system_timer_thread_init &rArr; rt_thread_init &rArr; _thread_init &rArr; rt_timer_init &rArr; rt_object_init &rArr; rt_exit_critical &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_startup
+<LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtthread_startup
+</UL>
+
+<P><STRONG><a name="[10c]"></a>rt_thread_control</STRONG> (Thumb, 190 bytes, Stack size 16 bytes, thread.o(.text.rt_thread_control))
+<BR><BR>[Stack]<UL><LI>Max Depth = 204<LI>Call Chain = rt_thread_control &rArr; rt_thread_startup &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_delete
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_startup
+<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_schedule
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+<LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_detach
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_schedule_insert_thread
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_schedule_remove_thread
+<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_is_systemobject
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_get_type
+</UL>
+<BR>[Called By]<UL><LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mutex_release
+<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mutex_take
+</UL>
+
+<P><STRONG><a name="[d5]"></a>rt_thread_create</STRONG> (Thumb, 74 bytes, Stack size 32 bytes, thread.o(.text.rt_thread_create))
+<BR><BR>[Stack]<UL><LI>Max Depth = 316<LI>Call Chain = rt_thread_create &rArr; rt_object_allocate &rArr; rt_malloc &rArr; rt_mutex_take &rArr; rt_timer_start &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_malloc
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_thread_init
+<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_allocate
+<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_delete
+</UL>
+<BR>[Called By]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtthread_startup
+<LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;finsh_system_init
+</UL>
+
+<P><STRONG><a name="[bb]"></a>rt_thread_defunct_enqueue</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, idle.o(.text.rt_thread_defunct_enqueue))
+<BR><BR>[Called By]<UL><LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_delete
+<LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_detach
+<LI><a href="#[36]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_thread_exit
+</UL>
+
+<P><STRONG><a name="[c5]"></a>rt_thread_delay</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, thread.o(.text.rt_thread_delay))
+<BR><BR>[Stack]<UL><LI>Max Depth = 236<LI>Call Chain = rt_thread_delay &rArr; rt_thread_sleep &rArr; rt_timer_start &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_sleep
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_timer_thread_entry
+</UL>
+
+<P><STRONG><a name="[11d]"></a>rt_thread_delete</STRONG> (Thumb, 152 bytes, Stack size 16 bytes, thread.o(.text.rt_thread_delete))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = rt_thread_delete &rArr; rt_timer_detach &rArr; rt_object_detach &rArr; rt_assert_handler &rArr;  rt_kprintf (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_detach
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_schedule_remove_thread
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_defunct_enqueue
+<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_is_systemobject
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_get_type
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_control
+</UL>
+
+<P><STRONG><a name="[11c]"></a>rt_thread_detach</STRONG> (Thumb, 152 bytes, Stack size 16 bytes, thread.o(.text.rt_thread_detach))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = rt_thread_detach &rArr; rt_timer_detach &rArr; rt_object_detach &rArr; rt_assert_handler &rArr;  rt_kprintf (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_detach
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_schedule_remove_thread
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_defunct_enqueue
+<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_is_systemobject
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_get_type
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_control
+</UL>
+
+<P><STRONG><a name="[11f]"></a>rt_thread_idle_init</STRONG> (Thumb, 80 bytes, Stack size 40 bytes, idle.o(.text.rt_thread_idle_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 364<LI>Call Chain = rt_thread_idle_init &rArr; rt_thread_init &rArr; _thread_init &rArr; rt_timer_init &rArr; rt_object_init &rArr; rt_exit_critical &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_startup
+<LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_init
+<LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_sprintf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtthread_startup
+</UL>
+
+<P><STRONG><a name="[11b]"></a>rt_thread_init</STRONG> (Thumb, 116 bytes, Stack size 48 bytes, thread.o(.text.rt_thread_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 324<LI>Call Chain = rt_thread_init &rArr; _thread_init &rArr; rt_timer_init &rArr; rt_object_init &rArr; rt_exit_critical &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_thread_init
+<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_idle_init
+<LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_system_timer_thread_init
+</UL>
+
+<P><STRONG><a name="[cb]"></a>rt_thread_mdelay</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, thread.o(.text.rt_thread_mdelay))
+<BR><BR>[Stack]<UL><LI>Max Depth = 236<LI>Call Chain = rt_thread_mdelay &rArr; rt_thread_sleep &rArr; rt_timer_start &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_tick_from_millisecond
+<LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_sleep
+</UL>
+<BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
+</UL>
+
+<P><STRONG><a name="[e8]"></a>rt_thread_resume</STRONG> (Thumb, 152 bytes, Stack size 16 bytes, thread.o(.text.rt_thread_resume))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = rt_thread_resume &rArr; rt_timer_stop &rArr; rt_object_get_type &rArr; rt_assert_handler &rArr;  rt_kprintf (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_stop
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_schedule_insert_thread
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_get_type
+</UL>
+<BR>[Called By]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_sem_release
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_startup
+<LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mutex_release
+<LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_data_queue_reset
+<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_data_queue_pop
+<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_data_queue_push
+<LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_completion_done
+<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_start
+</UL>
+
+<P><STRONG><a name="[c6]"></a>rt_thread_self</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, thread.o(.text.rt_thread_self))
+<BR><BR>[Called By]<UL><LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_sem_take
+<LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mutex_release
+<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mutex_take
+<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_data_queue_pop
+<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_data_queue_push
+<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_completion_wait
+<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_hard_fault_exception
+<LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_set_errno
+<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_free
+<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_malloc
+<LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_timer_thread_entry
+<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_memory_info
+<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_tick_increase
+</UL>
+
+<P><STRONG><a name="[11e]"></a>rt_thread_sleep</STRONG> (Thumb, 136 bytes, Stack size 24 bytes, thread.o(.text.rt_thread_sleep))
+<BR><BR>[Stack]<UL><LI>Max Depth = 228<LI>Call Chain = rt_thread_sleep &rArr; rt_timer_start &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_schedule
+<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_start
+<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_control
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_suspend
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_get_type
+</UL>
+<BR>[Called By]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_mdelay
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_delay
+</UL>
+
+<P><STRONG><a name="[d7]"></a>rt_thread_startup</STRONG> (Thumb, 136 bytes, Stack size 8 bytes, thread.o(.text.rt_thread_startup))
+<BR><BR>[Stack]<UL><LI>Max Depth = 188<LI>Call Chain = rt_thread_startup &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_resume
+<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_schedule
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_get_type
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_control
+<LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_idle_init
+<LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_system_timer_thread_init
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtthread_startup
+<LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;finsh_system_init
+</UL>
+
+<P><STRONG><a name="[c7]"></a>rt_thread_suspend</STRONG> (Thumb, 180 bytes, Stack size 16 bytes, thread.o(.text.rt_thread_suspend))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = rt_thread_suspend &rArr; rt_timer_stop &rArr; rt_object_get_type &rArr; rt_assert_handler &rArr;  rt_kprintf (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_stop
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_schedule_remove_thread
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_get_type
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_sem_take
+<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mutex_take
+<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_data_queue_pop
+<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_data_queue_push
+<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_completion_wait
+<LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_timer_thread_entry
+<LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_sleep
+</UL>
+
+<P><STRONG><a name="[120]"></a>rt_tick_from_millisecond</STRONG> (Thumb, 62 bytes, Stack size 0 bytes, clock.o(.text.rt_tick_from_millisecond))
+<BR><BR>[Called By]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_mdelay
+</UL>
+
+<P><STRONG><a name="[c4]"></a>rt_tick_get</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, clock.o(.text.rt_tick_get))
+<BR><BR>[Called By]<UL><LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_start
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_soft_timer_check
+<LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_timer_thread_entry
+<LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_check
+<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;list_timer
+</UL>
+
+<P><STRONG><a name="[ad]"></a>rt_tick_increase</STRONG> (Thumb, 94 bytes, Stack size 8 bytes, clock.o(.text.rt_tick_increase))
+<BR><BR>[Stack]<UL><LI>Max Depth = 260<LI>Call Chain = rt_tick_increase &rArr; rt_timer_check &rArr; rt_timer_start &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_schedule
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_self
+<LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_check
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
+</UL>
+
+<P><STRONG><a name="[122]"></a>rt_timer_check</STRONG> (Thumb, 244 bytes, Stack size 48 bytes, timer.o(.text.rt_timer_check))
+<BR><BR>[Stack]<UL><LI>Max Depth = 252<LI>Call Chain = rt_timer_check &rArr; rt_timer_start &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_start
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_tick_get
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_tick_increase
+</UL>
+
+<P><STRONG><a name="[ed]"></a>rt_timer_control</STRONG> (Thumb, 180 bytes, Stack size 24 bytes, timer.o(.text.rt_timer_control))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = rt_timer_control &rArr; rt_object_get_type &rArr; rt_assert_handler &rArr;  rt_kprintf (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_get_type
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_sem_take
+<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mutex_take
+<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_data_queue_pop
+<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_data_queue_push
+<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_completion_wait
+<LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_sleep
+</UL>
+
+<P><STRONG><a name="[ba]"></a>rt_timer_detach</STRONG> (Thumb, 136 bytes, Stack size 8 bytes, timer.o(.text.rt_timer_detach))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = rt_timer_detach &rArr; rt_object_detach &rArr; rt_assert_handler &rArr;  rt_kprintf (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+<LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_detach
+<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_is_systemobject
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_get_type
+</UL>
+<BR>[Called By]<UL><LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_delete
+<LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_detach
+<LI><a href="#[36]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_thread_exit
+</UL>
+
+<P><STRONG><a name="[c0]"></a>rt_timer_init</STRONG> (Thumb, 146 bytes, Stack size 32 bytes, timer.o(.text.rt_timer_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 252<LI>Call Chain = rt_timer_init &rArr; rt_object_init &rArr; rt_exit_critical &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_thread_init
+</UL>
+
+<P><STRONG><a name="[ee]"></a>rt_timer_start</STRONG> (Thumb, 308 bytes, Stack size 24 bytes, timer.o(.text.rt_timer_start))
+<BR><BR>[Stack]<UL><LI>Max Depth = 204<LI>Call Chain = rt_timer_start &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_resume
+<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_schedule
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_tick_get
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_get_type
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_sem_take
+<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mutex_take
+<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_data_queue_pop
+<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_data_queue_push
+<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_completion_wait
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_soft_timer_check
+<LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_sleep
+<LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_check
+</UL>
+
+<P><STRONG><a name="[121]"></a>rt_timer_stop</STRONG> (Thumb, 134 bytes, Stack size 8 bytes, timer.o(.text.rt_timer_stop))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = rt_timer_stop &rArr; rt_object_get_type &rArr; rt_assert_handler &rArr;  rt_kprintf (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_get_type
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_resume
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_suspend
+</UL>
+
+<P><STRONG><a name="[6f]"></a>rt_trustzone_context_load</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, trustzone.o(.text.rt_trustzone_context_load))
+<BR><BR>[Called By]<UL><LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PendSV_Handler
+</UL>
+
+<P><STRONG><a name="[6e]"></a>rt_trustzone_context_store</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, trustzone.o(.text.rt_trustzone_context_store))
+<BR><BR>[Called By]<UL><LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PendSV_Handler
+</UL>
+
+<P><STRONG><a name="[108]"></a>rt_vsnprintf</STRONG> (Thumb, 792 bytes, Stack size 56 bytes, kservice.o(.text.rt_vsnprintf))
+<BR><BR>[Stack]<UL><LI>Max Depth = 124<LI>Call Chain = rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;print_number
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_kprintf
+<LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_sprintf
+</UL>
+
+<P><STRONG><a name="[81]"></a>rtthread_startup</STRONG> (Thumb, 108 bytes, Stack size 16 bytes, components.o(.text.rtthread_startup))
+<BR><BR>[Stack]<UL><LI>Max Depth = 380<LI>Call Chain = rtthread_startup &rArr; rt_thread_idle_init &rArr; rt_thread_init &rArr; _thread_init &rArr; rt_timer_init &rArr; rt_object_init &rArr; rt_exit_critical &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_startup
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_create
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+<LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_system_scheduler_start
+<LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_idle_init
+<LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_system_timer_thread_init
+<LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_system_scheduler_init
+<LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_system_timer_init
+<LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_show_version
+<LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_board_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[33]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[61]"></a>version</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, cmd.o(.text.version))
+<BR><BR>[Stack]<UL><LI>Max Depth = 172<LI>Call Chain = version &rArr; rt_show_version &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_show_version
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> cmd.o(FSymTab)
+</UL>
+<P><STRONG><a name="[126]"></a>__0printf$8</STRONG> (Thumb, 22 bytes, Stack size 24 bytes, printf8.o(i.__0printf$8), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+
+<P><STRONG><a name="[13b]"></a>__1printf$8</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf8.o(i.__0printf$8), UNUSED)
+
+<P><STRONG><a name="[87]"></a>__2printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf8.o(i.__0printf$8))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = __2printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;$Super$$main
+<LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RF_EXTI_Init
+<LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ACD_Fun
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PCD_ACD_AutoCalc
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PCD_SI523_TypeA_GetUID
+</UL>
+
+<P><STRONG><a name="[7b]"></a>__aeabi_errno_addr</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, errno.o(i.__aeabi_errno_addr))
+<BR><BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;atoi
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_strtoul
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strtol
+</UL>
+
+<P><STRONG><a name="[13c]"></a>__rt_errno_addr</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, errno.o(i.__aeabi_errno_addr), UNUSED)
+
+<P><STRONG><a name="[13d]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
+
+<P><STRONG><a name="[13e]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
+
+<P><STRONG><a name="[13f]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
+<P>
+<H3>
+Local Symbols
+</H3>
+<P><STRONG><a name="[71]"></a>tzcall_entry</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, syscall_rvds.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 156<LI>Call Chain = tzcall_entry &rArr; rt_secure_svc_handle &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_secure_svc_handle
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SVC_Handler
+</UL>
+
+<P><STRONG><a name="[73]"></a>syscall_entry</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, syscall_rvds.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SVC_Handler
+</UL>
+
+<P><STRONG><a name="[5c]"></a>_pin_cmd</STRONG> (Thumb, 572 bytes, Stack size 16 bytes, pin.o(.text._pin_cmd))
+<BR><BR>[Stack]<UL><LI>Max Depth = 164<LI>Call Chain = _pin_cmd &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msh_isint
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_strcmp
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_pin_cmd_conv
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_kprintf
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;atoi
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> pin.o(FSymTab)
+</UL>
+<P><STRONG><a name="[b5]"></a>_pin_cmd_conv</STRONG> (Thumb, 146 bytes, Stack size 16 bytes, pin.o(.text._pin_cmd_conv))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = _pin_cmd_conv &rArr; rt_assert_handler &rArr;  rt_kprintf (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_strlen
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strncat
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;toupper
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_pin_cmd
+</UL>
+
+<P><STRONG><a name="[4a]"></a>_pin_read</STRONG> (Thumb, 56 bytes, Stack size 16 bytes, pin.o(.text._pin_read))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = _pin_read &rArr; rt_assert_handler &rArr;  rt_kprintf (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> pin.o(.rodata.pin_ops)
+</UL>
+<P><STRONG><a name="[4b]"></a>_pin_write</STRONG> (Thumb, 56 bytes, Stack size 16 bytes, pin.o(.text._pin_write))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = _pin_write &rArr; rt_assert_handler &rArr;  rt_kprintf (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> pin.o(.rodata.pin_ops)
+</UL>
+<P><STRONG><a name="[4c]"></a>_pin_control</STRONG> (Thumb, 52 bytes, Stack size 16 bytes, pin.o(.text._pin_control))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = _pin_control &rArr; rt_assert_handler &rArr;  rt_kprintf (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> pin.o(.rodata.pin_ops)
+</UL>
+<P><STRONG><a name="[4d]"></a>rt_serial_init</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, serial.o(.text.rt_serial_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = rt_serial_init &rArr; rt_assert_handler &rArr;  rt_kprintf (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> serial.o(.rodata.serial_ops)
+</UL>
+<P><STRONG><a name="[4e]"></a>rt_serial_open</STRONG> (Thumb, 620 bytes, Stack size 32 bytes, serial.o(.text.rt_serial_open))
+<BR><BR>[Stack]<UL><LI>Max Depth = 316<LI>Call Chain = rt_serial_open &rArr; rt_data_queue_init &rArr; rt_malloc &rArr; rt_mutex_take &rArr; rt_timer_start &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_data_queue_init
+<LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_completion_init
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_memset
+<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_malloc
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> serial.o(.rodata.serial_ops)
+</UL>
+<P><STRONG><a name="[4f]"></a>rt_serial_close</STRONG> (Thumb, 394 bytes, Stack size 16 bytes, serial.o(.text.rt_serial_close))
+<BR><BR>[Stack]<UL><LI>Max Depth = 284<LI>Call Chain = rt_serial_close &rArr; rt_data_queue_deinit &rArr; rt_free &rArr; rt_mutex_take &rArr; rt_timer_start &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_data_queue_deinit
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_free
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> serial.o(.rodata.serial_ops)
+</UL>
+<P><STRONG><a name="[50]"></a>rt_serial_read</STRONG> (Thumb, 892 bytes, Stack size 40 bytes, serial.o(.text.rt_serial_read))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = rt_serial_read &rArr; rt_assert_handler &rArr;  rt_kprintf (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+<LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_set_errno
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_memcpy
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> serial.o(.rodata.serial_ops)
+</UL>
+<P><STRONG><a name="[51]"></a>rt_serial_write</STRONG> (Thumb, 328 bytes, Stack size 32 bytes, serial.o(.text.rt_serial_write))
+<BR><BR>[Stack]<UL><LI>Max Depth = 284<LI>Call Chain = rt_serial_write &rArr; rt_data_queue_push &rArr; rt_timer_start &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_data_queue_push
+<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_completion_wait
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+<LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_set_errno
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> serial.o(.rodata.serial_ops)
+</UL>
+<P><STRONG><a name="[52]"></a>rt_serial_control</STRONG> (Thumb, 164 bytes, Stack size 16 bytes, serial.o(.text.rt_serial_control))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = rt_serial_control &rArr; rt_assert_handler &rArr;  rt_kprintf (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> serial.o(.rodata.serial_ops)
+</UL>
+<P><STRONG><a name="[b1]"></a>uart_isr</STRONG> (Thumb, 188 bytes, Stack size 16 bytes, drv_uart.o(.text.uart_isr))
+<BR><BR>[Stack]<UL><LI>Max Depth = 316<LI>Call Chain = uart_isr &rArr; rt_hw_serial_isr &rArr; rt_data_queue_pop &rArr; rt_timer_start &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_serial_isr
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[12]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART4_IRQHandler
+<LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART3_IRQHandler
+<LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART2_IRQHandler
+<LI><a href="#[25]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART1_IRQHandler
+</UL>
+
+<P><STRONG><a name="[45]"></a>_uart_configure</STRONG> (Thumb, 172 bytes, Stack size 16 bytes, drv_uart.o(.text._uart_configure))
+<BR><BR>[Stack]<UL><LI>Max Depth = 156<LI>Call Chain = _uart_configure &rArr; HAL_UART_Init &rArr; HAL_UART_MspInit &rArr; HAL_GPIO_Init &rArr; System_Module_Enable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Init
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> drv_uart.o(.rodata.acm32_uart_ops)
+</UL>
+<P><STRONG><a name="[46]"></a>_uart_control</STRONG> (Thumb, 424 bytes, Stack size 24 bytes, drv_uart.o(.text._uart_control))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = _uart_control &rArr; rt_device_set_rx_indicate &rArr; rt_object_get_type &rArr; rt_assert_handler &rArr;  rt_kprintf (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_DMA_Init
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Receive_DMA
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_device_set_rx_indicate
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> drv_uart.o(.rodata.acm32_uart_ops)
+</UL>
+<P><STRONG><a name="[38]"></a>uart_rx_indicate_cb</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, drv_uart.o(.text.uart_rx_indicate_cb))
+<BR>[Address Reference Count : 1]<UL><LI> drv_uart.o(.text._uart_control)
+</UL>
+<P><STRONG><a name="[47]"></a>_uart_putc</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, drv_uart.o(.text._uart_putc))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = _uart_putc &rArr; rt_assert_handler &rArr;  rt_kprintf (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> drv_uart.o(.rodata.acm32_uart_ops)
+</UL>
+<P><STRONG><a name="[48]"></a>_uart_getc</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, drv_uart.o(.text._uart_getc))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = _uart_getc &rArr; rt_assert_handler &rArr;  rt_kprintf (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> drv_uart.o(.rodata.acm32_uart_ops)
+</UL>
+<P><STRONG><a name="[49]"></a>_uart_dma_transmit</STRONG> (Thumb, 80 bytes, Stack size 24 bytes, drv_uart.o(.text._uart_dma_transmit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 324<LI>Call Chain = _uart_dma_transmit &rArr; rt_hw_serial_isr &rArr; rt_data_queue_pop &rArr; rt_timer_start &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_serial_isr
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_UART_Transmit_DMA
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> drv_uart.o(.rodata.acm32_uart_ops)
+</UL>
+<P><STRONG><a name="[3f]"></a>_pin_mode</STRONG> (Thumb, 116 bytes, Stack size 24 bytes, drv_gpio.o(.text._pin_mode))
+<BR><BR>[Stack]<UL><LI>Max Depth = 84<LI>Call Chain = _pin_mode &rArr; HAL_GPIO_Init &rArr; System_Module_Enable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> drv_gpio.o(.rodata._acm32_pin_ops)
+</UL>
+<P><STRONG><a name="[40]"></a>_pin_write</STRONG> (Thumb, 58 bytes, Stack size 8 bytes, drv_gpio.o(.text._pin_write))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = _pin_write
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> drv_gpio.o(.rodata._acm32_pin_ops)
+</UL>
+<P><STRONG><a name="[41]"></a>_pin_read</STRONG> (Thumb, 58 bytes, Stack size 8 bytes, drv_gpio.o(.text._pin_read))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = _pin_read
+</UL>
+<BR>[Calls]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> drv_gpio.o(.rodata._acm32_pin_ops)
+</UL>
+<P><STRONG><a name="[42]"></a>_pin_attach_irq</STRONG> (Thumb, 118 bytes, Stack size 24 bytes, drv_gpio.o(.text._pin_attach_irq))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = _pin_attach_irq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> drv_gpio.o(.rodata._acm32_pin_ops)
+</UL>
+<P><STRONG><a name="[43]"></a>_pin_dettach_irq</STRONG> (Thumb, 74 bytes, Stack size 16 bytes, drv_gpio.o(.text._pin_dettach_irq))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = _pin_dettach_irq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> drv_gpio.o(.rodata._acm32_pin_ops)
+</UL>
+<P><STRONG><a name="[44]"></a>_pin_irq_enable</STRONG> (Thumb, 290 bytes, Stack size 48 bytes, drv_gpio.o(.text._pin_irq_enable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 108<LI>Call Chain = _pin_irq_enable &rArr; HAL_GPIO_Init &rArr; System_Module_Enable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_EXTI_SetConfigLine
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> drv_gpio.o(.rodata._acm32_pin_ops)
+</UL>
+<P><STRONG><a name="[39]"></a>finsh_rx_ind</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, shell.o(.text.finsh_rx_ind))
+<BR><BR>[Stack]<UL><LI>Max Depth = 212<LI>Call Chain = finsh_rx_ind &rArr; rt_sem_release &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_sem_release
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> shell.o(.text.finsh_set_device)
+</UL>
+<P><STRONG><a name="[60]"></a>clear</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, cmd.o(.text.clear))
+<BR><BR>[Stack]<UL><LI>Max Depth = 156<LI>Call Chain = clear &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_kprintf
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> cmd.o(FSymTab)
+</UL>
+<P><STRONG><a name="[53]"></a>rti_start</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, components.o(.text.rti_start))
+<BR>[Address Reference Count : 1]<UL><LI> components.o(.rti_fn.0)
+</UL>
+<P><STRONG><a name="[54]"></a>rti_board_start</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, components.o(.text.rti_board_start))
+<BR>[Address Reference Count : 1]<UL><LI> components.o(.rti_fn.0.end)
+</UL>
+<P><STRONG><a name="[56]"></a>rti_board_end</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, components.o(.text.rti_board_end))
+<BR>[Address Reference Count : 1]<UL><LI> components.o(.rti_fn.1.end)
+</UL>
+<P><STRONG><a name="[5b]"></a>rti_end</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, components.o(.text.rti_end))
+<BR>[Address Reference Count : 1]<UL><LI> components.o(.rti_fn.6.end)
+</UL>
+<P><STRONG><a name="[3c]"></a>rt_thread_idle_entry</STRONG> (Thumb, 128 bytes, Stack size 0 bytes, idle.o(.text.rt_thread_idle_entry))
+<BR><BR>[Stack]<UL><LI>Max Depth = 268<LI>Call Chain = rt_thread_idle_entry &rArr; rt_object_delete &rArr; rt_free &rArr; rt_mutex_take &rArr; rt_timer_start &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_free
+<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_delete
+<LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_detach
+<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_is_systemobject
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> idle.o(.text.rt_thread_idle_init)
+</UL>
+<P><STRONG><a name="[123]"></a>print_number</STRONG> (Thumb, 420 bytes, Stack size 68 bytes, kservice.o(.text.print_number))
+<BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = print_number
+</UL>
+<BR>[Called By]<UL><LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_vsnprintf
+</UL>
+
+<P><STRONG><a name="[e5]"></a>plug_holes</STRONG> (Thumb, 136 bytes, Stack size 16 bytes, mem.o(.text.plug_holes))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = plug_holes &rArr; rt_assert_handler &rArr;  rt_kprintf (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_smem_free
+</UL>
+
+<P><STRONG><a name="[bd]"></a>_thread_init</STRONG> (Thumb, 148 bytes, Stack size 24 bytes, thread.o(.text._thread_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 276<LI>Call Chain = _thread_init &rArr; rt_timer_init &rArr; rt_object_init &rArr; rt_exit_critical &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_init
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_stack_init
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_memset
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_create
+<LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_init
+</UL>
+
+<P><STRONG><a name="[36]"></a>_thread_exit</STRONG> (Thumb, 56 bytes, Stack size 16 bytes, thread.o(.text._thread_exit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 196<LI>Call Chain = _thread_exit &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_detach
+<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_schedule
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_schedule_remove_thread
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_defunct_enqueue
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> thread.o(.text._thread_init)
+</UL>
+<P><STRONG><a name="[37]"></a>_thread_timeout</STRONG> (Thumb, 136 bytes, Stack size 16 bytes, thread.o(.text._thread_timeout))
+<BR><BR>[Stack]<UL><LI>Max Depth = 196<LI>Call Chain = _thread_timeout &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_schedule
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_assert_handler
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_schedule_insert_thread
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_object_get_type
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> thread.o(.text._thread_init)
+</UL>
+<P><STRONG><a name="[3b]"></a>_timer_thread_entry</STRONG> (Thumb, 86 bytes, Stack size 0 bytes, timer.o(.text._timer_thread_entry))
+<BR><BR>[Stack]<UL><LI>Max Depth = 252<LI>Call Chain = _timer_thread_entry &rArr; rt_soft_timer_check &rArr; rt_timer_start &rArr; rt_schedule &rArr; rt_kprintf &rArr; rt_vsnprintf &rArr; print_number
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_schedule
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_suspend
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_enable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_hw_interrupt_disable
+<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_tick_get
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_self
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_soft_timer_check
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_thread_delay
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> timer.o(.text.rt_system_timer_thread_init)
+</UL>
+<P><STRONG><a name="[127]"></a>_printf_core</STRONG> (Thumb, 996 bytes, Stack size 104 bytes, printf8.o(i._printf_core), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_pre_padding
+<LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_post_padding
+<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+</UL>
+<BR>[Called By]<UL><LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__0printf$8
+</UL>
+
+<P><STRONG><a name="[129]"></a>_printf_post_padding</STRONG> (Thumb, 36 bytes, Stack size 24 bytes, printf8.o(i._printf_post_padding), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+
+<P><STRONG><a name="[128]"></a>_printf_pre_padding</STRONG> (Thumb, 46 bytes, Stack size 24 bytes, printf8.o(i._printf_pre_padding), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+<P>
+<H3>
+Undefined Global Symbols
+</H3><HR></body></html>

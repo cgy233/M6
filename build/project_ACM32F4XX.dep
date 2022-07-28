@@ -1,0 +1,1381 @@
+Dependencies for Project 'project', Target 'ACM32F4XX': (DO NOT MODIFY !)
+CompilerVersion: 6180000::V6.18::ARMCLANG
+F (libraries\HAL_Driver\Src\HAL_UART.c)(0x62DF8617)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/hal_uart.o -MD)
+I (libraries\HAL_Driver\Inc\ACM32Fxx_HAL.h)(0x62DFA1FD)
+I (libraries\Device\ACM32F4.h)(0x62DF8617)
+I (libraries\CMSIS\core_cm33.h)(0x62DF8617)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (libraries\CMSIS\cmsis_version.h)(0x62DF8617)
+I (libraries\CMSIS\cmsis_compiler.h)(0x62DF8617)
+I (libraries\CMSIS\cmsis_armclang.h)(0x62DF8617)
+I (libraries\CMSIS\mpu_armv8.h)(0x62DF8617)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (libraries\Device\System_ACM32F4.h)(0x62DF8617)
+I (libraries\Device\System_Accelerate.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_DMA.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_GPIO.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_UART.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_UART_EX.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_ADC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_DAC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_EXTI.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_I2C.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_I2S.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_RTC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_SPI.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_IWDT.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_EFlash.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_EFlash_EX.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_OPA.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_COMP.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_CAN.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_LPUART.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_WDT.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_TIMER.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_TIMER_EX.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_FSUSB.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_CRC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_AES.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_FAU.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_SHA1.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_SHA256.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_HRNG.h)(0x62DF8617)
+F (libraries\HAL_Driver\Src\HAL_EXTI.c)(0x62DF8617)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/hal_exti.o -MD)
+I (libraries\HAL_Driver\Inc\ACM32Fxx_HAL.h)(0x62DFA1FD)
+I (libraries\Device\ACM32F4.h)(0x62DF8617)
+I (libraries\CMSIS\core_cm33.h)(0x62DF8617)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (libraries\CMSIS\cmsis_version.h)(0x62DF8617)
+I (libraries\CMSIS\cmsis_compiler.h)(0x62DF8617)
+I (libraries\CMSIS\cmsis_armclang.h)(0x62DF8617)
+I (libraries\CMSIS\mpu_armv8.h)(0x62DF8617)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (libraries\Device\System_ACM32F4.h)(0x62DF8617)
+I (libraries\Device\System_Accelerate.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_DMA.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_GPIO.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_UART.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_UART_EX.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_ADC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_DAC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_EXTI.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_I2C.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_I2S.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_RTC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_SPI.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_IWDT.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_EFlash.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_EFlash_EX.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_OPA.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_COMP.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_CAN.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_LPUART.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_WDT.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_TIMER.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_TIMER_EX.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_FSUSB.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_CRC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_AES.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_FAU.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_SHA1.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_SHA256.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_HRNG.h)(0x62DF8617)
+F (libraries\HAL_Driver\Src\HAL_DMA.c)(0x62DF8617)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/hal_dma.o -MD)
+I (libraries\HAL_Driver\Inc\ACM32Fxx_HAL.h)(0x62DFA1FD)
+I (libraries\Device\ACM32F4.h)(0x62DF8617)
+I (libraries\CMSIS\core_cm33.h)(0x62DF8617)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (libraries\CMSIS\cmsis_version.h)(0x62DF8617)
+I (libraries\CMSIS\cmsis_compiler.h)(0x62DF8617)
+I (libraries\CMSIS\cmsis_armclang.h)(0x62DF8617)
+I (libraries\CMSIS\mpu_armv8.h)(0x62DF8617)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (libraries\Device\System_ACM32F4.h)(0x62DF8617)
+I (libraries\Device\System_Accelerate.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_DMA.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_GPIO.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_UART.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_UART_EX.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_ADC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_DAC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_EXTI.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_I2C.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_I2S.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_RTC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_SPI.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_IWDT.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_EFlash.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_EFlash_EX.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_OPA.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_COMP.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_CAN.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_LPUART.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_WDT.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_TIMER.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_TIMER_EX.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_FSUSB.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_CRC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_AES.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_FAU.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_SHA1.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_SHA256.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_HRNG.h)(0x62DF8617)
+F (libraries\Device\Startup_ACM32F4.s)(0x62DF8617)(--cpu=Cortex-M33 --fpu=FPv5-SP -g --pd "__MICROLIB SETA 1"--pd "__UVISION_VERSION SETA 536"--list .\build\keil\startup_acm32f4.lst--xref -o .\build\startup_acm32f4.o--depend .\build\startup_acm32f4.d)
+F (libraries\Device\System_ACM32F4.c)(0x62DFA24C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/system_acm32f4.o -MD)
+I (libraries\HAL_Driver\Inc\ACM32Fxx_HAL.h)(0x62DFA1FD)
+I (libraries\Device\ACM32F4.h)(0x62DF8617)
+I (libraries\CMSIS\core_cm33.h)(0x62DF8617)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (libraries\CMSIS\cmsis_version.h)(0x62DF8617)
+I (libraries\CMSIS\cmsis_compiler.h)(0x62DF8617)
+I (libraries\CMSIS\cmsis_armclang.h)(0x62DF8617)
+I (libraries\CMSIS\mpu_armv8.h)(0x62DF8617)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (libraries\Device\System_ACM32F4.h)(0x62DF8617)
+I (libraries\Device\System_Accelerate.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_DMA.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_GPIO.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_UART.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_UART_EX.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_ADC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_DAC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_EXTI.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_I2C.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_I2S.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_RTC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_SPI.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_IWDT.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_EFlash.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_EFlash_EX.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_OPA.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_COMP.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_CAN.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_LPUART.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_WDT.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_TIMER.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_TIMER_EX.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_FSUSB.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_CRC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_AES.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_FAU.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_SHA1.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_SHA256.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_HRNG.h)(0x62DF8617)
+F (libraries\HAL_Driver\Src\HAL_GPIO.c)(0x62DF8617)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/hal_gpio.o -MD)
+I (libraries\HAL_Driver\Inc\ACM32Fxx_HAL.h)(0x62DFA1FD)
+I (libraries\Device\ACM32F4.h)(0x62DF8617)
+I (libraries\CMSIS\core_cm33.h)(0x62DF8617)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (libraries\CMSIS\cmsis_version.h)(0x62DF8617)
+I (libraries\CMSIS\cmsis_compiler.h)(0x62DF8617)
+I (libraries\CMSIS\cmsis_armclang.h)(0x62DF8617)
+I (libraries\CMSIS\mpu_armv8.h)(0x62DF8617)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (libraries\Device\System_ACM32F4.h)(0x62DF8617)
+I (libraries\Device\System_Accelerate.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_DMA.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_GPIO.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_UART.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_UART_EX.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_ADC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_DAC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_EXTI.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_I2C.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_I2S.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_RTC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_SPI.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_IWDT.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_EFlash.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_EFlash_EX.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_OPA.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_COMP.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_CAN.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_LPUART.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_WDT.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_TIMER.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_TIMER_EX.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_FSUSB.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_CRC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_AES.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_FAU.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_SHA1.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_SHA256.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_HRNG.h)(0x62DF8617)
+F (libraries\HAL_Driver\Src\HAL_EFlash.c)(0x62DFA270)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/hal_eflash.o -MD)
+I (libraries\HAL_Driver\Inc\ACM32Fxx_HAL.h)(0x62DFA1FD)
+I (libraries\Device\ACM32F4.h)(0x62DF8617)
+I (libraries\CMSIS\core_cm33.h)(0x62DF8617)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (libraries\CMSIS\cmsis_version.h)(0x62DF8617)
+I (libraries\CMSIS\cmsis_compiler.h)(0x62DF8617)
+I (libraries\CMSIS\cmsis_armclang.h)(0x62DF8617)
+I (libraries\CMSIS\mpu_armv8.h)(0x62DF8617)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (libraries\Device\System_ACM32F4.h)(0x62DF8617)
+I (libraries\Device\System_Accelerate.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_DMA.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_GPIO.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_UART.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_UART_EX.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_ADC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_DAC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_EXTI.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_I2C.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_I2S.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_RTC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_SPI.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_IWDT.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_EFlash.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_EFlash_EX.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_OPA.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_COMP.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_CAN.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_LPUART.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_WDT.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_TIMER.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_TIMER_EX.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_FSUSB.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_CRC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_AES.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_FAU.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_SHA1.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_SHA256.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_HRNG.h)(0x62DF8617)
+F (applications\main.c)(0x62E1FF25)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/main.o -MD)
+I (..\..\..\include\rthw.h)(0x62DF8621)
+I (..\..\..\include\rtthread.h)(0x62DF8621)
+I (rtconfig.h)(0x62DF9325)
+I (..\..\..\include\rtdebug.h)(0x62DF8621)
+I (..\..\..\include\rtdef.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\..\..\include\rtservice.h)(0x62DF8621)
+I (..\..\..\include\rtm.h)(0x62DF8621)
+I (..\..\..\components\finsh\finsh.h)(0x62DF8621)
+I (drivers\board.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\ACM32Fxx_HAL.h)(0x62DFA1FD)
+I (libraries\Device\ACM32F4.h)(0x62DF8617)
+I (libraries\CMSIS\core_cm33.h)(0x62DF8617)
+I (libraries\CMSIS\cmsis_version.h)(0x62DF8617)
+I (libraries\CMSIS\cmsis_compiler.h)(0x62DF8617)
+I (libraries\CMSIS\cmsis_armclang.h)(0x62DF8617)
+I (libraries\CMSIS\mpu_armv8.h)(0x62DF8617)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (libraries\Device\System_ACM32F4.h)(0x62DF8617)
+I (libraries\Device\System_Accelerate.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_DMA.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_GPIO.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_UART.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_UART_EX.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_ADC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_DAC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_EXTI.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_I2C.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_I2S.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_RTC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_SPI.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_IWDT.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_EFlash.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_EFlash_EX.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_OPA.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_COMP.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_CAN.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_LPUART.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_WDT.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_TIMER.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_TIMER_EX.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_FSUSB.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_CRC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_AES.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_FAU.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_SHA1.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_SHA256.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_HRNG.h)(0x62DF8617)
+I (..\..\..\components\drivers\include\drivers\pin.h)(0x62DF8621)
+I (Peripherals\RFID\SI523_App.h)(0x62E1FBCF)
+I (Peripherals\RFID\exti.h)(0x62E1FF46)
+I (applications\delay.h)(0x62E0FA96)
+F (.\applications\delay.c)(0x62E1FEC1)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/delay.o -MD)
+I (applications\delay.h)(0x62E0FA96)
+I (..\..\..\include\rthw.h)(0x62DF8621)
+I (..\..\..\include\rtthread.h)(0x62DF8621)
+I (rtconfig.h)(0x62DF9325)
+I (..\..\..\include\rtdebug.h)(0x62DF8621)
+I (..\..\..\include\rtdef.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\..\..\include\rtservice.h)(0x62DF8621)
+I (..\..\..\include\rtm.h)(0x62DF8621)
+I (..\..\..\components\finsh\finsh.h)(0x62DF8621)
+I (drivers\board.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\ACM32Fxx_HAL.h)(0x62DFA1FD)
+I (libraries\Device\ACM32F4.h)(0x62DF8617)
+I (libraries\CMSIS\core_cm33.h)(0x62DF8617)
+I (libraries\CMSIS\cmsis_version.h)(0x62DF8617)
+I (libraries\CMSIS\cmsis_compiler.h)(0x62DF8617)
+I (libraries\CMSIS\cmsis_armclang.h)(0x62DF8617)
+I (libraries\CMSIS\mpu_armv8.h)(0x62DF8617)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (libraries\Device\System_ACM32F4.h)(0x62DF8617)
+I (libraries\Device\System_Accelerate.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_DMA.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_GPIO.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_UART.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_UART_EX.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_ADC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_DAC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_EXTI.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_I2C.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_I2S.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_RTC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_SPI.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_IWDT.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_EFlash.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_EFlash_EX.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_OPA.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_COMP.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_CAN.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_LPUART.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_WDT.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_TIMER.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_TIMER_EX.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_FSUSB.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_CRC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_AES.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_FAU.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_SHA1.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_SHA256.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_HRNG.h)(0x62DF8617)
+I (..\..\..\components\drivers\include\drivers\pin.h)(0x62DF8621)
+F (.\applications\delay.h)(0x62E0FA96)()
+F (..\..\..\components\libc\compilers\armlibc\syscall_mem.c)(0x62DF8621)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/syscall_mem.o -MD)
+I (..\..\..\include\rtthread.h)(0x62DF8621)
+I (rtconfig.h)(0x62DF9325)
+I (..\..\..\include\rtdebug.h)(0x62DF8621)
+I (..\..\..\include\rtdef.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\..\..\include\rtservice.h)(0x62DF8621)
+I (..\..\..\include\rtm.h)(0x62DF8621)
+I (..\..\..\components\finsh\finsh.h)(0x62DF8621)
+F (..\..\..\components\libc\compilers\armlibc\syscalls.c)(0x62DF8621)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/syscalls.o -MD)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\rt_sys.h)(0x625260D8)
+I (..\..\..\include\rtthread.h)(0x62DF8621)
+I (rtconfig.h)(0x62DF9325)
+I (..\..\..\include\rtdebug.h)(0x62DF8621)
+I (..\..\..\include\rtdef.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\..\..\include\rtservice.h)(0x62DF8621)
+I (..\..\..\include\rtm.h)(0x62DF8621)
+I (..\..\..\components\finsh\finsh.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (..\..\..\components\libc\compilers\common\extension\fcntl\octal\fcntl.h)(0x62DF8621)
+I (..\..\..\components\libc\compilers\common\extension\sys\types.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\time.h)(0x625260D8)
+I (..\..\..\components\libc\compilers\common\include\unistd.h)(0x62DF8621)
+I (..\..\..\components\libc\compilers\common\include\sys\unistd.h)(0x62DF8621)
+I (..\..\..\components\libc\compilers\common\extension\sys\stat.h)(0x62DF8621)
+I (..\..\..\components\libc\compilers\common\include\sys\time.h)(0x62DF8621)
+I (..\..\..\components\libc\compilers\common\include\compiler_private.h)(0x62DF8621)
+I (..\..\..\include\rtdbg.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
+F (..\..\..\components\libc\compilers\common\cctype.c)(0x62DF8621)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/cctype.o -MD)
+I (..\..\..\components\libc\compilers\common\include\posix\ctype.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\ctype.h)(0x625260D6)
+F (..\..\..\components\libc\compilers\common\cstdio.c)(0x62DF8621)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/cstdio.o -MD)
+I (..\..\..\components\libc\compilers\common\include\posix\stdio.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
+I (..\..\..\components\libc\compilers\common\extension\sys\types.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\time.h)(0x625260D8)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\limits.h)(0x625260D6)
+I (..\..\..\components\libc\compilers\common\extension\sys\errno.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\errno.h)(0x625260D8)
+F (..\..\..\components\libc\compilers\common\cstdlib.c)(0x62DF8621)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/cstdlib.o -MD)
+I (..\..\..\include\rtthread.h)(0x62DF8621)
+I (rtconfig.h)(0x62DF9325)
+I (..\..\..\include\rtdebug.h)(0x62DF8621)
+I (..\..\..\include\rtdef.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\..\..\include\rtservice.h)(0x62DF8621)
+I (..\..\..\include\rtm.h)(0x62DF8621)
+I (..\..\..\components\finsh\finsh.h)(0x62DF8621)
+I (..\..\..\include\rtdbg.h)(0x62DF8621)
+F (..\..\..\components\libc\compilers\common\cstring.c)(0x62DF8621)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/cstring.o -MD)
+I (..\..\..\components\libc\compilers\common\include\posix\string.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\ctype.h)(0x625260D6)
+I (..\..\..\include\rtthread.h)(0x62DF8621)
+I (rtconfig.h)(0x62DF9325)
+I (..\..\..\include\rtdebug.h)(0x62DF8621)
+I (..\..\..\include\rtdef.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\..\..\include\rtservice.h)(0x62DF8621)
+I (..\..\..\include\rtm.h)(0x62DF8621)
+I (..\..\..\components\finsh\finsh.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x625260D6)
+F (..\..\..\components\libc\compilers\common\ctime.c)(0x62DF8621)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/ctime.o -MD)
+I (..\..\..\components\libc\compilers\common\include\sys\time.h)(0x62DF8621)
+I (rtconfig.h)(0x62DF9325)
+I (..\..\..\components\libc\compilers\common\extension\sys\types.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\time.h)(0x625260D8)
+I (..\..\..\components\libc\compilers\common\extension\sys\errno.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\errno.h)(0x625260D8)
+I (..\..\..\include\rtthread.h)(0x62DF8621)
+I (..\..\..\include\rtdebug.h)(0x62DF8621)
+I (..\..\..\include\rtdef.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\..\..\include\rtservice.h)(0x62DF8621)
+I (..\..\..\include\rtm.h)(0x62DF8621)
+I (..\..\..\components\finsh\finsh.h)(0x62DF8621)
+I (..\..\..\include\rthw.h)(0x62DF8621)
+I (..\..\..\components\libc\compilers\common\include\unistd.h)(0x62DF8621)
+I (..\..\..\components\libc\compilers\common\include\sys\unistd.h)(0x62DF8621)
+I (..\..\..\include\rtdbg.h)(0x62DF8621)
+F (..\..\..\components\libc\compilers\common\cwchar.c)(0x62DF8621)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/cwchar.o -MD)
+I (..\..\..\components\libc\compilers\common\include\posix\wchar.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\wchar.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\string.h)(0x625260D6)
+F (..\..\..\libcpu\arm\common\backtrace.c)(0x62DF8621)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/backtrace.o -MD)
+I (..\..\..\include\rtthread.h)(0x62DF8621)
+I (rtconfig.h)(0x62DF9325)
+I (..\..\..\include\rtdebug.h)(0x62DF8621)
+I (..\..\..\include\rtdef.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\..\..\include\rtservice.h)(0x62DF8621)
+I (..\..\..\include\rtm.h)(0x62DF8621)
+I (..\..\..\components\finsh\finsh.h)(0x62DF8621)
+F (..\..\..\libcpu\arm\common\div0.c)(0x62DF8621)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/div0.o -MD)
+F (..\..\..\libcpu\arm\common\showmem.c)(0x62DF8621)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/showmem.o -MD)
+I (..\..\..\include\rtthread.h)(0x62DF8621)
+I (rtconfig.h)(0x62DF9325)
+I (..\..\..\include\rtdebug.h)(0x62DF8621)
+I (..\..\..\include\rtdef.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\..\..\include\rtservice.h)(0x62DF8621)
+I (..\..\..\include\rtm.h)(0x62DF8621)
+I (..\..\..\components\finsh\finsh.h)(0x62DF8621)
+F (..\..\..\libcpu\arm\cortex-m33\context_rvds.S)(0x62DF8621)(--cpu=Cortex-M33 --fpu=FPv5-SP -g --pd "__MICROLIB SETA 1"--pd "__UVISION_VERSION SETA 536"--list .\build\keil\context_rvds.lst--xref -o .\build\context_rvds.o--depend .\build\context_rvds.d)
+F (..\..\..\libcpu\arm\cortex-m33\cpuport.c)(0x62DF8621)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/cpuport.o -MD)
+I (..\..\..\include\rtthread.h)(0x62DF8621)
+I (rtconfig.h)(0x62DF9325)
+I (..\..\..\include\rtdebug.h)(0x62DF8621)
+I (..\..\..\include\rtdef.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\..\..\include\rtservice.h)(0x62DF8621)
+I (..\..\..\include\rtm.h)(0x62DF8621)
+I (..\..\..\components\finsh\finsh.h)(0x62DF8621)
+F (..\..\..\libcpu\arm\cortex-m33\syscall_rvds.S)(0x62DF8621)(--cpu=Cortex-M33 --fpu=FPv5-SP -g --pd "__MICROLIB SETA 1"--pd "__UVISION_VERSION SETA 536"--list .\build\keil\syscall_rvds.lst--xref -o .\build\syscall_rvds.o--depend .\build\syscall_rvds.d)
+F (..\..\..\libcpu\arm\cortex-m33\trustzone.c)(0x62DF8621)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/trustzone.o -MD)
+I (..\..\..\include\rtthread.h)(0x62DF8621)
+I (rtconfig.h)(0x62DF9325)
+I (..\..\..\include\rtdebug.h)(0x62DF8621)
+I (..\..\..\include\rtdef.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\..\..\include\rtservice.h)(0x62DF8621)
+I (..\..\..\include\rtm.h)(0x62DF8621)
+I (..\..\..\components\finsh\finsh.h)(0x62DF8621)
+F (..\..\..\components\drivers\ipc\completion.c)(0x62DF8621)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/completion.o -MD)
+I (..\..\..\include\rthw.h)(0x62DF8621)
+I (..\..\..\include\rtthread.h)(0x62DF8621)
+I (rtconfig.h)(0x62DF9325)
+I (..\..\..\include\rtdebug.h)(0x62DF8621)
+I (..\..\..\include\rtdef.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\..\..\include\rtservice.h)(0x62DF8621)
+I (..\..\..\include\rtm.h)(0x62DF8621)
+I (..\..\..\components\finsh\finsh.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\rtdevice.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\ringbuffer.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\completion.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\dataqueue.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\workqueue.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\waitqueue.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\pipe.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\poll.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\ringblk_buf.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\drivers\serial.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\drivers\pin.h)(0x62DF8621)
+F (..\..\..\components\drivers\ipc\dataqueue.c)(0x62DF8621)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/dataqueue.o -MD)
+I (..\..\..\include\rtthread.h)(0x62DF8621)
+I (rtconfig.h)(0x62DF9325)
+I (..\..\..\include\rtdebug.h)(0x62DF8621)
+I (..\..\..\include\rtdef.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\..\..\include\rtservice.h)(0x62DF8621)
+I (..\..\..\include\rtm.h)(0x62DF8621)
+I (..\..\..\components\finsh\finsh.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\rtdevice.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\ringbuffer.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\completion.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\dataqueue.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\workqueue.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\waitqueue.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\pipe.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\poll.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\ringblk_buf.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\drivers\serial.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\drivers\pin.h)(0x62DF8621)
+I (..\..\..\include\rthw.h)(0x62DF8621)
+F (..\..\..\components\drivers\ipc\pipe.c)(0x62DF8621)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/pipe.o -MD)
+I (..\..\..\include\rthw.h)(0x62DF8621)
+I (..\..\..\include\rtthread.h)(0x62DF8621)
+I (rtconfig.h)(0x62DF9325)
+I (..\..\..\include\rtdebug.h)(0x62DF8621)
+I (..\..\..\include\rtdef.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\..\..\include\rtservice.h)(0x62DF8621)
+I (..\..\..\include\rtm.h)(0x62DF8621)
+I (..\..\..\components\finsh\finsh.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\rtdevice.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\ringbuffer.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\completion.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\dataqueue.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\workqueue.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\waitqueue.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\pipe.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\poll.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\ringblk_buf.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\drivers\serial.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\drivers\pin.h)(0x62DF8621)
+I (..\..\..\components\libc\compilers\common\extension\sys\errno.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\errno.h)(0x625260D8)
+F (..\..\..\components\drivers\ipc\ringblk_buf.c)(0x62DF8621)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/ringblk_buf.o -MD)
+I (..\..\..\include\rthw.h)(0x62DF8621)
+I (..\..\..\include\rtthread.h)(0x62DF8621)
+I (rtconfig.h)(0x62DF9325)
+I (..\..\..\include\rtdebug.h)(0x62DF8621)
+I (..\..\..\include\rtdef.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\..\..\include\rtservice.h)(0x62DF8621)
+I (..\..\..\include\rtm.h)(0x62DF8621)
+I (..\..\..\components\finsh\finsh.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\rtdevice.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\ringbuffer.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\completion.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\dataqueue.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\workqueue.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\waitqueue.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\pipe.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\poll.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\ringblk_buf.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\drivers\serial.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\drivers\pin.h)(0x62DF8621)
+F (..\..\..\components\drivers\ipc\ringbuffer.c)(0x62DF8621)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/ringbuffer.o -MD)
+I (..\..\..\include\rtthread.h)(0x62DF8621)
+I (rtconfig.h)(0x62DF9325)
+I (..\..\..\include\rtdebug.h)(0x62DF8621)
+I (..\..\..\include\rtdef.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\..\..\include\rtservice.h)(0x62DF8621)
+I (..\..\..\include\rtm.h)(0x62DF8621)
+I (..\..\..\components\finsh\finsh.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\rtdevice.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\ringbuffer.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\completion.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\dataqueue.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\workqueue.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\waitqueue.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\pipe.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\poll.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\ringblk_buf.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\drivers\serial.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\drivers\pin.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\string.h)(0x625260D6)
+F (..\..\..\components\drivers\ipc\waitqueue.c)(0x62DF8621)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/waitqueue.o -MD)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (..\..\..\include\rthw.h)(0x62DF8621)
+I (..\..\..\include\rtthread.h)(0x62DF8621)
+I (rtconfig.h)(0x62DF9325)
+I (..\..\..\include\rtdebug.h)(0x62DF8621)
+I (..\..\..\include\rtdef.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\..\..\include\rtservice.h)(0x62DF8621)
+I (..\..\..\include\rtm.h)(0x62DF8621)
+I (..\..\..\components\finsh\finsh.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\rtdevice.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\ringbuffer.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\completion.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\dataqueue.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\workqueue.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\waitqueue.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\pipe.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\poll.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\ringblk_buf.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\drivers\serial.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\drivers\pin.h)(0x62DF8621)
+F (..\..\..\components\drivers\ipc\workqueue.c)(0x62DF8621)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/workqueue.o -MD)
+I (..\..\..\include\rthw.h)(0x62DF8621)
+I (..\..\..\include\rtthread.h)(0x62DF8621)
+I (rtconfig.h)(0x62DF9325)
+I (..\..\..\include\rtdebug.h)(0x62DF8621)
+I (..\..\..\include\rtdef.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\..\..\include\rtservice.h)(0x62DF8621)
+I (..\..\..\include\rtm.h)(0x62DF8621)
+I (..\..\..\components\finsh\finsh.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\rtdevice.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\ringbuffer.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\completion.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\dataqueue.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\workqueue.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\waitqueue.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\pipe.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\poll.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\ringblk_buf.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\drivers\serial.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\drivers\pin.h)(0x62DF8621)
+F (..\..\..\components\drivers\misc\pin.c)(0x62DF8621)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/pin.o -MD)
+I (..\..\..\components\drivers\include\drivers\pin.h)(0x62DF8621)
+I (..\..\..\include\rtthread.h)(0x62DF8621)
+I (rtconfig.h)(0x62DF9325)
+I (..\..\..\include\rtdebug.h)(0x62DF8621)
+I (..\..\..\include\rtdef.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\..\..\include\rtservice.h)(0x62DF8621)
+I (..\..\..\include\rtm.h)(0x62DF8621)
+I (..\..\..\components\finsh\finsh.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\ctype.h)(0x625260D6)
+I (..\..\..\components\finsh\msh_parse.h)(0x62DF8621)
+F (..\..\..\components\drivers\serial\serial.c)(0x62DF8621)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/serial.o -MD)
+I (..\..\..\include\rthw.h)(0x62DF8621)
+I (..\..\..\include\rtthread.h)(0x62DF8621)
+I (rtconfig.h)(0x62DF9325)
+I (..\..\..\include\rtdebug.h)(0x62DF8621)
+I (..\..\..\include\rtdef.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\..\..\include\rtservice.h)(0x62DF8621)
+I (..\..\..\include\rtm.h)(0x62DF8621)
+I (..\..\..\components\finsh\finsh.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\rtdevice.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\ringbuffer.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\completion.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\dataqueue.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\workqueue.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\waitqueue.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\pipe.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\poll.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\ringblk_buf.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\drivers\serial.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\drivers\pin.h)(0x62DF8621)
+I (..\..\..\include\rtdbg.h)(0x62DF8621)
+F (drivers\drv_uart.c)(0x62DF8617)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/drv_uart.o -MD)
+I (..\..\..\include\rthw.h)(0x62DF8621)
+I (..\..\..\include\rtthread.h)(0x62DF8621)
+I (rtconfig.h)(0x62DF9325)
+I (..\..\..\include\rtdebug.h)(0x62DF8621)
+I (..\..\..\include\rtdef.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\..\..\include\rtservice.h)(0x62DF8621)
+I (..\..\..\include\rtm.h)(0x62DF8621)
+I (..\..\..\components\finsh\finsh.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\rtdevice.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\ringbuffer.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\completion.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\dataqueue.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\workqueue.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\waitqueue.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\pipe.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\poll.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\ringblk_buf.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\drivers\serial.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\drivers\pin.h)(0x62DF8621)
+I (drivers\board.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\ACM32Fxx_HAL.h)(0x62DFA1FD)
+I (libraries\Device\ACM32F4.h)(0x62DF8617)
+I (libraries\CMSIS\core_cm33.h)(0x62DF8617)
+I (libraries\CMSIS\cmsis_version.h)(0x62DF8617)
+I (libraries\CMSIS\cmsis_compiler.h)(0x62DF8617)
+I (libraries\CMSIS\cmsis_armclang.h)(0x62DF8617)
+I (libraries\CMSIS\mpu_armv8.h)(0x62DF8617)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (libraries\Device\System_ACM32F4.h)(0x62DF8617)
+I (libraries\Device\System_Accelerate.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_DMA.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_GPIO.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_UART.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_UART_EX.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_ADC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_DAC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_EXTI.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_I2C.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_I2S.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_RTC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_SPI.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_IWDT.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_EFlash.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_EFlash_EX.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_OPA.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_COMP.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_CAN.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_LPUART.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_WDT.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_TIMER.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_TIMER_EX.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_FSUSB.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_CRC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_AES.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_FAU.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_SHA1.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_SHA256.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_HRNG.h)(0x62DF8617)
+I (drivers\uart_config.h)(0x62DF8617)
+F (drivers\drv_gpio.c)(0x62DF8617)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/drv_gpio.o -MD)
+I (..\..\..\include\rthw.h)(0x62DF8621)
+I (..\..\..\include\rtthread.h)(0x62DF8621)
+I (rtconfig.h)(0x62DF9325)
+I (..\..\..\include\rtdebug.h)(0x62DF8621)
+I (..\..\..\include\rtdef.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\..\..\include\rtservice.h)(0x62DF8621)
+I (..\..\..\include\rtm.h)(0x62DF8621)
+I (..\..\..\components\finsh\finsh.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\rtdevice.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\ringbuffer.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\completion.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\dataqueue.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\workqueue.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\waitqueue.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\pipe.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\poll.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\ringblk_buf.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\drivers\serial.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\drivers\pin.h)(0x62DF8621)
+I (drivers\board.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\ACM32Fxx_HAL.h)(0x62DFA1FD)
+I (libraries\Device\ACM32F4.h)(0x62DF8617)
+I (libraries\CMSIS\core_cm33.h)(0x62DF8617)
+I (libraries\CMSIS\cmsis_version.h)(0x62DF8617)
+I (libraries\CMSIS\cmsis_compiler.h)(0x62DF8617)
+I (libraries\CMSIS\cmsis_armclang.h)(0x62DF8617)
+I (libraries\CMSIS\mpu_armv8.h)(0x62DF8617)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (libraries\Device\System_ACM32F4.h)(0x62DF8617)
+I (libraries\Device\System_Accelerate.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_DMA.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_GPIO.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_UART.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_UART_EX.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_ADC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_DAC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_EXTI.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_I2C.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_I2S.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_RTC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_SPI.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_IWDT.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_EFlash.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_EFlash_EX.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_OPA.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_COMP.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_CAN.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_LPUART.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_WDT.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_TIMER.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_TIMER_EX.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_FSUSB.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_CRC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_AES.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_FAU.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_SHA1.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_SHA256.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_HRNG.h)(0x62DF8617)
+F (drivers\board.c)(0x62DF8617)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/board.o -MD)
+I (..\..\..\include\rthw.h)(0x62DF8621)
+I (..\..\..\include\rtthread.h)(0x62DF8621)
+I (rtconfig.h)(0x62DF9325)
+I (..\..\..\include\rtdebug.h)(0x62DF8621)
+I (..\..\..\include\rtdef.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\..\..\include\rtservice.h)(0x62DF8621)
+I (..\..\..\include\rtm.h)(0x62DF8621)
+I (..\..\..\components\finsh\finsh.h)(0x62DF8621)
+I (drivers\board.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\ACM32Fxx_HAL.h)(0x62DFA1FD)
+I (libraries\Device\ACM32F4.h)(0x62DF8617)
+I (libraries\CMSIS\core_cm33.h)(0x62DF8617)
+I (libraries\CMSIS\cmsis_version.h)(0x62DF8617)
+I (libraries\CMSIS\cmsis_compiler.h)(0x62DF8617)
+I (libraries\CMSIS\cmsis_armclang.h)(0x62DF8617)
+I (libraries\CMSIS\mpu_armv8.h)(0x62DF8617)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (libraries\Device\System_ACM32F4.h)(0x62DF8617)
+I (libraries\Device\System_Accelerate.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_DMA.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_GPIO.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_UART.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_UART_EX.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_ADC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_DAC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_EXTI.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_I2C.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_I2S.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_RTC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_SPI.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_IWDT.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_EFlash.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_EFlash_EX.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_OPA.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_COMP.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_CAN.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_LPUART.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_WDT.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_TIMER.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_TIMER_EX.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_FSUSB.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_CRC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_AES.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_FAU.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_SHA1.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_SHA256.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_HRNG.h)(0x62DF8617)
+I (..\..\..\components\drivers\include\rtdevice.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\ringbuffer.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\completion.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\dataqueue.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\workqueue.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\waitqueue.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\pipe.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\poll.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\ipc\ringblk_buf.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\drivers\serial.h)(0x62DF8621)
+I (..\..\..\components\drivers\include\drivers\pin.h)(0x62DF8621)
+F (..\..\..\components\finsh\shell.c)(0x62DF8621)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/shell.o -MD)
+I (..\..\..\include\rthw.h)(0x62DF8621)
+I (..\..\..\include\rtthread.h)(0x62DF8621)
+I (rtconfig.h)(0x62DF9325)
+I (..\..\..\include\rtdebug.h)(0x62DF8621)
+I (..\..\..\include\rtdef.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\..\..\include\rtservice.h)(0x62DF8621)
+I (..\..\..\include\rtm.h)(0x62DF8621)
+I (..\..\..\components\finsh\finsh.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
+I (..\..\..\components\finsh\shell.h)(0x62DF8621)
+I (..\..\..\components\finsh\msh.h)(0x62DF8621)
+F (..\..\..\components\finsh\msh.c)(0x62DF8621)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/msh.o -MD)
+I (..\..\..\include\rtthread.h)(0x62DF8621)
+I (rtconfig.h)(0x62DF9325)
+I (..\..\..\include\rtdebug.h)(0x62DF8621)
+I (..\..\..\include\rtdef.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\..\..\include\rtservice.h)(0x62DF8621)
+I (..\..\..\include\rtm.h)(0x62DF8621)
+I (..\..\..\components\finsh\finsh.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (..\..\..\components\finsh\msh.h)(0x62DF8621)
+I (..\..\..\components\finsh\shell.h)(0x62DF8621)
+F (..\..\..\components\finsh\msh_parse.c)(0x62DF8621)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/msh_parse.o -MD)
+I (..\..\..\include\rtthread.h)(0x62DF8621)
+I (rtconfig.h)(0x62DF9325)
+I (..\..\..\include\rtdebug.h)(0x62DF8621)
+I (..\..\..\include\rtdef.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\..\..\include\rtservice.h)(0x62DF8621)
+I (..\..\..\include\rtm.h)(0x62DF8621)
+I (..\..\..\components\finsh\finsh.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\ctype.h)(0x625260D6)
+F (..\..\..\components\finsh\cmd.c)(0x62DF8621)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/cmd.o -MD)
+I (..\..\..\include\rthw.h)(0x62DF8621)
+I (..\..\..\include\rtthread.h)(0x62DF8621)
+I (rtconfig.h)(0x62DF9325)
+I (..\..\..\include\rtdebug.h)(0x62DF8621)
+I (..\..\..\include\rtdef.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\..\..\include\rtservice.h)(0x62DF8621)
+I (..\..\..\include\rtm.h)(0x62DF8621)
+I (..\..\..\components\finsh\finsh.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\string.h)(0x625260D6)
+F (..\..\..\src\clock.c)(0x62DF8621)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/clock.o -MD)
+I (..\..\..\include\rthw.h)(0x62DF8621)
+I (..\..\..\include\rtthread.h)(0x62DF8621)
+I (rtconfig.h)(0x62DF9325)
+I (..\..\..\include\rtdebug.h)(0x62DF8621)
+I (..\..\..\include\rtdef.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\..\..\include\rtservice.h)(0x62DF8621)
+I (..\..\..\include\rtm.h)(0x62DF8621)
+I (..\..\..\components\finsh\finsh.h)(0x62DF8621)
+F (..\..\..\src\components.c)(0x62DF8621)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/components.o -MD)
+I (..\..\..\include\rthw.h)(0x62DF8621)
+I (..\..\..\include\rtthread.h)(0x62DF8621)
+I (rtconfig.h)(0x62DF9325)
+I (..\..\..\include\rtdebug.h)(0x62DF8621)
+I (..\..\..\include\rtdef.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\..\..\include\rtservice.h)(0x62DF8621)
+I (..\..\..\include\rtm.h)(0x62DF8621)
+I (..\..\..\components\finsh\finsh.h)(0x62DF8621)
+F (..\..\..\src\device.c)(0x62DF8621)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/device.o -MD)
+I (..\..\..\include\rtthread.h)(0x62DF8621)
+I (rtconfig.h)(0x62DF9325)
+I (..\..\..\include\rtdebug.h)(0x62DF8621)
+I (..\..\..\include\rtdef.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\..\..\include\rtservice.h)(0x62DF8621)
+I (..\..\..\include\rtm.h)(0x62DF8621)
+I (..\..\..\components\finsh\finsh.h)(0x62DF8621)
+F (..\..\..\src\idle.c)(0x62DF8621)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/idle.o -MD)
+I (..\..\..\include\rthw.h)(0x62DF8621)
+I (..\..\..\include\rtthread.h)(0x62DF8621)
+I (rtconfig.h)(0x62DF9325)
+I (..\..\..\include\rtdebug.h)(0x62DF8621)
+I (..\..\..\include\rtdef.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\..\..\include\rtservice.h)(0x62DF8621)
+I (..\..\..\include\rtm.h)(0x62DF8621)
+I (..\..\..\components\finsh\finsh.h)(0x62DF8621)
+F (..\..\..\src\ipc.c)(0x62DF8621)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/ipc.o -MD)
+I (..\..\..\include\rtthread.h)(0x62DF8621)
+I (rtconfig.h)(0x62DF9325)
+I (..\..\..\include\rtdebug.h)(0x62DF8621)
+I (..\..\..\include\rtdef.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\..\..\include\rtservice.h)(0x62DF8621)
+I (..\..\..\include\rtm.h)(0x62DF8621)
+I (..\..\..\components\finsh\finsh.h)(0x62DF8621)
+I (..\..\..\include\rthw.h)(0x62DF8621)
+F (..\..\..\src\irq.c)(0x62DF8621)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/irq.o -MD)
+I (..\..\..\include\rthw.h)(0x62DF8621)
+I (..\..\..\include\rtthread.h)(0x62DF8621)
+I (rtconfig.h)(0x62DF9325)
+I (..\..\..\include\rtdebug.h)(0x62DF8621)
+I (..\..\..\include\rtdef.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\..\..\include\rtservice.h)(0x62DF8621)
+I (..\..\..\include\rtm.h)(0x62DF8621)
+I (..\..\..\components\finsh\finsh.h)(0x62DF8621)
+F (..\..\..\src\kservice.c)(0x62DF8621)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/kservice.o -MD)
+I (..\..\..\include\rtthread.h)(0x62DF8621)
+I (rtconfig.h)(0x62DF9325)
+I (..\..\..\include\rtdebug.h)(0x62DF8621)
+I (..\..\..\include\rtdef.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\..\..\include\rtservice.h)(0x62DF8621)
+I (..\..\..\include\rtm.h)(0x62DF8621)
+I (..\..\..\components\finsh\finsh.h)(0x62DF8621)
+I (..\..\..\include\rthw.h)(0x62DF8621)
+F (..\..\..\src\mem.c)(0x62DF8621)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/mem.o -MD)
+I (..\..\..\include\rthw.h)(0x62DF8621)
+I (..\..\..\include\rtthread.h)(0x62DF8621)
+I (rtconfig.h)(0x62DF9325)
+I (..\..\..\include\rtdebug.h)(0x62DF8621)
+I (..\..\..\include\rtdef.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\..\..\include\rtservice.h)(0x62DF8621)
+I (..\..\..\include\rtm.h)(0x62DF8621)
+I (..\..\..\components\finsh\finsh.h)(0x62DF8621)
+F (..\..\..\src\mempool.c)(0x62DF8621)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/mempool.o -MD)
+I (..\..\..\include\rthw.h)(0x62DF8621)
+I (..\..\..\include\rtthread.h)(0x62DF8621)
+I (rtconfig.h)(0x62DF9325)
+I (..\..\..\include\rtdebug.h)(0x62DF8621)
+I (..\..\..\include\rtdef.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\..\..\include\rtservice.h)(0x62DF8621)
+I (..\..\..\include\rtm.h)(0x62DF8621)
+I (..\..\..\components\finsh\finsh.h)(0x62DF8621)
+F (..\..\..\src\object.c)(0x62DF8621)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/object.o -MD)
+I (..\..\..\include\rtthread.h)(0x62DF8621)
+I (rtconfig.h)(0x62DF9325)
+I (..\..\..\include\rtdebug.h)(0x62DF8621)
+I (..\..\..\include\rtdef.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\..\..\include\rtservice.h)(0x62DF8621)
+I (..\..\..\include\rtm.h)(0x62DF8621)
+I (..\..\..\components\finsh\finsh.h)(0x62DF8621)
+I (..\..\..\include\rthw.h)(0x62DF8621)
+F (..\..\..\src\scheduler.c)(0x62DF8621)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/scheduler.o -MD)
+I (..\..\..\include\rtthread.h)(0x62DF8621)
+I (rtconfig.h)(0x62DF9325)
+I (..\..\..\include\rtdebug.h)(0x62DF8621)
+I (..\..\..\include\rtdef.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\..\..\include\rtservice.h)(0x62DF8621)
+I (..\..\..\include\rtm.h)(0x62DF8621)
+I (..\..\..\components\finsh\finsh.h)(0x62DF8621)
+I (..\..\..\include\rthw.h)(0x62DF8621)
+F (..\..\..\src\thread.c)(0x62DF8621)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/thread.o -MD)
+I (..\..\..\include\rthw.h)(0x62DF8621)
+I (..\..\..\include\rtthread.h)(0x62DF8621)
+I (rtconfig.h)(0x62DF9325)
+I (..\..\..\include\rtdebug.h)(0x62DF8621)
+I (..\..\..\include\rtdef.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\..\..\include\rtservice.h)(0x62DF8621)
+I (..\..\..\include\rtm.h)(0x62DF8621)
+I (..\..\..\components\finsh\finsh.h)(0x62DF8621)
+F (..\..\..\src\timer.c)(0x62DF8621)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/timer.o -MD)
+I (..\..\..\include\rtthread.h)(0x62DF8621)
+I (rtconfig.h)(0x62DF9325)
+I (..\..\..\include\rtdebug.h)(0x62DF8621)
+I (..\..\..\include\rtdef.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\..\..\include\rtservice.h)(0x62DF8621)
+I (..\..\..\include\rtm.h)(0x62DF8621)
+I (..\..\..\components\finsh\finsh.h)(0x62DF8621)
+I (..\..\..\include\rthw.h)(0x62DF8621)
+F (.\Peripherals\RFID\nfc_iic.c)(0x62BADCED)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/nfc_iic.o -MD)
+I (Peripherals\RFID\nfc_iic.h)(0x62E0FA4E)
+I (..\..\..\include\rthw.h)(0x62DF8621)
+I (..\..\..\include\rtthread.h)(0x62DF8621)
+I (rtconfig.h)(0x62DF9325)
+I (..\..\..\include\rtdebug.h)(0x62DF8621)
+I (..\..\..\include\rtdef.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\..\..\include\rtservice.h)(0x62DF8621)
+I (..\..\..\include\rtm.h)(0x62DF8621)
+I (..\..\..\components\finsh\finsh.h)(0x62DF8621)
+I (drivers\board.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\ACM32Fxx_HAL.h)(0x62DFA1FD)
+I (libraries\Device\ACM32F4.h)(0x62DF8617)
+I (libraries\CMSIS\core_cm33.h)(0x62DF8617)
+I (libraries\CMSIS\cmsis_version.h)(0x62DF8617)
+I (libraries\CMSIS\cmsis_compiler.h)(0x62DF8617)
+I (libraries\CMSIS\cmsis_armclang.h)(0x62DF8617)
+I (libraries\CMSIS\mpu_armv8.h)(0x62DF8617)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (libraries\Device\System_ACM32F4.h)(0x62DF8617)
+I (libraries\Device\System_Accelerate.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_DMA.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_GPIO.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_UART.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_UART_EX.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_ADC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_DAC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_EXTI.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_I2C.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_I2S.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_RTC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_SPI.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_IWDT.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_EFlash.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_EFlash_EX.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_OPA.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_COMP.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_CAN.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_LPUART.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_WDT.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_TIMER.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_TIMER_EX.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_FSUSB.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_CRC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_AES.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_FAU.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_SHA1.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_SHA256.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_HRNG.h)(0x62DF8617)
+I (..\..\..\components\drivers\include\drivers\pin.h)(0x62DF8621)
+I (applications\delay.h)(0x62E0FA96)
+I (Peripherals\RFID\SI523_App.h)(0x62E1FBCF)
+F (.\Peripherals\RFID\nfc_iic.h)(0x62E0FA4E)()
+F (.\Peripherals\RFID\SI523_App.c)(0x62E1FBEB)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/si523_app.o -MD)
+I (..\..\..\include\rthw.h)(0x62DF8621)
+I (..\..\..\include\rtthread.h)(0x62DF8621)
+I (rtconfig.h)(0x62DF9325)
+I (..\..\..\include\rtdebug.h)(0x62DF8621)
+I (..\..\..\include\rtdef.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\..\..\include\rtservice.h)(0x62DF8621)
+I (..\..\..\include\rtm.h)(0x62DF8621)
+I (..\..\..\components\finsh\finsh.h)(0x62DF8621)
+I (Peripherals\RFID\nfc_iic.h)(0x62E0FA4E)
+I (drivers\board.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\ACM32Fxx_HAL.h)(0x62DFA1FD)
+I (libraries\Device\ACM32F4.h)(0x62DF8617)
+I (libraries\CMSIS\core_cm33.h)(0x62DF8617)
+I (libraries\CMSIS\cmsis_version.h)(0x62DF8617)
+I (libraries\CMSIS\cmsis_compiler.h)(0x62DF8617)
+I (libraries\CMSIS\cmsis_armclang.h)(0x62DF8617)
+I (libraries\CMSIS\mpu_armv8.h)(0x62DF8617)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (libraries\Device\System_ACM32F4.h)(0x62DF8617)
+I (libraries\Device\System_Accelerate.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_DMA.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_GPIO.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_UART.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_UART_EX.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_ADC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_DAC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_EXTI.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_I2C.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_I2S.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_RTC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_SPI.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_IWDT.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_EFlash.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_EFlash_EX.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_OPA.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_COMP.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_CAN.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_LPUART.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_WDT.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_TIMER.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_TIMER_EX.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_FSUSB.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_CRC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_AES.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_FAU.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_SHA1.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_SHA256.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_HRNG.h)(0x62DF8617)
+I (..\..\..\components\drivers\include\drivers\pin.h)(0x62DF8621)
+I (applications\delay.h)(0x62E0FA96)
+I (Peripherals\RFID\SI523_App.h)(0x62E1FBCF)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x625260D6)
+I (Peripherals\RFID\exti.h)(0x62E1FF46)
+I (Peripherals\Power\power.h)(0x62D65FC8)
+F (.\Peripherals\RFID\SI523_App.h)(0x62E1FBCF)()
+F (.\Peripherals\RFID\exti.c)(0x62E1FF1A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/exti.o -MD)
+I (Peripherals\RFID\exti.h)(0x62E1FF46)
+I (libraries\HAL_Driver\Inc\ACM32Fxx_HAL.h)(0x62DFA1FD)
+I (libraries\Device\ACM32F4.h)(0x62DF8617)
+I (libraries\CMSIS\core_cm33.h)(0x62DF8617)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (libraries\CMSIS\cmsis_version.h)(0x62DF8617)
+I (libraries\CMSIS\cmsis_compiler.h)(0x62DF8617)
+I (libraries\CMSIS\cmsis_armclang.h)(0x62DF8617)
+I (libraries\CMSIS\mpu_armv8.h)(0x62DF8617)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (libraries\Device\System_ACM32F4.h)(0x62DF8617)
+I (libraries\Device\System_Accelerate.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_DMA.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_GPIO.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_UART.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_UART_EX.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_ADC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_DAC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_EXTI.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_I2C.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_I2S.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_RTC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_SPI.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_IWDT.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_EFlash.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_EFlash_EX.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_OPA.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_COMP.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_CAN.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_LPUART.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_WDT.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_TIMER.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_TIMER_EX.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_FSUSB.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_CRC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_AES.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_FAU.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_SHA1.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_SHA256.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_HRNG.h)(0x62DF8617)
+I (applications\delay.h)(0x62E0FA96)
+I (..\..\..\include\rthw.h)(0x62DF8621)
+I (..\..\..\include\rtthread.h)(0x62DF8621)
+I (rtconfig.h)(0x62DF9325)
+I (..\..\..\include\rtdebug.h)(0x62DF8621)
+I (..\..\..\include\rtdef.h)(0x62DF8621)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
+I (..\..\..\include\rtservice.h)(0x62DF8621)
+I (..\..\..\include\rtm.h)(0x62DF8621)
+I (..\..\..\components\finsh\finsh.h)(0x62DF8621)
+F (.\Peripherals\RFID\exti.h)(0x62E1FF46)()
+F (.\Peripherals\Power\HAL_RTC.c)(0x613C5CE4)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/hal_rtc.o -MD)
+I (libraries\HAL_Driver\Inc\ACM32Fxx_HAL.h)(0x62DFA1FD)
+I (libraries\Device\ACM32F4.h)(0x62DF8617)
+I (libraries\CMSIS\core_cm33.h)(0x62DF8617)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (libraries\CMSIS\cmsis_version.h)(0x62DF8617)
+I (libraries\CMSIS\cmsis_compiler.h)(0x62DF8617)
+I (libraries\CMSIS\cmsis_armclang.h)(0x62DF8617)
+I (libraries\CMSIS\mpu_armv8.h)(0x62DF8617)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (libraries\Device\System_ACM32F4.h)(0x62DF8617)
+I (libraries\Device\System_Accelerate.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_DMA.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_GPIO.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_UART.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_UART_EX.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_ADC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_DAC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_EXTI.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_I2C.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_I2S.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_RTC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_SPI.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_IWDT.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_EFlash.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_EFlash_EX.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_OPA.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_COMP.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_CAN.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_LPUART.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_WDT.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_TIMER.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_TIMER_EX.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_FSUSB.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_CRC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_AES.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_FAU.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_SHA1.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_SHA256.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_HRNG.h)(0x62DF8617)
+F (.\Peripherals\Power\power.c)(0x62D663B4)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O1 -ffunction-sections -I libraries/HAL_Driver/Inc -I libraries/Device -I libraries/CMSIS -I applications -I . -I ../../../components/libc/compilers/common/include -I ../../../components/libc/compilers/common/extension -I ../../../components/libc/compilers/common/extension/fcntl/octal -I ../../../libcpu/arm/common -I ../../../libcpu/arm/cortex-m33 -I ../../../components/drivers/include -I ../../../components/drivers/include -I ../../../components/drivers/include -I drivers -I ../../../components/finsh -I . -I ../../../include -I ../../../components/libc/posix/io/poll -I ../../../components/libc/posix/io/stdio -I ../../../components/libc/posix/ipc -I ./Peripherals/Power -I ./Peripherals/RFID-D__UVISION_VERSION="536" -DRT_USING_LIBC -D__RTTHREAD__ -D__STDC_LIMIT_MACROS -DRT_USING_ARM_LIBC -D__CLK_TCK="RT_TICK_PER_SECOND"-o ./build/power.o -MD)
+I (Peripherals\Power\power.h)(0x62D65FC8)
+I (libraries\HAL_Driver\Inc\ACM32Fxx_HAL.h)(0x62DFA1FD)
+I (libraries\Device\ACM32F4.h)(0x62DF8617)
+I (libraries\CMSIS\core_cm33.h)(0x62DF8617)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
+I (libraries\CMSIS\cmsis_version.h)(0x62DF8617)
+I (libraries\CMSIS\cmsis_compiler.h)(0x62DF8617)
+I (libraries\CMSIS\cmsis_armclang.h)(0x62DF8617)
+I (libraries\CMSIS\mpu_armv8.h)(0x62DF8617)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x625260D6)
+I (D:\Ethan\Program\MDK\Keil_v5\ARM\ARMCLANG\include\string.h)(0x625260D6)
+I (libraries\Device\System_ACM32F4.h)(0x62DF8617)
+I (libraries\Device\System_Accelerate.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_DMA.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_GPIO.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_UART.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_UART_EX.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_ADC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_DAC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_EXTI.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_I2C.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_I2S.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_RTC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_SPI.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_IWDT.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_EFlash.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_EFlash_EX.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_OPA.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_COMP.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_CAN.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_LPUART.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_WDT.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_TIMER.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_TIMER_EX.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_FSUSB.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_CRC.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_AES.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_FAU.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_SHA1.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_SHA256.h)(0x62DF8617)
+I (libraries\HAL_Driver\Inc\HAL_HRNG.h)(0x62DF8617)
+I (Peripherals\RFID\SI523_App.h)(0x62E1FBCF)
+F (.\Peripherals\Power\power.h)(0x62D65FC8)()
