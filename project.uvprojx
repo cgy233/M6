@@ -745,6 +745,51 @@
             </File>
           </Files>
         </Group>
+        <Group>
+          <GroupName>Peripherals\Touch</GroupName>
+          <Files>
+            <File>
+              <FileName>led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Peripherals\Touch\led.c</FilePath>
+            </File>
+            <File>
+              <FileName>led.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Peripherals\Touch\led.h</FilePath>
+            </File>
+            <File>
+              <FileName>Si14tch.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Peripherals\Touch\Si14tch.c</FilePath>
+            </File>
+            <File>
+              <FileName>Si14tch.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Peripherals\Touch\Si14tch.h</FilePath>
+            </File>
+            <File>
+              <FileName>tk_exti.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Peripherals\Touch\tk_exti.c</FilePath>
+            </File>
+            <File>
+              <FileName>tk_exti.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Peripherals\Touch\tk_exti.h</FilePath>
+            </File>
+            <File>
+              <FileName>touch.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Peripherals\Touch\touch.c</FilePath>
+            </File>
+            <File>
+              <FileName>touch.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Peripherals\Touch\touch.h</FilePath>
+            </File>
+          </Files>
+        </Group>
       </Groups>
     </Target>
   </Targets>

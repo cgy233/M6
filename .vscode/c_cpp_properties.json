@@ -32,7 +32,8 @@
                 "d:\\Ethan\\Project\\ACM32\\rt-thread\\components\\drivers\\ipc",
                 "d:\\Ethan\\Project\\ACM32\\rt-thread\\components\\drivers\\misc",
                 "d:\\Ethan\\Project\\ACM32\\rt-thread\\components\\drivers\\serial",
-                "d:\\Ethan\\Project\\ACM32\\rt-thread\\src"
+                "d:\\Ethan\\Project\\ACM32\\rt-thread\\src",
+                "d:\\Ethan\\Project\\ACM32\\rt-thread\\bsp\\acm32\\acm32f4xx_rtt\\Peripherals\\Touch"
             ],
             "defines": [
                 "RT_USING_LIBC",

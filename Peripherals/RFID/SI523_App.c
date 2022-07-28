@@ -531,6 +531,7 @@ void PCD_SI523_TypeA(void)
 		delay_ms(500);
 	}
 }
+//INIT_APP_EXPORT(PCD_SI523_TypeA);
 
 /*================================
  函数功能：循环读取B卡UID
@@ -1043,7 +1044,7 @@ int ACD_init_Fun(void)
 	PCD_ACD_Init();
 	return 0;
 }
-INIT_APP_EXPORT(ACD_init_Fun);
+//INIT_APP_EXPORT(ACD_init_Fun);
 
 /*===============================
  函数功能：ACD寻卡

@@ -57,6 +57,10 @@
 ".\build\exti.o"
 ".\build\hal_rtc.o"
 ".\build\power.o"
+".\build\led.o"
+".\build\si14tch.o"
+".\build\tk_exti.o"
+".\build\touch.o"
 --library_type=microlib --strict --scatter ".\build\ACM32F4.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

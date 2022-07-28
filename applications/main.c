@@ -10,14 +10,6 @@
 
 #include <rthw.h>
 #include <rtthread.h>
-#include "board.h"
-#include <drivers/pin.h>
-#include "SI523_App.h"
-#include "exti.h"
-#include "delay.h"
-
-#define LED_PIN_NUM    83     /* PF3 */
-
 
 uint8_t PCD_IRQ_flagA;
 
